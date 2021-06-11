@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "font";
+    font-weight: 400;
+    src: url("../fonts/lineto-circular-pro-bold-webfont.woff") format("woff");
+    src: url("../fonts/lineto-circular-pro-bold-webfont.woff2") format("woff2");
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: "font";
+    font-weight: 400;
+    src: url("../fonts/lineto-circular-pro-book-webfont.woff") format("woff");
+    src: url("../fonts/lineto-circular-pro-book-webfont.woff2") format("woff2");
+    font-weight: 400;
+  }
+
+body{
+    font-family: "font";
+}
