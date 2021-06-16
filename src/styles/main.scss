@@ -121,15 +121,105 @@ a {
   cursor: pointer;
 }
 
-.project-image {
-  position: absolute;
-  z-index: 999;
-  width: 10%;
-  visibility: hidden;
-  transform: translateX(-50%)  translateY(-50%); 
-  margin-left: -400px;
-  pointer-events:none
+// .project-image {
+//   position: absolute;
+//   z-index: 999;
+//   width: 10%;
+//   visibility: hidden;
+//   transform: translateX(-50%)  translateY(-50%); 
+//   margin-left: -400px;
+//   pointer-events:none
+// }
+// .project-image.visible {
+//   visibility: visible;
+// }
+
+* {
+	cursor: none;
 }
-.project-image.visible {
-  visibility: visible;
+.cursor {
+    --size: 8px;
+    height: var(--size);
+    width:  var(--size);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10000;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.cursor.cursor-shadow {
+    background-color: transparent;
+    border: 1px solid #000;
+    --size: 40px;
+    transition: top .2s, left .2s,
+                width .2s, height .2s,
+                background-color .2s, border-color 0.2s;
+    transition-timing-function: ease-out;
+}
+.cursor.cursor-dot {
+    background: #7f6ed2;
+    transition: width .2s, height .2s;
+}
+.cursor-shadow.active {
+    --size: 80px;
+    border-color: rgba(255,255,255, 0);
+    background-color: rgba(255,255,255,.1);
+}
+.cursor-dot.active {
+	  --size: 0;
+}
+a {
+	  cursor: pointer;
+}
+a:hover {
+  	text-decoration: none;
+}
+
+.cursor-shadow.active-blog-post-1 {
+  background-image: url('http://ivang-design.com/alke/img/blog/1.jpg');
+}
+.cursor-shadow.active-blog-post-2 {
+  background-image: url('http://ivang-design.com/alke/img/blog/2.jpg');
+}
+.cursor-shadow.active-blog-post-3 {
+  background-image: url('http://ivang-design.com/alke/img/blog/3.jpg');
+}
+.cursor-shadow.active-blog-post-4 {
+  background-image: url('http://ivang-design.com/alke/img/blog/4.jpg');
+}
+.cursor-shadow.active-blog-post-5 {
+  background-image: url('http://ivang-design.com/alke/img/blog/5.jpg');
+}
+.cursor-shadow.active-blog-post-6 {
+  background-image: url('http://ivang-design.com/alke/img/blog/6.jpg');
+}
+.cursor-shadow.active-blog-post-7 {
+  background-image: url('http://ivang-design.com/alke/img/blog/7.jpg');
+}
+
+.cursor.cursor-dot.active-blog-post-1,
+.cursor.cursor-dot.active-blog-post-2,
+.cursor.cursor-dot.active-blog-post-3,
+.cursor.cursor-dot.active-blog-post-4,
+.cursor.cursor-dot.active-blog-post-5,
+.cursor.cursor-dot.active-blog-post-6,
+.cursor.cursor-dot.active-blog-post-7 {
+	  opacity: 0;
+}
+.cursor-shadow.active-blog-post-1,
+.cursor-shadow.active-blog-post-2,
+.cursor-shadow.active-blog-post-3,
+.cursor-shadow.active-blog-post-4,
+.cursor-shadow.active-blog-post-5,
+.cursor-shadow.active-blog-post-6,
+.cursor-shadow.active-blog-post-7 {
+	  --size: 160px;
+  	border-color: rgba(255,255,255, 0);
+	  border-width: 0;
+	  background-color: transparent;
+	  background-position: center center;
+	  background-repeat: no-repeat;
+  	background-size: cover;
+	  border-radius: 50%;
+  	z-index: 1;
 }
