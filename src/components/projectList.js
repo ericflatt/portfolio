@@ -81,8 +81,6 @@ class List extends React.Component {
   render() {
     return (
       <div className="">
-        <div className="cursor cursor-shadow"></div>
-        <div className="cursor cursor-dot"></div>
         <div className="work">
           <div className="work-item">
             <div className="work-title work-item-inner">
