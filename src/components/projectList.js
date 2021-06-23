@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { Link } from "gatsby"
 import $ from "jquery"
 import "../styles/main.scss"
@@ -81,8 +81,8 @@ class List extends React.Component {
   render() {
     return (
       <div className="">
-        <div class="cursor cursor-shadow"></div>
-        <div class="cursor cursor-dot"></div>
+        <div className="cursor cursor-shadow"></div>
+        <div className="cursor cursor-dot"></div>
         <div className="work">
           <div className="work-item">
             <div className="work-title work-item-inner">
