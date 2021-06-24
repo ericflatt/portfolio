@@ -5,7 +5,7 @@ import Seo from "../components/seo"
 import List from "../components/projectList"
 import Hero from "../components/hero"
 import Cursor from "../components/cursor"
-
+import NavButtons from "../components/navButtons"
 import "../styles/main.scss"
 
 const IndexPage = () => (
@@ -14,6 +14,7 @@ const IndexPage = () => (
     <Cursor />
     <Hero />
     <List />
+    <NavButtons />
   </main>
 )
 

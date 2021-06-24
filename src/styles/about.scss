@@ -1,12 +1,25 @@
+@import "react-alice-carousel/lib/scss/alice-carousel.scss";
+
 .about-container{
+    padding-top: 100px;
     max-width: 50vw;
     display: block;
     margin: auto;
+    position: relative;
+    @media only screen and (max-width:1000px){
+        max-width: 80vw;
+        padding-left: 25px;
+        margin: 0;
+    }
 }
 
 .about-text{
     font-weight: 400;
-    font-size: 18px;
+    font-size: 21px;
+
+    @media only screen and (max-width:1000px){
+        font-size: 16px;
+    }
 }
 
 .about-link {
@@ -53,3 +66,36 @@
   .launch-icon{
       margin-bottom: -4px;
   }
+
+  .hover-gif{
+      visibility: visible;
+      width: 20%;
+      margin-left: 5px;
+  }
+
+  .me-image{
+      display: none;
+      width: 25%;
+      z-index: 999;
+      position: absolute;
+      top: 125px;
+      left: 145px;
+      transition: .3s ease;
+  }
+
+  .me{
+      color: #7f6ed2;
+  }
+
+  .me-visible{
+    display: inline-block;
+    transition: .3s ease;
+}
+
+.stone-pony{
+    width: 50%;
+}
+.stone-ponytwo{
+    width: 25%;
+    margin-left: 25px;
+}

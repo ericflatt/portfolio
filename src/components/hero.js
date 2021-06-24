@@ -12,7 +12,7 @@ class Hero extends React.Component {
     return (
       <div className="hero">
           <div className="hero-text-container">
-                <h1 className="hero-text">Hi, I'm Eric and I am looking for a job</h1>
+                <h1 className="hero-text">Hi I'm Eric, a designer &amp; creative technologist.</h1>
           </div>
       </div>
     )
