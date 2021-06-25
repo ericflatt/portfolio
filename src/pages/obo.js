@@ -21,6 +21,9 @@ import homeScreen from "../images/obo/homeScreen.png"
 import routinesScreen from "../images/obo/routineScreen.png"
 import digitalBalance from "../images/obo/digitalBalance.png"
 import indigo from "../images/obo/indigo.png"
+import Seo from "../components/seo"
+import Cursor from "../components/cursor"
+import NavButtons from "../components/navButtons"
 
 import "../styles/obo.scss"
 
@@ -67,9 +70,18 @@ const ColoredLine = ({ color }) => (
   />
 )
 
-function App() {
-  return (
-    <div className="App">
+class Obo extends React.Component {
+    componentDidMount() {
+     
+    }
+  
+    render() {
+      return (
+        <div>
+          <Seo title="Obo" />
+          <NavButtons />
+          <Cursor />
+          <div className="App">
       <header className="App-header">
         <a className="downArrow" href="/">
           <img src={downArrow} className="backArrow" alt="go back" />
@@ -537,7 +549,10 @@ function App() {
         <br />
       </Footer>
     </div>
-  )
-}
+        </div>
+      )
+    }
+  }
+  
+  export default Obo
 
-export default App
