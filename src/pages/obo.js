@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import tw from "tailwind.macro"
+// import tw from "tailwind.macro"
 import oboLogo from "../images/obo/oboLogo.svg"
 import downArrow from "../images/obo/arrow-down.svg"
 import targetAudience from "../images/obo/targetAudience.png"
@@ -28,7 +28,6 @@ import NavButtons from "../components/navButtons"
 import "../styles/obo.scss"
 
 const ProjectsWrapper = styled.div`
-  ${tw`flex flex-wrap justify-between mt-8`};
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
@@ -41,7 +40,6 @@ const ProjectsWrapper = styled.div`
   }
 `
 const ThreeColumns = styled.div`
-  ${tw`flex flex-wrap justify-between mt-8`};
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
@@ -53,9 +51,7 @@ const ThreeColumns = styled.div`
     grid-gap: 2rem;
   }
 `
-const Footer = styled.footer`
-  ${tw`text-center text-grey  pin-b p-6 font-sans text-md lg:text-lg`};
-`
+
 
 const ColoredLine = ({ color }) => (
   <hr
@@ -533,7 +529,7 @@ class Obo extends React.Component {
       {/*   Made with <a style={{color:"red"}}>&#9829;</a>{' '}
                          , React and other stuff<br/> */}
 
-      <Footer>
+      {/* <Footer>
         Check out my other projects:{" "}
         <a className="footerObo" href="/bond">
           {" "}
@@ -547,7 +543,7 @@ class Obo extends React.Component {
           floatie
         </a>
         <br />
-      </Footer>
+      </Footer> */}
     </div>
         </div>
       )

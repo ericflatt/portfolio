@@ -98,7 +98,7 @@ class List extends React.Component {
               <div className="work-sub-title">
                 <p>Human-Computer Interaction</p>
               </div>
-              <Link to="/page-2">Obo</Link>
+              <Link className="cursor-link-blog-post-2" to="/obo">Obo</Link>
             </div>
           </div>
 
