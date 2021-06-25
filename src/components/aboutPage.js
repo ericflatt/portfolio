@@ -246,7 +246,7 @@ class About extends React.Component {
                   alt="stone pony"
                 />
               </div>
-              Theres a young me playing at the Stone Pony in Asbury Park, New Jersey. Most famous for where Bruce Springsteen was discovered.
+              There's a young me playing at the Stone Pony in Asbury Park, New Jersey. Most famous for where Bruce Springsteen was discovered.
             </h1>
           </div>
         </div>

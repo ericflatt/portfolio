@@ -80,9 +80,9 @@ class List extends React.Component {
 
   render() {
     return (
-      <div className="">
+      <div >
         <div className="work">
-          <div className="work-item">
+          <div id="work" className="work-item">
             <div className="work-title work-item-inner">
               <div className="work-sub-title">
                 <p>Senior Capstone</p>
