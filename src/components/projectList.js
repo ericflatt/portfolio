@@ -2,10 +2,13 @@ import React from "react"
 import { Link } from "gatsby"
 import $ from "jquery"
 import "../styles/main.scss"
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 class List extends React.Component {
   componentDidMount() {
+    AOS.init();
+
     $(window).mousemove(function (e) {
       $(".cursor").css({
         left: e.pageX,
@@ -82,7 +85,7 @@ class List extends React.Component {
     return (
       <div >
         <div className="work">
-          <div id="work" className="work-item">
+          <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" id="work" className="work-item">
             <div className="work-title work-item-inner">
               <div className="work-sub-title">
                 <p>Senior Capstone</p>
@@ -93,36 +96,39 @@ class List extends React.Component {
             </div>
           </div>
 
-          <div className="work-item">
+          <div data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000" className="work-item">
             <div className="work-title work-item-inner">
               <div className="work-sub-title">
                 <p>Human-Computer Interaction</p>
               </div>
-              <Link className="cursor-link-blog-post-2" to="/obo">Obo</Link>
+              <Link className="view-cursor cursor-link-blog-post-2" to="/obo">Obo</Link>
             </div>
           </div>
 
-          <div className="work-item">
+          <div data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000" className="work-item">
             <div className="work-title work-item-inner">
               <div className="work-sub-title">
                 <p>Prototyping Electronics</p>
               </div>
-              <Link to="/page-2">Sway</Link>
+              <Link className="view-cursor" to="/page-2">Sway</Link>
             </div>
           </div>
 
-          <div className="work-item">
+          <div data-aos="fade-up" data-aos-delay="250" data-aos-duration="1000" className="work-item">
             <div className="work-title work-item-inner">
               <div className="work-sub-title">
                 <p>Human Factors</p>
               </div>
-              <Link to="/page-2">Bond</Link>
+              <Link className="view-cursor cursor-link-blog-post-4" to="/bond">Bond</Link>
             </div>
           </div>
 
-          <div className="work-item">
+          <div data-aos="fade-up" data-aos-delay="250" data-aos-duration="1000" className="work-item">
             <div className="work-title work-item-inner">
-              <Link to="/page-2">Floatie</Link>
+            <div className="work-sub-title">
+                <p>What I do on the side</p>
+              </div>
+              <Link className="view-cursor" to="/page-2">Playground</Link>
             </div>
           </div>
         </div>

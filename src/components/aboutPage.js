@@ -9,22 +9,22 @@ import Cursor from "../components/cursor"
 import NavButtons from "./navButtons"
 import me from "../images/me.jpg"
 import "animate.css/animate.css"
-import AliceCarousel from "react-alice-carousel"
-import "react-alice-carousel/lib/alice-carousel.css"
+// import AliceCarousel from "react-alice-carousel"
+// import "react-alice-carousel/lib/alice-carousel.css"
 import "../styles/carousel.scss"
-import one from "../images/travel/one.png"
-import two from "../images/travel/two.png"
-import three from "../images/travel/three.png"
-import four from "../images/travel/four.png"
-import five from "../images/travel/five.png"
-import six from "../images/travel/six.png"
-import seven from "../images/travel/seven.png"
-import eight from "../images/travel/eight.png"
-import nine from "../images/travel/nine.png"
-import ten from "../images/travel/ten.png"
-import eleven from "../images/travel/eleven.png"
-import stoneone from "../images/stonepony.jpg"
-import stonetwo from "../images/stonetwo.jpg"
+// import one from "../images/travel/one.png"
+// import two from "../images/travel/two.png"
+// import three from "../images/travel/three.png"
+// import four from "../images/travel/four.png"
+// import five from "../images/travel/five.png"
+// import six from "../images/travel/six.png"
+// import seven from "../images/travel/seven.png"
+// import eight from "../images/travel/eight.png"
+// import nine from "../images/travel/nine.png"
+// import ten from "../images/travel/ten.png"
+// import eleven from "../images/travel/eleven.png"
+// import stoneone from "../images/stonepony.jpg"
+// import stonetwo from "../images/stonetwo.jpg"
 
 class About extends React.Component {
   componentDidMount() {
@@ -38,104 +38,104 @@ class About extends React.Component {
   }
 
   render() {
-    const handleDragStart = e => e.preventDefault()
+    // const handleDragStart = e => e.preventDefault()
 
-    const items = [
-      <div className="item" data-value="1">
-        <img
-          onDragStart={handleDragStart}
-          className="carousel-image"
-          src={one}
-          alt="carousel"
-        />
-      </div>,
-      <div className="item" data-value="2">
-        <img
-          onDragStart={handleDragStart}
-          className="carousel-image"
-          src={two}
-          alt="carousel"
-        />
-      </div>,
-      <div className="item" data-value="3">
-        <img
-          onDragStart={handleDragStart}
-          className="carousel-image"
-          src={three}
-          alt="carousel"
-        />
-      </div>,
-      <div className="item" data-value="4">
-        <img
-          onDragStart={handleDragStart}
-          className="carousel-image"
-          src={four}
-          alt="carousel"
-        />
-      </div>,
-      <div className="item" data-value="5">
-        <img
-          onDragStart={handleDragStart}
-          className="carousel-image"
-          src={five}
-          alt="carousel"
-        />
-      </div>,
-      <div className="item" data-value="6">
-        <img
-          onDragStart={handleDragStart}
-          className="carousel-image"
-          src={six}
-          alt="carousel"
-        />
-      </div>,
-      <div className="item" data-value="7">
-        <img
-          onDragStart={handleDragStart}
-          className="carousel-image"
-          src={seven}
-          alt="carousel"
-        />
-      </div>,
-      <div className="item" data-value="8">
-        <img
-          onDragStart={handleDragStart}
-          className="carousel-image"
-          src={eight}
-          alt="carousel"
-        />
-      </div>,
-      <div className="item" data-value="9">
-        <img
-          onDragStart={handleDragStart}
-          className="carousel-image"
-          src={nine}
-          alt="carousel"
-        />
-      </div>,
-      <div className="item" data-value="10">
-        <img
-          onDragStart={handleDragStart}
-          className="carousel-image"
-          src={ten}
-          alt="carousel"
-        />
-      </div>,
-      <div className="item" data-value="11">
-        <img
-          onDragStart={handleDragStart}
-          className="carousel-image"
-          src={eleven}
-          alt="carousel"
-        />
-      </div>,
-    ]
+    // const items = [
+    //   <div className="item" data-value="1">
+    //     <img
+    //       onDragStart={handleDragStart}
+    //       className="carousel-image"
+    //       src={one}
+    //       alt="carousel"
+    //     />
+    //   </div>,
+    //   <div className="item" data-value="2">
+    //     <img
+    //       onDragStart={handleDragStart}
+    //       className="carousel-image"
+    //       src={two}
+    //       alt="carousel"
+    //     />
+    //   </div>,
+    //   <div className="item" data-value="3">
+    //     <img
+    //       onDragStart={handleDragStart}
+    //       className="carousel-image"
+    //       src={three}
+    //       alt="carousel"
+    //     />
+    //   </div>,
+    //   <div className="item" data-value="4">
+    //     <img
+    //       onDragStart={handleDragStart}
+    //       className="carousel-image"
+    //       src={four}
+    //       alt="carousel"
+    //     />
+    //   </div>,
+    //   <div className="item" data-value="5">
+    //     <img
+    //       onDragStart={handleDragStart}
+    //       className="carousel-image"
+    //       src={five}
+    //       alt="carousel"
+    //     />
+    //   </div>,
+    //   <div className="item" data-value="6">
+    //     <img
+    //       onDragStart={handleDragStart}
+    //       className="carousel-image"
+    //       src={six}
+    //       alt="carousel"
+    //     />
+    //   </div>,
+    //   <div className="item" data-value="7">
+    //     <img
+    //       onDragStart={handleDragStart}
+    //       className="carousel-image"
+    //       src={seven}
+    //       alt="carousel"
+    //     />
+    //   </div>,
+    //   <div className="item" data-value="8">
+    //     <img
+    //       onDragStart={handleDragStart}
+    //       className="carousel-image"
+    //       src={eight}
+    //       alt="carousel"
+    //     />
+    //   </div>,
+    //   <div className="item" data-value="9">
+    //     <img
+    //       onDragStart={handleDragStart}
+    //       className="carousel-image"
+    //       src={nine}
+    //       alt="carousel"
+    //     />
+    //   </div>,
+    //   <div className="item" data-value="10">
+    //     <img
+    //       onDragStart={handleDragStart}
+    //       className="carousel-image"
+    //       src={ten}
+    //       alt="carousel"
+    //     />
+    //   </div>,
+    //   <div className="item" data-value="11">
+    //     <img
+    //       onDragStart={handleDragStart}
+    //       className="carousel-image"
+    //       src={eleven}
+    //       alt="carousel"
+    //     />
+    //   </div>,
+    // ]
 
-    const responsive = {
-      0: { items: 1 },
-      568: { items: 2 },
-      1024: { items: 3 },
-    }
+    // const responsive = {
+    //   0: { items: 1 },
+    //   568: { items: 2 },
+    //   1024: { items: 3 },
+    // }
     return (
       <div>
         <Seo title="About" />
@@ -218,6 +218,27 @@ class About extends React.Component {
               computer engulfed in whatever side project I've got going on.
               <br></br>
               <br></br>
+              Take a look at my{" "}
+              <a
+                className="about-link"
+                target="blank"
+                href="https://drive.google.com/file/d/1s_huTYRM40YsMhgOuyPJLOERSPY4R63m/view?usp=sharing"
+              >
+                Resume
+              </a>{" "}
+              and feel free to contact me{" "}
+              <a
+                className="about-link"
+                target="blank"
+                href="mailto:hello@ericbflatt.com"
+              >
+                here
+              </a>.
+              <br></br>
+              <br></br>
+              Thanks for stopping by 🙂
+              {/* <br></br>
+              <br></br>
               Traveling is something I love to do, and I was fortunate to be
               able to do a fair amount before the pandemic.
               <div className="carousel-cursor">
@@ -246,7 +267,7 @@ class About extends React.Component {
                   alt="stone pony"
                 />
               </div>
-              There's a young me playing at the Stone Pony in Asbury Park, New Jersey. Most famous for where Bruce Springsteen was discovered.
+              There's a young me playing at the Stone Pony in Asbury Park, New Jersey. Most famous for where Bruce Springsteen was discovered. */}
             </h1>
           </div>
         </div>

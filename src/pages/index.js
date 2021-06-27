@@ -11,6 +11,7 @@ import "../styles/main.scss"
 const IndexPage = () => (
   <main>
     <Seo title="Home" />
+    <div className="noise"></div>
     <Cursor />
     <Hero />
     <List />
