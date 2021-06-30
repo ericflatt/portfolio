@@ -1,0 +1,32 @@
+.play-container {
+  padding-top: 100px;
+  max-width: 70vw;
+  display: block;
+  margin: auto;
+  @media only screen and (max-width: 1000px) {
+    max-width: 80vw;
+    padding-left: 25px;
+    margin: 0;
+  }
+}
+
+.play-container p{
+    margin: 0;
+}
+
+.play-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 24px;
+  grid-row-gap: 0px;
+}
+
+.play-grid div{
+    display: block;
+    margin: auto;
+}
+
+.play-image{
+    width: 100%;
+}

@@ -2,7 +2,6 @@ import React from "react"
 import "../styles/main.scss"
 import "../styles/about.scss"
 // import { Link } from "gatsby"
-import LaunchIcon from "@material-ui/icons/Launch"
 import $ from "jquery"
 import Seo from "../components/seo"
 import Cursor from "../components/cursor"
@@ -164,7 +163,6 @@ class About extends React.Component {
                 href="https://blackmath.com"
               >
                 Black Math
-                <LaunchIcon className="launch-icon" />
               </a>{" "}
               doing front-end web development. Previously I've interned at{" "}
               <a
@@ -173,12 +171,10 @@ class About extends React.Component {
                 href="https://bobblehaus.com"
               >
                 Bobblehaus
-                <LaunchIcon className="launch-icon" />
               </a>{" "}
               and{" "}
               <a className="about-link" target="blank" href="https://icims.com">
                 iCIMS
-                <LaunchIcon className="launch-icon" />
               </a>
               , and worked freelance at Vera Roca most notably working on{" "}
               <a
@@ -187,7 +183,6 @@ class About extends React.Component {
                 href="https://staples.com"
               >
                 Staples
-                <LaunchIcon className="launch-icon" />
               </a>{" "}
               redesign. I'm always experimenting with cool new technologies. You
               can see this statement in action on{" "}
@@ -197,7 +192,6 @@ class About extends React.Component {
                 href="https://twitter.com/erics_plants"
               >
                 twitter
-                <LaunchIcon className="launch-icon" />
               </a>{" "}
               where a raspberry pi monitors the well being of my plants. As well
               as{" "}
@@ -207,7 +201,6 @@ class About extends React.Component {
                 href="https://spotify-collab.glitch.me/"
               >
                 here
-                <LaunchIcon className="launch-icon" />
               </a>
               <span style={{ fontSize: "16px" }}>
                 (might load slow, Glitch does not load fast)
@@ -226,15 +219,15 @@ class About extends React.Component {
               >
                 Resume
               </a>{" "}
-              and feel free to contact me{" "}
+              and feel free to contact me @{" "}
               <a
                 className="about-link"
                 target="blank"
                 href="mailto:hello@ericbflatt.com"
               >
-                here
-              </a>.
-              <br></br>
+                hello@ericbflatt.com
+              </a>
+              .<br></br>
               <br></br>
               Thanks for stopping by 🙂
               {/* <br></br>

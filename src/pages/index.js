@@ -6,6 +6,7 @@ import List from "../components/projectList"
 import Hero from "../components/hero"
 import Cursor from "../components/cursor"
 import NavButtons from "../components/navButtons"
+import HomeAbout from "../components/homeAbout"
 import "../styles/main.scss"
 
 const IndexPage = () => (
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <div className="noise"></div>
     <Cursor />
     <Hero />
+    <HomeAbout />
     <List />
     <NavButtons />
   </main>

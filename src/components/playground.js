@@ -1,0 +1,71 @@
+import React from "react"
+import "../styles/main.scss"
+import "../styles/playground.scss"
+// import { Link } from "gatsby"
+import Seo from "../components/seo"
+import Cursor from "../components/cursor"
+import NavButtons from "./navButtons"
+import flux from "../images/playground/flux.png"
+import startup from "../images/playground/startup.png"
+import comotion from "../images/playground/comotion.png"
+
+class Playground extends React.Component {
+  componentDidMount() {}
+
+  render() {
+    return (
+      <div>
+        <Seo title="Playground" />
+        <NavButtons />
+        <Cursor />
+        <div className="play-container">
+          <h1>Here's some cool stuff I've worked on</h1>
+          <div className="play-grid">
+            <div>
+              <a href="https://scadstartup.com" target="blank">
+                <img className="play-image" src={startup} alt="comotion" />
+              </a>
+              <a
+                className="about-link"
+                href="https://scadstartup.com"
+                target="blank"
+              >
+                <p>SCAD StartUp</p>
+              </a>
+              <p>An annual design sprint with over 300 participants</p>
+            </div>
+            <div>
+              <a href="https://scadcomotion.com" target="blank">
+                <img className="play-image" src={comotion} alt="comotion" />
+              </a>
+              <a
+                className="about-link"
+                href="https://scadcomotion.com"
+                target="blank"
+              >
+                <p>SCAD CoMotion</p>
+              </a>
+              <p>A student run design conference</p>
+            </div>
+            <div>
+              <a href="https://scadflux.com" target="blank">
+                <img className="play-image" src={flux} alt="flux" />
+              </a>
+              <a
+                className="about-link"
+                href="https://scadflux.com"
+                target="blank"
+              >
+                <p>FLUX UX Design Club</p>
+              </a>
+              <p>SCAD's User Experience Design Club</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    )
+  }
+}
+
+export default Playground

@@ -83,9 +83,10 @@ class List extends React.Component {
 
   render() {
     return (
-      <div >
-        <div className="work">
-          <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" id="work" className="work-item">
+      <div id="work">
+        <h1 className="section-intro">work</h1>
+        <div  className="work">
+          <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" className="wrapper work-item">
             <div className="work-title work-item-inner">
               <div className="work-sub-title">
                 <p>Senior Capstone</p>
@@ -128,7 +129,7 @@ class List extends React.Component {
             <div className="work-sub-title">
                 <p>What I do on the side</p>
               </div>
-              <Link className="view-cursor" to="/page-2">Playground</Link>
+              <Link className="view-cursor" to="/playground">Playground</Link>
             </div>
           </div>
         </div>
