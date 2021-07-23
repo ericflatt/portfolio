@@ -4,6 +4,11 @@ import $ from "jquery"
 import "../styles/main.scss"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import oboimage from "../images/oboimage.png";
+import upload from "../images/holocloud/upload.png";
+import sway from "../images/sway.png";
+import scrapbook from "../images/bond/scrapbook.png";
+
 
 class List extends React.Component {
   componentDidMount() {
@@ -21,6 +26,14 @@ class List extends React.Component {
       })
       .on("mouseleave", function () {
         $(".cursor").removeClass("active")
+      })
+      // image appear
+      $(".cursor-link-blog-post-1")
+      .on("mouseenter", function () {
+        $(".work-item-inner").addClass("image-appear")
+      })
+      .on("mouseleave", function () {
+        $(".work-item-inner").removeClass("image-appear")
       })
     //Blog page cursors with image
     //Blog post 1:
@@ -79,6 +92,12 @@ class List extends React.Component {
       .on("mouseleave", function () {
         $(".cursor").removeClass("active-blog-post-7")
       })
+
+      $(document).ready(function () {
+        $(".work-item-inner").hover(function () {
+          $(this).toggleClass("image-appear");
+        });
+      });
   }
 
   render() {
@@ -91,10 +110,12 @@ class List extends React.Component {
               <div className="work-sub-title">
                 <p>Senior Capstone</p>
               </div>
-              <Link className="view-cursor cursor-link-blog-post-6"  to="/page-2">
+              <Link className="view-cursor cursor-link-blog-post-6"  to="/holocloud">
                 Holo-cloud
+                <img className="project-image holo-image" src={upload} alt="test" />
               </Link>
             </div>
+            
           </div>
 
           <div data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000" className="work-item">
@@ -103,6 +124,7 @@ class List extends React.Component {
                 <p>Human-Computer Interaction</p>
               </div>
               <Link className="view-cursor cursor-link-blog-post-2" to="/obo">Obo</Link>
+              <img className="project-image obo-image" src={oboimage} alt="test" />
             </div>
           </div>
 
@@ -111,7 +133,8 @@ class List extends React.Component {
               <div className="work-sub-title">
                 <p>Prototyping Electronics</p>
               </div>
-              <Link className="view-cursor" to="/page-2">Sway</Link>
+              <Link className="view-cursor" to="/sway">Sway</Link>
+              <img className="project-image sway-img" src={sway} alt="test" />
             </div>
           </div>
 
@@ -121,6 +144,7 @@ class List extends React.Component {
                 <p>Human Factors</p>
               </div>
               <Link className="view-cursor cursor-link-blog-post-4" to="/bond">Bond</Link>
+              <img className="project-image bond-img" src={scrapbook} alt="test" />
             </div>
           </div>
 

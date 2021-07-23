@@ -79,9 +79,7 @@ class Obo extends React.Component {
           <Cursor />
           <div className="App">
       <header className="App-header">
-        <a className="downArrow" href="/">
-          <img src={downArrow} className="backArrow" alt="go back" />
-        </a>
+
 
         <img src={oboLogo} className="oboLogo" alt="logo" />
         <p>

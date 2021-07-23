@@ -5,7 +5,7 @@ import "../styles/about.scss"
 import $ from "jquery"
 import Seo from "../components/seo"
 import Cursor from "../components/cursor"
-import NavButtons from "./navButtons"
+import NavButtons from "../components/navButtons"
 import me from "../images/me.jpg"
 import "animate.css/animate.css"
 // import AliceCarousel from "react-alice-carousel"
@@ -140,8 +140,11 @@ class About extends React.Component {
         <Seo title="About" />
         <NavButtons />
         <Cursor />
-        <div className="about-container">
-          <div>
+        <div >
+       
+          <div className="wrapper">
+          <h1 className="about-title">About me</h1>
+            <div className="about-content">
             <h1 className="about-text">
               Hi I'm{" "}
               <span className="me">
@@ -262,6 +265,7 @@ class About extends React.Component {
               </div>
               There's a young me playing at the Stone Pony in Asbury Park, New Jersey. Most famous for where Bruce Springsteen was discovered. */}
             </h1>
+            </div>
           </div>
         </div>
       </div>

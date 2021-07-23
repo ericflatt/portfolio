@@ -7,6 +7,7 @@ import Hero from "../components/hero"
 import Cursor from "../components/cursor"
 import NavButtons from "../components/navButtons"
 import HomeAbout from "../components/homeAbout"
+import Logo from "../components/logo"
 import "../styles/main.scss"
 
 const IndexPage = () => (
@@ -14,9 +15,9 @@ const IndexPage = () => (
     <Seo title="Home" />
     <div className="noise"></div>
     <Cursor />
-    <Hero />
-    <HomeAbout />
+    <Hero />  
     <List />
+    <HomeAbout />
     <NavButtons />
   </main>
 )

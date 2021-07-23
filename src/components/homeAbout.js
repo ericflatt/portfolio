@@ -26,7 +26,7 @@ class HomeAbout extends React.Component {
             >
               Black Math
             </a>{" "}
-            doing work with Figma, React, Node and Spark AR for different clients.
+            doing work in Figma, React, Node and Spark AR for different clients.
           </h1>
         </div>
       </div>

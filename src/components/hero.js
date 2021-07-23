@@ -30,7 +30,7 @@ class Hero extends React.Component {
               type: "spring",
               stiffness: 260,
               damping: 20,
-              delay: .5,
+              delay: .6,
             }}
           >
             <svg

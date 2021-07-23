@@ -8,6 +8,7 @@ import NavButtons from "./navButtons"
 import flux from "../images/playground/flux.png"
 import startup from "../images/playground/startup.png"
 import comotion from "../images/playground/comotion.png"
+import Logo from "../components/logo"
 
 class Playground extends React.Component {
   componentDidMount() {}
@@ -18,6 +19,7 @@ class Playground extends React.Component {
         <Seo title="Playground" />
         <NavButtons />
         <Cursor />
+        <Logo />
         <div className="play-container">
           <h1>Here's some cool stuff I've worked on</h1>
           <div className="play-grid">
@@ -60,7 +62,7 @@ class Playground extends React.Component {
               </a>
               <p>SCAD's User Experience Design Club</p>
             </div>
-            
+
           </div>
         </div>
       </div>

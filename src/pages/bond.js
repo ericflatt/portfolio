@@ -33,10 +33,6 @@ function App() {
     <div style={{background:"#f4f4f4",color:'#595959'}} className="App">
       <header className="App-header">
 
-      <a className="downArrow" href="/">
-      <img src={ downArrow } className="backArrow" alt="go back" />
-      </a>
-
         <img style={{width:"15%"}} src={ bondLogo } className="oboLogo" alt="logo" />
        <h5>Creating genuine relationships between <span style={{color:'#d26e5f'}}>different generations</span></h5>
         <img src={ downArrow } className="downArrow bounce" alt="scroll down" />
