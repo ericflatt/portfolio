@@ -501,7 +501,7 @@ a {
 }
 
 .cursor-shadow.active-blog-post-1 {
-  background-image: url("http://ivang-design.com/alke/img/blog/1.jpg");
+  background-image: url("../images/holocloud/cloud.png");
 }
 .cursor-shadow.active-blog-post-2 {
   background-image: url("../images/obo/dailyChallenges.png");
@@ -516,7 +516,8 @@ a {
   background-image: url("http://ivang-design.com/alke/img/blog/5.jpg");
 }
 .cursor-shadow.active-blog-post-6 {
-  background-image: url("http://ivang-design.com/alke/img/blog/6.jpg");
+  background-image: url("../images/holocloud/cloud.svg");
+  background-size: contain;
 }
 .cursor-shadow.active-blog-post-7 {
   background-image: url("http://ivang-design.com/alke/img/blog/7.jpg");
