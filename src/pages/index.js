@@ -18,6 +18,7 @@ const IndexPage = () => (
     <Hero />  
     <List />
     <HomeAbout />
+    <Logo />
     <NavButtons />
   </main>
 )

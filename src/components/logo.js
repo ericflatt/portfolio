@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import "../styles/main.scss"
-import logo from "../images/logo.svg"
 
 class Logo extends React.Component {
   componentDidMount() {
@@ -10,7 +9,7 @@ class Logo extends React.Component {
   render() {
     return (
       <div className="logo">
-       <Link to="/"><img width="10%" src={logo} alt="logo" /></Link>
+       <Link to="/"><h1>eric flatt</h1></Link>
       </div>
     )
   }

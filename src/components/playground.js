@@ -9,6 +9,9 @@ import flux from "../images/playground/flux.png"
 import startup from "../images/playground/startup.png"
 import comotion from "../images/playground/comotion.png"
 import Logo from "../components/logo"
+import twitter from "../images/playground/twitter.png"
+import spotify from "../images/playground/spotify.png"
+
 
 class Playground extends React.Component {
   componentDidMount() {}
@@ -21,12 +24,10 @@ class Playground extends React.Component {
         <Cursor />
         <Logo />
         <div className="play-container">
-          <h1>Here's some cool stuff I've worked on</h1>
+          <h1>Here's some cool stuff I've worked on and explored with</h1>
           <div className="play-grid">
             <div>
-              <a href="https://scadstartup.com" target="blank">
                 <img className="play-image" src={startup} alt="comotion" />
-              </a>
               <a
                 className="about-link"
                 href="https://scadstartup.com"
@@ -37,9 +38,7 @@ class Playground extends React.Component {
               <p>An annual design sprint with over 300 participants</p>
             </div>
             <div>
-              <a href="https://scadcomotion.com" target="blank">
                 <img className="play-image" src={comotion} alt="comotion" />
-              </a>
               <a
                 className="about-link"
                 href="https://scadcomotion.com"
@@ -50,9 +49,7 @@ class Playground extends React.Component {
               <p>A student run design conference</p>
             </div>
             <div>
-              <a href="https://scadflux.com" target="blank">
                 <img className="play-image" src={flux} alt="flux" />
-              </a>
               <a
                 className="about-link"
                 href="https://scadflux.com"
@@ -61,6 +58,28 @@ class Playground extends React.Component {
                 <p>FLUX UX Design Club</p>
               </a>
               <p>SCAD's User Experience Design Club</p>
+            </div>
+            <div>
+                <img className="play-image" src={twitter} alt="twitter" />
+              <a
+                className="about-link"
+                href="https://twitter.com/erics_plants"
+                target="blank"
+              >
+                <p>My plant twitter account</p>
+              </a>
+              <p>A Raspberry pi monitors the health of my plants</p>
+            </div>
+            <div>
+                <img className="play-image" src={spotify} alt="twitter" />
+              <a
+                className="about-link"
+                href="https://spotify-collab.glitch.me/"
+                target="blank"
+              >
+                <p>Spotify Collaborative Queue</p>
+              </a>
+              <p>A collaborative spotify queue with a robot if your feeling uninspired</p>
             </div>
 
           </div>

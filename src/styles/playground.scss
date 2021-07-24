@@ -19,14 +19,15 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 24px;
-  grid-row-gap: 0px;
-}
+  grid-row-gap: 24px;
 
-.play-grid div{
-    display: block;
-    margin: auto;
+  @media only screen and (max-width:768px){
+    grid-template-columns: repeat(1, 1fr);
+
+  }
 }
 
 .play-image{
     width: 100%;
+    box-shadow: 0 1px 8px rgb(0 0 0 / 25%);
 }

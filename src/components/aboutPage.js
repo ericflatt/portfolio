@@ -37,104 +37,6 @@ class About extends React.Component {
   }
 
   render() {
-    // const handleDragStart = e => e.preventDefault()
-
-    // const items = [
-    //   <div className="item" data-value="1">
-    //     <img
-    //       onDragStart={handleDragStart}
-    //       className="carousel-image"
-    //       src={one}
-    //       alt="carousel"
-    //     />
-    //   </div>,
-    //   <div className="item" data-value="2">
-    //     <img
-    //       onDragStart={handleDragStart}
-    //       className="carousel-image"
-    //       src={two}
-    //       alt="carousel"
-    //     />
-    //   </div>,
-    //   <div className="item" data-value="3">
-    //     <img
-    //       onDragStart={handleDragStart}
-    //       className="carousel-image"
-    //       src={three}
-    //       alt="carousel"
-    //     />
-    //   </div>,
-    //   <div className="item" data-value="4">
-    //     <img
-    //       onDragStart={handleDragStart}
-    //       className="carousel-image"
-    //       src={four}
-    //       alt="carousel"
-    //     />
-    //   </div>,
-    //   <div className="item" data-value="5">
-    //     <img
-    //       onDragStart={handleDragStart}
-    //       className="carousel-image"
-    //       src={five}
-    //       alt="carousel"
-    //     />
-    //   </div>,
-    //   <div className="item" data-value="6">
-    //     <img
-    //       onDragStart={handleDragStart}
-    //       className="carousel-image"
-    //       src={six}
-    //       alt="carousel"
-    //     />
-    //   </div>,
-    //   <div className="item" data-value="7">
-    //     <img
-    //       onDragStart={handleDragStart}
-    //       className="carousel-image"
-    //       src={seven}
-    //       alt="carousel"
-    //     />
-    //   </div>,
-    //   <div className="item" data-value="8">
-    //     <img
-    //       onDragStart={handleDragStart}
-    //       className="carousel-image"
-    //       src={eight}
-    //       alt="carousel"
-    //     />
-    //   </div>,
-    //   <div className="item" data-value="9">
-    //     <img
-    //       onDragStart={handleDragStart}
-    //       className="carousel-image"
-    //       src={nine}
-    //       alt="carousel"
-    //     />
-    //   </div>,
-    //   <div className="item" data-value="10">
-    //     <img
-    //       onDragStart={handleDragStart}
-    //       className="carousel-image"
-    //       src={ten}
-    //       alt="carousel"
-    //     />
-    //   </div>,
-    //   <div className="item" data-value="11">
-    //     <img
-    //       onDragStart={handleDragStart}
-    //       className="carousel-image"
-    //       src={eleven}
-    //       alt="carousel"
-    //     />
-    //   </div>,
-    // ]
-
-    // const responsive = {
-    //   0: { items: 1 },
-    //   568: { items: 2 },
-    //   1024: { items: 3 },
-    // }
     return (
       <div>
         <Seo title="About" />
@@ -156,7 +58,7 @@ class About extends React.Component {
                 />
               </span>
               , lover of any workplace comedy, cartoons, coffee, traveling and
-              heavy metal (not in any particular order). I just gradutated from
+              metal music (not in any particular order). I just gradutated from
               the Savannah College of Art and Design in May of 2021 with a
               Bachelor of Fine Arts in User Experience Design. Right now I am a
               creative technology intern at{" "}
@@ -167,7 +69,7 @@ class About extends React.Component {
               >
                 Black Math
               </a>{" "}
-              doing front-end web development. Previously I've interned at{" "}
+              doing primarily front-end web development and UI/UX design. Previously I've interned at{" "}
               <a
                 className="about-link"
                 target="blank"
@@ -175,11 +77,11 @@ class About extends React.Component {
               >
                 Bobblehaus
               </a>{" "}
-              and{" "}
+              a sustainable fashion startup, the{" "}
               <a className="about-link" target="blank" href="https://icims.com">
                 iCIMS
               </a>
-              , and worked freelance at Vera Roca most notably working on{" "}
+              {" "}product design team, and worked freelance at Vera Roca most notably working on{" "}
               <a
                 className="about-link"
                 target="blank"
@@ -218,7 +120,7 @@ class About extends React.Component {
               <a
                 className="about-link"
                 target="blank"
-                href="https://drive.google.com/file/d/1s_huTYRM40YsMhgOuyPJLOERSPY4R63m/view?usp=sharing"
+                href="https://drive.google.com/file/d/1ZS598bNVBwWnP0SA1yeic6HGVclOD0LV/view?usp=sharing"
               >
                 Resume
               </a>{" "}
