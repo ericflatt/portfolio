@@ -42,7 +42,7 @@ body {
 .work-button {
   position: fixed;
   z-index: 900;
-  top: 20px;
+  top: 40px;
   right: 20px;
   width: 140px;
   height: 40px;
@@ -616,10 +616,17 @@ a {
   }
 }
 
+.nav-vis{
+  visibility: hidden;
+}
+
 .logo {
+  span{
+    font-size: 24px;
+  }
   position: fixed;
-  top: 0;
-  margin-top: 20px;
+  top: 40px;
+  // margin-top: 20px;
   left: 20px;
 
   h1{

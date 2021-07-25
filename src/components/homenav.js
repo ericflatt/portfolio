@@ -3,8 +3,17 @@ import { Link } from "gatsby"
 import "../styles/main.scss"
 import $ from "jquery"
 
-class NavButtons extends React.Component {
+class HomeNav extends React.Component {
   componentDidMount() {
+    $(document).ready(function() {
+
+      $(window).scroll(function() {
+  
+        if($(this).scrollTop() > 500) {
+            $('.nav').css({"opacity": "1"});
+        }
+      });
+  });
 
     $('a[href*="#"]')
       .not('[href="#"]')
@@ -38,7 +47,7 @@ class NavButtons extends React.Component {
 
   render() {
     return (
-      <nav>
+      <nav className="nav" style={{opacity:"0", transition:".3s all ease"}}>
           {/* <div className="nav-item">
             <a href="mailto:hello@ericbflatt.com">
               <div  className="work-button">
@@ -65,4 +74,4 @@ class NavButtons extends React.Component {
   }
 }
 
-export default NavButtons
+export default HomeNav

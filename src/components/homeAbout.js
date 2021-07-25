@@ -1,6 +1,5 @@
 import React from "react"
 import "../styles/main.scss"
-import me from "../images/me.png"
 
 class HomeAbout extends React.Component {
   componentDidMount() {}

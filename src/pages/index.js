@@ -5,9 +5,8 @@ import Seo from "../components/seo"
 import List from "../components/projectList"
 import Hero from "../components/hero"
 import Cursor from "../components/cursor"
-import NavButtons from "../components/navButtons"
+import HomeNav from "../components/homenav"
 import HomeAbout from "../components/homeAbout"
-import Logo from "../components/logo"
 import "../styles/main.scss"
 
 const IndexPage = () => (
@@ -18,8 +17,7 @@ const IndexPage = () => (
     <Hero />  
     <List />
     <HomeAbout />
-    <Logo />
-    <NavButtons />
+    <HomeNav />
   </main>
 )
 

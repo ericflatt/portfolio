@@ -23,6 +23,8 @@ import webtwo from "../images/sway/webtwo.png"
 import webthree from "../images/sway/webthree.png"
 import arduino from "../images/sway/arduino.png"
 import carbon from "../images/sway/carbon.png"
+import process from "../images/sway/process.png"
+import product from "../images/sway/product.png"
 
 
 class Sway extends React.Component {
@@ -160,9 +162,19 @@ class Sway extends React.Component {
               <img style={{transform:"rotate(90deg)"}} src={arduino} alt="hub" />
             </div>
           </div>
-          <div className="code">
-              <h1>Code Snippet</h1>
+          <div>
+            <h1>Process</h1>
+          </div>
+          <div>
+          <h1 style={{color:"black", textAlign:"left"}}>Code Snippet</h1>
+              <h3>Sway was created using various arduino parts</h3>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" className="process two-grid">
+              <img src={process} alt="carbon" />
+              <img src={product} alt="carbon" />
               <img src={carbon} alt="carbon" />
+              <img  src={arduino} alt="hub" />
+
           </div>
           </div>
           </div>

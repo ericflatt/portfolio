@@ -8,7 +8,6 @@ import NavButtons from "./navButtons"
 import flux from "../images/playground/flux.png"
 import startup from "../images/playground/startup.png"
 import comotion from "../images/playground/comotion.png"
-import Logo from "../components/logo"
 import twitter from "../images/playground/twitter.png"
 import spotify from "../images/playground/spotify.png"
 
@@ -22,7 +21,6 @@ class Playground extends React.Component {
         <Seo title="Playground" />
         <NavButtons />
         <Cursor />
-        <Logo />
         <div className="play-container">
           <h1>Here's some cool stuff I've worked on and explored with</h1>
           <div className="play-grid">

@@ -36,7 +36,7 @@ class About extends React.Component {
     return (
       <div className="holo-body">
         <Seo title="holo-cloud" />
-        <NavButtons />
+        <NavButtons /> 
         <Cursor />
         <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" className="holo-hero">
           <img src={logo} alt="logo" />
@@ -188,6 +188,7 @@ class About extends React.Component {
           </div>
           <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" className="vision-video">
             <video className="holo-video" poster={poster} controls>
+              <track kind="captions" />
               <source src={visionvideo} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
