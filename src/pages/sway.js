@@ -25,6 +25,7 @@ import arduino from "../images/sway/arduino.png"
 import carbon from "../images/sway/carbon.png"
 import process from "../images/sway/process.png"
 import product from "../images/sway/product.png"
+import MobileNav from "../components/mobilenav"
 
 
 class Sway extends React.Component {
@@ -37,6 +38,7 @@ class Sway extends React.Component {
       <div className="sway-body">
         <Seo title="Sway" />
         <NavButtons />
+        <MobileNav />
         <Cursor />
         <div className="sway-wrapper">
           <div className="sway-hero">

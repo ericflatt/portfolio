@@ -56,6 +56,10 @@ body {
   letter-spacing: -0.03em;
   -webkit-text-size-adjust: 100%;
   transition: opacity 0.35s;
+
+  @media only screen and (max-width:1024px) {
+    right: 75px;
+  }
 }
 
 .work-button:before {
@@ -454,6 +458,12 @@ a {
   text-decoration: none;
 }
 
+.project-image{
+  @media only screen and (max-width:768px){
+    display: none;
+  }
+}
+
 // .project-image {
 //   position: absolute;
 //   z-index: 999;
@@ -472,6 +482,9 @@ a {
 // }
 
 .cursor {
+  @media only screen and (max-width:768px){
+    display: none;
+  }
   --size: 8px;
   height: var(--size);
   width: var(--size);
@@ -504,25 +517,46 @@ a {
 
 .cursor-shadow.active-blog-post-1 {
   background-image: url("../images/holocloud/cloud.png");
+  @media only screen and (max-width:768px){
+    display: none;
+  }
 }
 .cursor-shadow.active-blog-post-2 {
   background-image: url("../images/obo/dailyChallenges.png");
+  @media only screen and (max-width:768px){
+    display: none;
+  }
 }
 .cursor-shadow.active-blog-post-3 {
   background-image: url("http://ivang-design.com/alke/img/blog/3.jpg");
+  @media only screen and (max-width:768px){
+    display: none;
+  }
 }
 .cursor-shadow.active-blog-post-4 {
   background-image: url("../images/cursor/bond.svg");
+  @media only screen and (max-width:768px){
+    display: none;
+  }
 }
 .cursor-shadow.active-blog-post-5 {
   background-image: url("http://ivang-design.com/alke/img/blog/5.jpg");
+  @media only screen and (max-width:768px){
+    display: none;
+  }
 }
 .cursor-shadow.active-blog-post-6 {
   background-image: url("../images/holocloud/cloud.svg");
+  @media only screen and (max-width:768px){
+    display: none;
+  }
   background-size: contain;
 }
 .cursor-shadow.active-blog-post-7 {
   background-image: url("http://ivang-design.com/alke/img/blog/7.jpg");
+  @media only screen and (max-width:768px){
+    display: none;
+  }
 }
 
 .cursor.cursor-dot.active-blog-post-1,
@@ -616,6 +650,12 @@ a {
   }
 }
 
+nav{
+  @media only screen and (max-width:1023px){
+    display: none;
+  }
+}
+
 .nav-vis{
   visibility: hidden;
 }
@@ -647,4 +687,62 @@ a {
     opacity: 1;
     transition: 0.5s all ease;
   }
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 99999; /* Sit on top */
+  margin: auto;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow:hidden; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.mobile-button{
+  position: fixed;
+  top: 0;
+  right: 20px;
+}
+
+.top-link{
+  margin-top: 100px;
+}
+
+.mobile-nav{
+  position: fixed;
+  z-index: 99999;
+  @media only screen and (min-width:1023px){
+    display: none;
+  }
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80vw;
+  height: 100vh;
+  text-align: right;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }

@@ -26,6 +26,7 @@ import pitwo from "../images/holocloud/pitwo.svg"
 import leap from "../images/holocloud/leap.svg"
 import analysis from "../images/holocloud/analysis.svg"
 import trends from "../images/holocloud/trends.svg"
+import MobileNav from "../components/mobilenav"
 
 class About extends React.Component {
   componentDidMount() {
@@ -37,6 +38,7 @@ class About extends React.Component {
       <div className="holo-body">
         <Seo title="holo-cloud" />
         <NavButtons /> 
+        <MobileNav />
         <Cursor />
         <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" className="holo-hero">
           <img src={logo} alt="logo" />

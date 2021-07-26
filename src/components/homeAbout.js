@@ -25,7 +25,17 @@ class HomeAbout extends React.Component {
             >
               Black Math
             </a>{" "}
-            doing work in Figma, React, Node and Spark AR for different clients.
+            doing work in Figma, React, Node and Spark AR for different clients.<br>
+            </br>
+            Here you will find my{" "}
+            <a
+              className="about-link"
+              target="blank"
+              href="https://drive.google.com/file/d/1ZS598bNVBwWnP0SA1yeic6HGVclOD0LV/view?usp=sharing"
+            >
+              Resume
+            </a>
+            
           </h1>
         </div>
       </div>

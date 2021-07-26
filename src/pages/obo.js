@@ -26,6 +26,7 @@ import Cursor from "../components/cursor"
 import NavButtons from "../components/navButtons"
 
 import "../styles/obo.scss"
+import MobileNav from "../components/mobilenav"
 
 const ProjectsWrapper = styled.div`
   display: grid;
@@ -76,6 +77,7 @@ class Obo extends React.Component {
         <div>
           <Seo title="Obo" />
           <NavButtons />
+          <MobileNav />
           <Cursor />
           <div className="App">
       <header className="App-header">
