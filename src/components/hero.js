@@ -18,7 +18,7 @@ class Hero extends React.Component {
 
   render() {
     return (
-      <div className="hero">
+      <div style={{overflowX:"hidden"}} className="hero">
         <div className="hero-text-container">
           {/* <h1  className="hero-text">
             Eric <span className="flatt">Flatt</span>

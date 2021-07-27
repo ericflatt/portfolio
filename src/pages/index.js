@@ -11,7 +11,7 @@ import "../styles/main.scss"
 import MobileNav from "../components/mobilenav"
 
 const IndexPage = () => (
-  <main>
+  <main style={{overflowX:"hidden"}}>
     <Seo title="Home" />
     <div className="noise"></div>
     <Cursor />

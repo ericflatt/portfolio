@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import "../styles/main.scss"
-import $ from "jquery"
 
 class MobileNav extends React.Component {
   componentDidMount() {
@@ -25,7 +24,7 @@ class MobileNav extends React.Component {
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
-      if (event.target == modal) {
+      if (event.target === modal) {
         modal.style.display = "none"
       }
     }
@@ -46,9 +45,9 @@ class MobileNav extends React.Component {
           <rect y="60" width="100" height="20"></rect>
         </svg>
 
-        <div id="myModal" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
+        <div id="myModal" className="modal">
+          <div className="modal-content">
+            <span className="close">&times;</span>
             <Link  to="/">
               <div className="top-link">
                 <h1>Home</h1>
