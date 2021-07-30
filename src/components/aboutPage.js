@@ -26,100 +26,95 @@ class About extends React.Component {
         <Seo title="About" />
         <NavButtons />
         <Cursor />
-        <div >
-       
+        <div>
           <div className="wrapper">
-          <h1 className="about-title">About me</h1>
+            <h1 className="about-title">About me</h1>
             <div className="about-content">
-            <h1 className="about-text">
-              Hi I'm{" "}
-              <span className="me">
-                Eric{" "}
-                <img
-                  className="me-image animate__animated animate__rollIn"
-                  src={me}
-                  alt="me"
-                />
-              </span>
-              , lover of any workplace comedy, cartoons, coffee, traveling and
-              metal music (not in any particular order). I just gradutated from
-              the Savannah College of Art and Design in May of 2021 with a
-              Bachelor of Fine Arts in User Experience Design. Right now I am a
-              creative technology intern at{" "}
-              <a
-                className="about-link"
-                target="blank"
-                href="https://blackmath.com"
-              >
-                Black Math
-              </a>{" "}
-              doing primarily front-end web development and UI/UX design. Previously I've interned at{" "}
-              <a
-                className="about-link"
-                target="blank"
-                href="https://bobblehaus.com"
-              >
-                Bobblehaus
-              </a>{" "}
-              a sustainable fashion startup, the{" "}
-              <a className="about-link" target="blank" href="https://icims.com">
-                iCIMS
-              </a>
-              {" "}product design team, and worked freelance at Vera Roca most notably working on{" "}
-              <a
-                className="about-link"
-                target="blank"
-                href="https://staples.com"
-              >
-                Staples
-              </a>{" "}
-              redesign. I'm always experimenting with cool new technologies. You
-              can see this statement in action on{" "}
-              <a
-                className="about-link"
-                target="blank"
-                href="https://twitter.com/erics_plants"
-              >
-                twitter
-              </a>{" "}
-              where a raspberry pi monitors the well being of my plants. As well
-              as{" "}
-              <a
-                className="about-link"
-                target="blank"
-                href="https://spotify-collab.glitch.me/"
-              >
-                here
-              </a>
-              <span style={{ fontSize: "16px" }}>
-                (might load slow, Glitch does not load fast)
-              </span>{" "}
-              a collaborative Spotify queue that I made before Spotify created
-              their own version. After hours you'll catch me rooting for the New
-              York Islanders, watching tv, the occasional videogame and on my
-              computer engulfed in whatever side project I've got going on.
-              <br></br>
-              <br></br>
-              Take a look at my{" "}
-              <a
-                className="about-link"
-                target="blank"
-                href="https://drive.google.com/file/d/1ZS598bNVBwWnP0SA1yeic6HGVclOD0LV/view?usp=sharing"
-              >
-                Resume
-              </a>{" "}
-              and feel free to contact me @{" "}
-              <a
-                className="about-link"
-                target="blank"
-                href="mailto:hello@ericbflatt.com"
-              >
-                hello@ericbflatt.com
-              </a>
-              .<br></br>
-              <br></br>
-              Thanks for stopping by 🙂
-              {/* <br></br>
+              <h1 className="about-text">
+                Hi I'm{" "}
+                <span className="me">
+                  Eric{" "}
+                  <img
+                    className="me-image animate__animated animate__rollIn"
+                    src={me}
+                    alt="me"
+                  />
+                </span>
+                , lover of all workplace comedies, cartoons, coffee, traveling
+                and metal music (not in any particular order). I’m a recent grad
+                from the Savannah College of Art and Design with
+                a BFA in User Experience Design. I am currently a creative tech
+                intern at{" "}
+                <a
+                  className="about-link"
+                  target="blank"
+                  href="https://blackmath.com"
+                >
+                  Black Math
+                </a>{" "}
+                collaborating on front-end web development and UI/UX design
+                based projects. I have previously interned with{" "}
+                <a
+                  className="about-link"
+                  target="blank"
+                  href="https://bobblehaus.com"
+                >
+                  Bobblehaus
+                </a>
+                ,{" "}
+                <a
+                  className="about-link"
+                  target="blank"
+                  href="https://icims.com"
+                >
+                  iCIMS
+                </a>{" "}
+                & worked freelance with Vera Roca.<br></br><br></br> I was first drawn to UX
+                because of my curiosity with ever evolving technologies and
+                exploring creative ways in which we can use them. I set up a
+                raspberry pi to post daily {" "}
+                <a
+                  className="about-link"
+                  target="blank"
+                  href="https://twitter.com/erics_plants"
+                >
+                  twitter
+                </a>{" "}
+                updates on the well being of my plants & had the genius idea to
+                create a collaborative Spotify queue, you can see{" "}
+                <a
+                  className="about-link"
+                  target="blank"
+                  href="https://spotify-collab.glitch.me/"
+                >
+                  here
+                </a>,{" "}
+                that I finished just weeks before Spotify launched their own.
+                <br></br>
+                <br></br>
+                I am currently seeking full-time opportunities.
+                <br></br>
+                <br></br>
+                Take a look at my{" "}
+                <a
+                  className="about-link"
+                  target="blank"
+                  href="https://drive.google.com/file/d/1ZS598bNVBwWnP0SA1yeic6HGVclOD0LV/view?usp=sharing"
+                >
+                  Resume
+                </a>{" "}
+                and feel free to contact me {" "}
+                <a
+                  className="about-link"
+                  target="blank"
+                  href="mailto:hello@ericbflatt.com"
+                >
+                  hello@ericbflatt.com
+                </a>
+                .<br></br>
+                <br></br>
+                Thanks for stopping by 🙂
+                {/* <br></br>
               <br></br>
               Traveling is something I love to do, and I was fortunate to be
               able to do a fair amount before the pandemic.
@@ -150,7 +145,7 @@ class About extends React.Component {
                 />
               </div>
               There's a young me playing at the Stone Pony in Asbury Park, New Jersey. Most famous for where Bruce Springsteen was discovered. */}
-            </h1>
+              </h1>
             </div>
           </div>
         </div>

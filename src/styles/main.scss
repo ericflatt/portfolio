@@ -9,6 +9,7 @@ body {
   font-family: "Jost", sans-serif;
   margin: 0;
   overflow-x: hidden;
+  width: 100%;
 }
 
 .wrapper {
@@ -332,9 +333,9 @@ img{
   margin: 0 auto;
 }
 
-.view-cursor {
-  cursor: url("../images/cursor/view-cursor.svg"), auto;
-}
+// .view-cursor {
+//   cursor: url("../images/cursor/view-cursor.svg"), auto;
+// }
 
 // .nav-buttons{
 //   display: inline-block;
@@ -524,7 +525,7 @@ a {
   }
 }
 .cursor-shadow.active-blog-post-2 {
-  background-image: url("../images/obo/dailyChallenges.png");
+  background-image: url("../images/obo/oboeyes.svg");
   @media only screen and (max-width:768px){
     display: none;
   }
