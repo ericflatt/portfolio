@@ -47,20 +47,21 @@ class MobileNav extends React.Component {
 
         <div id="myModal" className="modal">
           <div className="modal-content">
+            
             <span className="close">&times;</span>
             <Link  to="/">
               <div className="top-link">
                 <h1>Home</h1>
               </div>
             </Link>
-            <Link to="/about">
-              <div>
-                <h1>About</h1>
-              </div>
-            </Link>
             <Link to="/#work">
               <div>
                 <h1>Work</h1>
+              </div>
+            </Link>
+            <Link to="/about">
+              <div>
+                <h1>About</h1>
               </div>
             </Link>
           </div>

@@ -30,6 +30,12 @@
 .about-title{
   font-size: 12rem;
   margin: 0;
+  @media only screen and (max-width:768px){
+    font-size: 7rem;
+    line-height: .8;
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
 }
 
 .about-link {

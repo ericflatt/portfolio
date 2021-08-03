@@ -111,7 +111,7 @@ class List extends React.Component {
                 <p>Senior Capstone</p>
               </div>
               <Link className="view-cursor cursor-link-blog-post-6"  to="/holocloud">
-                Holo-cloud
+                <span className="project-color">Holo-cloud</span>
                 <img className="project-image holo-image" src={upload} alt="test" />
               </Link>
             </div>
@@ -123,7 +123,7 @@ class List extends React.Component {
               <div className="work-sub-title">
                 <p>Human-Computer Interaction</p>
               </div>
-              <Link className="view-cursor cursor-link-blog-post-2" to="/obo">Obo</Link>
+              <Link className="view-cursor cursor-link-blog-post-2" to="/obo"><span className="project-color">Obo</span></Link>
               <img className="project-image obo-image" src={oboimage} alt="test" />
             </div>
           </div>
@@ -133,7 +133,7 @@ class List extends React.Component {
               <div className="work-sub-title">
                 <p>Prototyping Electronics</p>
               </div>
-              <Link className="view-cursor" to="/sway">Sway</Link>
+              <Link className="view-cursor cursor-link-blog-post-3" to="/sway"><span className="project-color">Sway</span></Link>
               <img className="project-image sway-img" src={sway} alt="test" />
             </div>
           </div>
@@ -143,7 +143,7 @@ class List extends React.Component {
               <div className="work-sub-title">
                 <p>Human Factors</p>
               </div>
-              <Link className="view-cursor cursor-link-blog-post-4" to="/bond">Bond</Link>
+              <Link className="view-cursor cursor-link-blog-post-4" to="/bond"><span className="project-color">Bond</span></Link>
               <img className="project-image bond-img" src={scrapbook} alt="test" />
             </div>
           </div>
@@ -153,7 +153,7 @@ class List extends React.Component {
             <div className="work-sub-title">
                 <p>What I do on the side</p>
               </div>
-              <Link className="view-cursor" to="/playground">Playground</Link>
+              <Link className="view-cursor" to="/playground"><span className="project-color">Playground</span></Link>
             </div>
           </div>
         </div>

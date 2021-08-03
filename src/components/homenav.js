@@ -9,7 +9,7 @@ class HomeNav extends React.Component {
 
       $(window).scroll(function() {
   
-        if($(this).scrollTop() > 500) {
+        if($(this).scrollTop() > 200) {
             $('.nav').css({"opacity": "1"});
         }
       });
