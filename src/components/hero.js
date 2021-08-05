@@ -1,6 +1,7 @@
 import React from "react"
 // import { Link } from "gatsby"
 import "../styles/hero.scss"
+import "../styles/main.scss"
 import "animate.css/animate.css"
 import { motion } from "framer-motion"
 
@@ -20,7 +21,7 @@ class Hero extends React.Component {
     return (
       <div className="hero">
         <div className="hero-name">
-        {/* <motion.div
+          {/* <motion.div
             initial={{ scale: 0 }}
             animate={{ rotate: 360, scale: 1 }}
             transition={{
@@ -35,7 +36,9 @@ class Hero extends React.Component {
             <h1 className="hero-flatt">Flatt</h1>
           </div>
           <div className="hero-neg">
-            <span className="hero-desc">UX Designer &<br></br> Front End Developer</span>
+            <span className="hero-desc">
+              UX Designer &<br></br> Front End Developer
+            </span>
           </div>
           {/* </motion.div> */}
           <svg>
@@ -57,22 +60,27 @@ class Hero extends React.Component {
             </filter>
           </svg>
         </div>
+        <div id="scroll-down" className="scroll-a scroll-down">
+           <a href="/" style={{pointerEvents:"none"}}>
+             <span></span>Scroll Down
+           </a>
+         </div>
       </div>
       // <div style={{overflowX:"hidden"}} className="hero">
       //   <div className="hero-text-container">
       //     {/* <h1  className="hero-text">
       //       Eric <span className="flatt">Flatt</span>
       //     </h1> */}
-          // <motion.div
-          //   initial={{ scale: 0 }}
-          //   animate={{ rotate: 360, scale: 1 }}
-          //   transition={{
-          //     type: "spring",
-          //     stiffness: 260,
-          //     damping: 20,
-          //     delay: .6,
-          //   }}
-          // >
+      // <motion.div
+      //   initial={{ scale: 0 }}
+      //   animate={{ rotate: 360, scale: 1 }}
+      //   transition={{
+      //     type: "spring",
+      //     stiffness: 260,
+      //     damping: 20,
+      //     delay: .6,
+      //   }}
+      // >
       //       <svg
       //         className="name-image"
       //         xmlns="http://www.w3.org/2000/svg"
