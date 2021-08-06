@@ -60,11 +60,11 @@ class Hero extends React.Component {
             </filter>
           </svg>
         </div>
-        <div id="scroll-down" className="scroll-a scroll-down">
+        {/* <div id="scroll-down" className="scroll-a scroll-down">
            <a href="/" style={{pointerEvents:"none"}}>
              <span></span>Scroll Down
            </a>
-         </div>
+         </div> */}
       </div>
       // <div style={{overflowX:"hidden"}} className="hero">
       //   <div className="hero-text-container">
