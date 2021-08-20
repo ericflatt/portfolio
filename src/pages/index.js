@@ -22,7 +22,7 @@ const IndexPage = () => (
         name="keywords"
         content="eric flatt, eric, flatt, ux designer, ux, design, designer, scad, frontend developer"
       />
-      <meta name="robots" content="noindex, nofollow" />
+      <meta name="robots" content="noindex, follow" />
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="language" content="English" />
       <meta name="author" content="Eric Flatt" />
