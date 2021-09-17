@@ -16,7 +16,7 @@ class HomeAbout extends React.Component {
             Lover of any workplace comedy, cartoons, coffee, traveling and metal
             music (not in any particular order). I just gradutated from the
             Savannah College of Art and Design in May of 2021 with a Bachelor of
-            Fine Arts in User Experience Design. Right now I am a creative
+            Fine Arts in User Experience Design. Most recently I was a creative
             tech intern at{" "}
             <a
               className="about-link"
@@ -35,7 +35,8 @@ class HomeAbout extends React.Component {
             >
               Resume
             </a>
-            
+            <br></br>
+            Currently seeking full time UX/Product Design role
           </h1>
         </div>
       </div>
