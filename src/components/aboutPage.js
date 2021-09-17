@@ -43,7 +43,7 @@ class About extends React.Component {
                 , lover of all workplace comedies, cartoons, coffee, traveling
                 and metal music (not in any particular order). I’m a recent grad
                 from the Savannah College of Art and Design with
-                a BFA in User Experience Design. Most recently i was a creative tech
+                a BFA in User Experience Design. Most recently I was a creative tech
                 intern at{" "}
                 <a
                   className="about-link"
@@ -107,9 +107,9 @@ class About extends React.Component {
                 <a
                   className="about-link"
                   target="blank"
-                  href="mailto:hello@ericbflatt.com"
+                  href="mailto:eflatt18@gmail.com"
                 >
-                  hello@ericbflatt.com
+                  eflatt18@gmail.com
                 </a>
                 .<br></br>
                 <br></br>
