@@ -31,7 +31,7 @@ class HomeAbout extends React.Component {
             <a
               className="about-link"
               target="blank"
-              href="https://drive.google.com/file/d/1ZS598bNVBwWnP0SA1yeic6HGVclOD0LV/view?usp=sharing"
+              href="https://drive.google.com/file/d/1ZPtiem5AWq6CiN_ZOgtOhkO6WfoVNuGb/view?usp=sharing"
             >
               Resume
             </a>
