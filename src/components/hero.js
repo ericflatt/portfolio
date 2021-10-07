@@ -37,7 +37,7 @@ class Hero extends React.Component {
           </div>
           <div className="hero-neg">
             <span className="hero-desc">
-              UX Designer &<br></br> Front End Developer
+              UX Designer who enjoys Front End Development
             </span>
           </div>
           {/* </motion.div> */}
