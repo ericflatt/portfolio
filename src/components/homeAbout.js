@@ -121,7 +121,7 @@ class HomeAbout extends React.Component {
               href="https://funko.com"
             >
               Funko
-            </a>{" "}
+            </a>. {" "}
 
             Most recently I was a creative
             tech intern at{" "}
