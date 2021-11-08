@@ -6,7 +6,7 @@ import $ from "jquery"
 import Seo from "../components/seo"
 import Cursor from "../components/cursor"
 import NavButtons from "../components/navButtons"
-import me from "../images/me(1).png"
+import me from "../images/me(2).png"
 import "animate.css/animate.css"
 
 class About extends React.Component {
@@ -22,7 +22,7 @@ class About extends React.Component {
 
   render() {
     return (
-      <div>
+      <div> 
         <Seo title="About" />
         <NavButtons />
         <Cursor />
