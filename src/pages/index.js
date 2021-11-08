@@ -11,7 +11,7 @@ import MobileNav from "../components/mobilenav"
 import { Helmet } from "react-helmet"
 
 const IndexPage = () => (
-  <main style={{ overflowX: "hidden" }}>
+  <main>
     <Seo title="Home" />
     <Helmet>
       <meta
@@ -31,9 +31,9 @@ const IndexPage = () => (
     <Cursor />
     <MobileNav />
     <Hero />
-    <List />
     <HomeAbout />
     <HomeNav />
+    {/* <List /> */}
   </main>
 )
 

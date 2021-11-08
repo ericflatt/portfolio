@@ -636,19 +636,22 @@ a {
 
 .about-home {
   height: auto;
-  margin-top: 50px;
+  margin-top: 100px;
   // padding: 0 5%;
 }
 
 .about-home-text {
-  padding-left: 30vw;
+  padding-left: 5%;
   padding-right: 48px;
   display: flex;
   margin-bottom: 40px;
+  @media only screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
 }
 
 .about-home-text h1 {
-  font-size: 24px;
+  font-size: 32px;
   font-family: font;
 
   @media only screen and (max-width: 1023px) {

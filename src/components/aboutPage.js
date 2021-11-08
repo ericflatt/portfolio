@@ -6,7 +6,7 @@ import $ from "jquery"
 import Seo from "../components/seo"
 import Cursor from "../components/cursor"
 import NavButtons from "../components/navButtons"
-import me from "../images/me.jpg"
+import me from "../images/me(1).png"
 import "animate.css/animate.css"
 
 class About extends React.Component {
@@ -29,21 +29,23 @@ class About extends React.Component {
         <div>
           <div className="wrapper">
             <h1 className="about-title">About me</h1>
+            <img className="about-image" src={me} alt="me" />
             <div className="about-content">
               <h1 className="about-text">
-                Hi I'm{" "}
-                <span className="me">
-                  Eric{" "}
-                  <img
-                    className="me-image animate__animated animate__rollIn"
-                    src={me}
-                    alt="me"
-                  />
-                </span>
+                Hi I'm Eric
                 , lover of all workplace comedies, cartoons, coffee, traveling
                 and metal music (not in any particular order). I’m a recent grad
                 from the Savannah College of Art and Design with
-                a BFA in User Experience Design. Most recently I was a creative tech
+                a BFA in User Experience Design. Currently I am designing digital experiences as a UI/UX Designer at{" "}
+                <a
+                  className="about-link"
+                  target="blank"
+                  href="https://funko.com"
+                >
+                  Funko
+                </a>.{" "}
+                
+                Previously I was a creative tech
                 intern at{" "}
                 <a
                   className="about-link"
@@ -53,7 +55,7 @@ class About extends React.Component {
                   Black Math
                 </a>{" "}
                 collaborating on front-end web development and UI/UX design
-                based projects. I have previously interned with{" "}
+                based projects. I have also interned with{" "}
                 <a
                   className="about-link"
                   target="blank"
@@ -92,14 +94,11 @@ class About extends React.Component {
                 that I finished just weeks before Spotify launched their own.
                 <br></br>
                 <br></br>
-                I am currently seeking full-time opportunities.
-                <br></br>
-                <br></br>
                 Take a look at my{" "}
                 <a
                   className="about-link"
                   target="blank"
-                  href="https://drive.google.com/file/d/1ZPtiem5AWq6CiN_ZOgtOhkO6WfoVNuGb/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1SubpvE2xl7dhFJgzvcZo3Wwk6ZVntGf2/view?usp=sharing"
                 >
                   Resume
                 </a>{" "}

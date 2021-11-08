@@ -5,6 +5,15 @@ import $ from "jquery"
 
 class HomeNav extends React.Component {
   componentDidMount() {
+    const targetDiv = document.getElementById("work");
+    const btn = document.getElementById("toggle");
+    btn.onclick = function () {
+      if (targetDiv.style.display !== "none") {
+        targetDiv.style.display = "none";
+      } else {
+        targetDiv.style.display = "block";
+      }
+    };
     $(document).ready(function() {
 
       $(window).scroll(function() {
@@ -64,7 +73,7 @@ class HomeNav extends React.Component {
                 <div className="work-button__content">About</div>
               </div>
             </Link>
-            <Link to="/#work">
+            <Link id="toggle" to="/#work">
               <div style={{marginRight:"175px" }} className="work-button">
                 <div className="work-button__content">Work</div>
               </div>
