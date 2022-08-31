@@ -105,6 +105,19 @@ class List extends React.Component {
       <div id="work">
         <h1 className="section-intro">work</h1>
         <div  className="work">
+
+        <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" className="wrapper work-item">
+            <div className="work-title work-item-inner">
+              <div className="work-sub-title">
+                <p>UX/UI Designer</p>
+              </div>
+              <Link className="view-cursor cursor-link-blog-post-6"  to="/holocloud">
+                <span className="project-color">Funko</span>
+                <img className="project-image holo-image" src={upload} alt="test" />
+              </Link>
+            </div>
+            
+          </div>
           <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" className="wrapper work-item">
             <div className="work-title work-item-inner">
               <div className="work-sub-title">

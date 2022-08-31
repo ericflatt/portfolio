@@ -380,6 +380,11 @@ img{
   width: 30%;
 }
 
+.freddy-image{
+  width: 30%;
+  right: 0px;
+  z-index: -1;}
+
 .holo-image{
   width: 40%;
   right: -130px;
@@ -520,6 +525,13 @@ a {
   --size: 0;
 }
 
+.cursor-shadow.active-blog-post-7 {
+  background-image: url("../images/funko-crown.png");
+  @media only screen and (max-width:768px){
+    display: none;
+  }
+}
+
 .cursor-shadow.active-blog-post-1 {
   background-image: url("../images/holocloud/cloud.png");
   @media only screen and (max-width:768px){
@@ -557,12 +569,12 @@ a {
   }
   background-size: contain;
 }
-.cursor-shadow.active-blog-post-7 {
-  background-image: url("http://ivang-design.com/alke/img/blog/7.jpg");
-  @media only screen and (max-width:768px){
-    display: none;
-  }
-}
+// .cursor-shadow.active-blog-post-7 {
+//   background-image: url("http://ivang-design.com/alke/img/blog/7.jpg");
+//   @media only screen and (max-width:768px){
+//     display: none;
+//   }
+// }
 
 .cursor.cursor-dot.active-blog-post-1,
 .cursor.cursor-dot.active-blog-post-2,

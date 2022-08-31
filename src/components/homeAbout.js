@@ -2,7 +2,6 @@ import React from "react"
 import "../styles/main.scss"
 import { Link } from "gatsby"
 import $ from "jquery"
-import "../styles/main.scss"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import oboimage from "../images/oboimage.png";
@@ -10,6 +9,8 @@ import upload from "../images/holocloud/upload.png";
 import sway from "../images/sway.png";
 import scrapbook from "../images/bond/scrapbook.png";
 import funko from "../images/funko.png"
+import freddy from "../images/freddy.png"
+
 
 class HomeAbout extends React.Component {
   componentDidMount() {
@@ -123,7 +124,7 @@ class HomeAbout extends React.Component {
               Funko
             </a>. {" "}
 
-            Most recently I was a creative
+            Before Funko I was a creative
             tech intern at{" "}
             <a
               className="about-link"
@@ -150,6 +151,19 @@ class HomeAbout extends React.Component {
         <div id="work">
           <h1 className="section-intro">work</h1>
           <div className="work">
+
+          <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" className="wrapper work-item">
+              <div className="work-title work-item-inner">
+                <div className="work-sub-title">
+                  <p>UX/UI Designer</p>
+                </div>
+                <Link className="view-cursor cursor-link-blog-post-7" to="/funko">
+                  <span className="project-color">Funko</span>
+                  <img className="project-image freddy-image" src={freddy} alt="test" />
+                </Link>
+              </div>
+            </div>
+
             <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" className="wrapper work-item">
               <div className="work-title work-item-inner">
                 <div className="work-sub-title">

@@ -37,7 +37,7 @@ class Hero extends React.Component {
           </div>
           <div className="hero-neg">
             <span className="hero-desc">
-              Currently designing digital experiences @<a style={{textDecoration:"underline",color:"#c4c4c4"}} href="https://funko.com" target="blank">funko</a>
+              Currently designing digital experiences @<a style={{textDecoration:"underline",color:"#a9a9a9"}} href="https://funko.com" target="blank">funko</a>
             </span>
           </div>
           {/* </motion.div> */}
