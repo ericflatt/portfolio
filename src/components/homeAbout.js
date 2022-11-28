@@ -118,7 +118,7 @@ class HomeAbout extends React.Component {
             music (not in any particular order). Currently I am designing digital experiences at{" "}
             <a
               className="about-link"
-              target="blank"
+              target="_blank"
               href="https://funko.com"
             >
               Funko
@@ -128,7 +128,7 @@ class HomeAbout extends React.Component {
             tech intern at{" "}
             <a
               className="about-link"
-              target="blank"
+              target="_blank"
               href="https://blackmath.com"
             >
               Black Math
@@ -138,7 +138,7 @@ class HomeAbout extends React.Component {
             Here you will find my{" "}
             <a
               className="about-link"
-              target="blank"
+              target="_blank"
               href="https://drive.google.com/file/d/1SubpvE2xl7dhFJgzvcZo3Wwk6ZVntGf2/view?usp=sharing"
             >
               Resume
