@@ -12,7 +12,7 @@ import { Helmet } from "react-helmet"
 const IndexPage = () => (
   <main>
     <Seo title="Home" />
-    <Helmet>
+    <Helmet> 
       <meta
         name="description" 
         content="Hi, I'm Eric. A UX Designer and Frontend Developer as well as a recent graduate of SCAD."
