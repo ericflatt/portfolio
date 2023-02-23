@@ -8,7 +8,7 @@ import Cursor from "../components/cursor"
 import NavButtons from "../components/navButtons"
 import me from "../images/me(2).png"
 import "animate.css/animate.css"
- 
+
 class About extends React.Component {
   componentDidMount() {
     $(".me")
@@ -22,7 +22,7 @@ class About extends React.Component {
 
   render() {
     return (
-      <div> 
+      <div>
         <Seo title="About" />
         <NavButtons />
         <Cursor />
@@ -32,21 +32,19 @@ class About extends React.Component {
             <img className="about-image" src={me} alt="me" />
             <div className="about-content">
               <h1 className="about-text">
-                Hi I'm Eric
-                , lover of all workplace comedies, cartoons, coffee, traveling
-                and metal music (not in any particular order). I’m a recent grad
-                from the Savannah College of Art and Design with
-                a BFA in User Experience Design. Currently I am designing digital experiences as a UI/UX Designer at{" "}
+                Hi I'm Eric , lover of all workplace comedies, cartoons, coffee,
+                traveling and all kinds of music (not in any particular order).
+                I graduated in spring 2021 from the Savannah College of Art and
+                Design with a BFA in User Experience Design. Currently I am
+                designing digital experiences as a UX/UI Designer at{" "}
                 <a
                   className="about-link"
                   target="blank"
                   href="https://funko.com"
                 >
                   Funko
-                </a>.{" "}
-                
-                Previously I was a creative tech
-                intern at{" "}
+                </a>
+                . Previously I was a creative tech intern at{" "}
                 <a
                   className="about-link"
                   target="blank"
@@ -54,7 +52,7 @@ class About extends React.Component {
                 >
                   Black Math
                 </a>{" "}
-                collaborating on front-end web development and UI/UX design
+                collaborating on front-end web development and UX/UI design
                 based projects. I have also interned with{" "}
                 <a
                   className="about-link"
@@ -71,10 +69,10 @@ class About extends React.Component {
                 >
                   iCIMS
                 </a>{" "}
-                & worked freelance with Vera Roca.<br></br><br></br> I was first drawn to UX
-                because of my curiosity with ever evolving technologies and
-                exploring creative ways in which we can use them. I set up a
-                raspberry pi to post daily {" "}
+                & worked freelance with Vera Roca.<br></br>
+                <br></br> I was first drawn to UX because of my curiosity with
+                ever evolving technologies and exploring creative ways in which
+                we can use them. I set up a raspberry pi to post daily{" "}
                 <a
                   className="about-link"
                   target="blank"
@@ -82,27 +80,27 @@ class About extends React.Component {
                 >
                   twitter
                 </a>{" "}
-                updates on the well being of my plants & had the genius idea to
-                create a collaborative Spotify queue, you can see{" "}
+                updates on the well being of my plants & had the idea to create
+                a collaborative Spotify queue, you can see{" "}
                 <a
                   className="about-link"
                   target="blank"
                   href="https://spotify-collab.glitch.me/"
                 >
                   here
-                </a>,{" "}
-                that I finished just weeks before Spotify launched their own.
+                </a>
+                , that I finished just weeks before Spotify launched their own.
                 <br></br>
                 <br></br>
                 Take a look at my{" "}
                 <a
                   className="about-link"
                   target="blank"
-                  href="https://drive.google.com/file/d/1SubpvE2xl7dhFJgzvcZo3Wwk6ZVntGf2/view?usp=sharing"
+                  href="https://read.cv/ericflatt"
                 >
                   Resume
                 </a>{" "}
-                and feel free to contact me {" "}
+                and feel free to contact me{" "}
                 <a
                   className="about-link"
                   target="blank"
@@ -110,40 +108,19 @@ class About extends React.Component {
                 >
                   eflatt18@gmail.com
                 </a>
+                <br></br>
+                <br></br>
+                My Bento page <span style={{marginTop:"8px"}}>→</span> {""}
+                <a
+                  className="about-link"
+                  target="blank"
+                  href="https://bento.me/ericflatt"
+                >
+                  click here
+                </a>
                 .<br></br>
                 <br></br>
-                Thanks for stopping by 🙂
-                {/* <br></br>
-              <br></br>
-              Traveling is something I love to do, and I was fortunate to be
-              able to do a fair amount before the pandemic.
-              <div className="carousel-cursor">
-                <AliceCarousel
-                  mouseTracking
-                  infinite
-                  items={items}
-                  responsive={responsive}
-                />
-              </div>
-              While studying abroad in Hong Kong I was able to go around and
-              spend time in the surrounding countries. This may sound strange
-              but some of the best chinese food I've ever had was actually in
-              Amsterdam. Being able to see the world is something I truely enjoy
-              and I hope to be able to continue doing so soon.
-              <br></br>
-              <br></br>
-              Music has also been a lifelong passion of mine. Learning to play
-              drums at a young age to eventually picking up the bass, making and
-              listening to music was always on my mind.
-              <div>
-                <img className="stone-pony" src={stoneone} alt="stone pony" />
-                <img
-                  className="stone-ponytwo"
-                  src={stonetwo}
-                  alt="stone pony"
-                />
-              </div>
-              There's a young me playing at the Stone Pony in Asbury Park, New Jersey. Most famous for where Bruce Springsteen was discovered. */}
+                <span style={{paddingBottom:"80px"}}>Thanks for stopping by 🙂</span>
               </h1>
             </div>
           </div>

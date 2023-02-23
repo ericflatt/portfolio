@@ -22,8 +22,9 @@ class Playground extends React.Component {
         <NavButtons />
         <Cursor />
         <div className="play-container">
-          <h1>Here's some cool stuff I've worked on and explored with</h1>
-          <div className="play-grid">
+          <h1 style={{margin:"0"}}>Here's some cool stuff I've worked on and explored with</h1>
+          <p style={{marginBottom:"16px"}}>Note: Some of these sites have been updated since I worked on them and may appear different.</p>
+          <div style={{marginBottom:"40px"}} className="play-grid">
             <div>
                 <img className="play-image" src={startup} alt="comotion" />
               <a

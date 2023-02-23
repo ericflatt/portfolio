@@ -1,7 +1,6 @@
 import * as React from "react"
 // import { Link } from "gatsby"
 import Seo from "../components/seo"
-import List from "../components/projectList"
 import Hero from "../components/hero"
 import Cursor from "../components/cursor"
 import HomeNav from "../components/homenav"
@@ -20,7 +19,7 @@ const IndexPage = () => (
       />
       <meta
         name="keywords"
-        content="eric flatt, eric, flatt, ux designer, ux, design, designer, scad, frontend developer"
+        content="eric flatt, eric, flatt, ux designer, ux, design, designer, scad"
       />
       <meta name="robots" content="index, follow" />
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -33,7 +32,6 @@ const IndexPage = () => (
     <Hero />
     <HomeAbout />
     <HomeNav />
-    {/* <List /> */}
   </main>
 )
 
