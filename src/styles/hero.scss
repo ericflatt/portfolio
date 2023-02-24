@@ -40,7 +40,7 @@
 }
 
 .hero-name {
-  animation: float 6s ease-in-out infinite;
+  // animation: float 6s ease-in-out infinite;
   margin-left: 15%;
   margin-top: 100px;
   @media (max-width:500px) {
@@ -71,17 +71,17 @@
   }
 }
 
-@keyframes float {
-  0% {
-    transform: translatey(0px);
-  }
-  50% {
-    transform: translatey(-20px);
-  }
-  100% {
-    transform: translatey(0px);
-  }
-}
+// @keyframes float {
+//   0% {
+//     transform: translatey(0px);
+//   }
+//   50% {
+//     transform: translatey(-20px);
+//   }
+//   100% {
+//     transform: translatey(0px);
+//   }
+// }
 
 // .hero-animation {
 //   filter: url("#noise");
