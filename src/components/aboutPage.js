@@ -6,6 +6,7 @@ import $ from "jquery"
 import Seo from "../components/seo"
 import Cursor from "../components/cursor"
 import NavButtons from "../components/navButtons"
+// import NavButtons from "../components/navButtons"
 import me from "../images/me(2).png"
 import "animate.css/animate.css"
 
