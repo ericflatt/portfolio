@@ -11,12 +11,16 @@ import elderlyUI from "../images/bond/elderlyUI.svg"
 import elderlyUITwo from "../images/bond/elderlyUI-2.svg"
 import tutorial from "../images/bond/tut.svg"
 import access from "../images/bond/access.svg"
-import NavButtons from "../components/navButtons"
+// import NavButtons from "../components/navButtons"
 import Seo from "../components/seo"
+import "../styles/main.scss"
+import Cursor from "../components/cursor"
+
 
 
 import "../styles/bond.scss"
 import MobileNav from "../components/mobilenav"
+import HomeNav from "../components/homenav"
 
 const ThreeColumns = styled.div`
   display: grid;
@@ -35,8 +39,10 @@ function App() {
   return (
     <div>
       <Seo title="Bond" />
-      <NavButtons />
+      <HomeNav />
       <MobileNav />
+      <Cursor />
+
       <div style={{ background: "#f4f4f4", color: "#595959" }} className="App">
         <header className="App-header">
           <img

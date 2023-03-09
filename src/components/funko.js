@@ -4,8 +4,9 @@ import "../styles/playground.scss"
 // import { Link } from "gatsby"
 import Seo from "../components/seo"
 import Cursor from "../components/cursor"
-import NavButtons from "./navButtons"
+// import NavButtons from "./navButtons"
 import funko from "../images/mepop.png"
+import HomeNav from "./homenav"
 
 
 class Funko extends React.Component {
@@ -15,7 +16,7 @@ class Funko extends React.Component {
     return (
       <div>
         <Seo title="Funko" />
-        <NavButtons />
+        <HomeNav />
         <Cursor />
         <div className="play-container">
           <h1>Hello,</h1>
