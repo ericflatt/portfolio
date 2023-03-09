@@ -678,6 +678,16 @@ nav{
   }
 }
 
+.funkoimg{
+  width: 15%;
+  @media (max-width:1024px) {
+    width: 20%;
+  }
+  @media (max-width:500px) {
+    width: 30%;
+  }
+}
+
 .nav-vis{
   visibility: hidden;
 }

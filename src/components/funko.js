@@ -19,11 +19,11 @@ class Funko extends React.Component {
         <Cursor />
         <div className="play-container">
           <h1>Hello,</h1>
-          <h2>
+          <p>
             Currently I am a UX/UI Designer on the digital experience team at
             Funko.
-          </h2>
-          <img style={{width:"20%",marginTop:"24px"}} src={funko} alt="me as a funko" />
+          </p>
+          <img className="funkoimg" style={{marginTop:"24px"}} src={funko} alt="me as a funko" />
         </div>
       </div>
     )
