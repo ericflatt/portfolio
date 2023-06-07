@@ -71,7 +71,7 @@ class About extends React.Component {
                   iCIMS
                 </a>{" "}
                 & worked freelance with Vera Roca.<br></br>
-                <br></br> I was first drawn to UX because of my curiosity with
+                {/* <br></br> I was first drawn to UX because of my curiosity with
                 ever evolving technologies and exploring creative ways in which
                 we can use them. I set up a raspberry pi to post daily{" "}
                 <a
@@ -92,7 +92,7 @@ class About extends React.Component {
                 </a>
                 , that I finished just weeks before Spotify launched their own.
                 <br></br>
-                <br></br>
+                <br></br> */}
                 Take a look at my{" "}
                 <a
                   className="about-link"
