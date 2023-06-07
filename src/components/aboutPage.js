@@ -111,16 +111,7 @@ class About extends React.Component {
                 </a>
                 <br></br>
                 <br></br>
-                My Bento page <span style={{marginTop:"8px"}}>→</span> {""}
-                <a
-                  className="about-link"
-                  target="blank"
-                  href="https://bento.me/ericflatt"
-                >
-                  click here
-                </a>
-                .<br></br>
-                <br></br>
+               
                 <span style={{paddingBottom:"80px"}}>Thanks for stopping by 🙂</span>
               </h1>
             </div>
