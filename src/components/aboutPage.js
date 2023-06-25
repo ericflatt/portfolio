@@ -33,19 +33,26 @@ class About extends React.Component {
             <img className="about-image" src={me} alt="me" />
             <div className="about-content">
               <h1 className="about-text">
-                Hi I'm Eric , lover of all workplace comedies, cartoons, coffee,
-                traveling and all kinds of music (not in any particular order).
-                I graduated in spring 2021 from the Savannah College of Art and
-                Design with a BFA in User Experience Design. Currently I am
-                designing digital experiences as a UX/UI Designer at{" "}
+                Hi I'm Eric. Currently I am a designer on the digital
+                experiences team at Funko, working on{" "}
                 <a
                   className="about-link"
                   target="blank"
                   href="https://funko.com"
                 >
-                  Funko
+                  funko.com
                 </a>
-                . Previously I was a creative tech intern at{" "}
+                ,
+                <a
+                  className="about-link"
+                  target="blank"
+                  href="https://loungefly.com"
+                >
+                  loungefly.com
+                </a>
+                , as well as the Funko mobile app. I graduated in spring 2021
+                from the Savannah College of Art and Design with a BFA in User
+                Experience Design. Previously I was a creative tech intern at{" "}
                 <a
                   className="about-link"
                   target="blank"
@@ -111,8 +118,9 @@ class About extends React.Component {
                 </a>
                 <br></br>
                 <br></br>
-               
-                <span style={{paddingBottom:"80px"}}>Thanks for stopping by 🙂</span>
+                <span style={{ paddingBottom: "80px" }}>
+                  Thanks for stopping by 🙂
+                </span>
               </h1>
             </div>
           </div>
