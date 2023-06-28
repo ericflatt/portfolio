@@ -351,6 +351,7 @@ img{
   position: relative;
   width: 100%;
   height: auto;
+  padding-bottom: 120px;
 }
 
 .work-item {
@@ -779,4 +780,47 @@ nav{
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+.gif{
+  outline: none;
+  border: none;
+  position:relative;
+
+}
+
+.gif-404{
+  position:absolute;
+  outline: none;
+  border: none;
+}
+
+.float-nav{
+  position: fixed;
+  bottom: 0;
+  // width: 100%;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: rgba(255, 255, 255, 0.75);
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  text-align: center;
+}
+
+.nav-anchor{
+  padding: 8px 24px;
+
+  a{
+    font-weight: 800;
+  }
+}
+
+.active-link{
+  color: pink;
+  background-color: red;
 }

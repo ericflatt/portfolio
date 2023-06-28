@@ -104,7 +104,7 @@ class About extends React.Component {
                 <a
                   className="about-link"
                   target="blank"
-                  href="https://read.cv/ericflatt"
+                  href="https://drive.google.com/file/d/1SubpvE2xl7dhFJgzvcZo3Wwk6ZVntGf2/view?usp=sharing"
                 >
                   Resume
                 </a>{" "}

@@ -3,13 +3,18 @@ import * as React from "react"
 import Seo from "../components/seo"
 
 const NotFoundPage = () => (
-<main>
-<Seo title="404: Not found" />
-    <h1>404: Not Found</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-</main>
-
-
+  <main>
+    <Seo title="404: Not found" />
+    <h1>Page not found</h1>
+    <p>Sorry, go back <a style={{textDecoration:"underline"}} href="/">home</a></p>
+    <div className="gif">
+      <iframe
+        className="gif-404"
+        title="gif"
+        src="https://giphy.com/embed/hyyV7pnbE0FqLNBAzs"
+      ></iframe>
+    </div>
+  </main>
 )
 
 export default NotFoundPage
