@@ -1,7 +1,6 @@
 import React from "react"
 import "../styles/main.scss"
 import "../styles/playground.scss"
-// import { Link } from "gatsby"
 import Seo from "../components/seo"
 import Cursor from "../components/cursor"
 import NavButtons from "./navButtons"
@@ -26,8 +25,10 @@ class Funko extends React.Component {
         <div className="play-container">
           <h1>Hello,</h1>
           <p>
-            Currently I am a UX/UI Designer on the digital experience team at
+            Most recently I was a UX/UI Designer on the digital experience team at
             Funko.
+            <br></br>
+            More content coming soon...
           </p>
           <img
             className="funkoimg"

@@ -111,7 +111,7 @@ class HomeAbout extends React.Component {
           <div>{/* <img src={funko} alt="funko" /> */}</div>
           <h1>
             Lover of any workplace comedy, cartoons, coffee, traveling and all
-            kinds of music (not in any particular order). Currently I am
+            kinds of music (not in any particular order). Most recently I was
             designing digital experiences at{" "}
             <a
               className="about-link"
@@ -174,7 +174,7 @@ class HomeAbout extends React.Component {
             >
               <div className="work-title work-item-inner">
                 <div className="work-sub-title">
-                  <p>Current Job - UX/UI Designer</p>
+                  <p>Most Recent Job - UX/UI Designer</p>
                 </div>
                 <Link
                   className="view-cursor cursor-link-blog-post-7"
