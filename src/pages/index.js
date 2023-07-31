@@ -10,6 +10,7 @@ import MobileNav from "../components/mobilenav"
 import { Helmet } from "react-helmet"
 
 const IndexPage = () => (
+  
   <main>
     <Seo title="Home" />
     <Helmet> 
