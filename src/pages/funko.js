@@ -24,23 +24,47 @@ import HomeNav from "../components/homenav"
 
 // export default IndexPage
 
-import React, { useState } from "react"
+// import React, { useState } from "react"
+// import PasswordForm from "../PasswordForm"
+// const ProtectedPage = () => {
+//   const [passwordValid, setPasswordValid] = useState(
+//     localStorage.getItem("passwordValid") === "true"
+//   )
+
+//   return (
+ 
+//       <React.Fragment>
+//       {passwordValid ? (
+//         <><Seo title="Funko" /><HomeNav /><Cursor /><Funko /></>
+//       ) : (
+//         <PasswordForm setPasswordValid={setPasswordValid} />
+//       )}
+//   </React.Fragment>
+//   )
+// }
+
+// export default ProtectedPage
+
+import React, { useState, useEffect } from 'react';
 import PasswordForm from "../PasswordForm"
 const ProtectedPage = () => {
-  const [passwordValid, setPasswordValid] = useState(
-    localStorage.getItem("passwordValid") === "true"
-  )
+  const [passwordValid, setPasswordValid] = useState(false);
+
+  useEffect(() => {
+    // Check local storage for the password validity once the component mounts
+    const storedPasswordValid = localStorage.getItem('passwordValid') === 'true';
+    setPasswordValid(storedPasswordValid);
+  }, []);
 
   return (
- 
-      <React.Fragment>
+    <div>
       {passwordValid ? (
-        <><Seo title="Funko" /><HomeNav /><Cursor /><Funko /></>
+        <h1>Welcome to the protected page!</h1>
       ) : (
         <PasswordForm setPasswordValid={setPasswordValid} />
       )}
-  </React.Fragment>
-  )
-}
+    </div>
+  );
+};
 
-export default ProtectedPage
+export default ProtectedPage;
