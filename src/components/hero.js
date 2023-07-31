@@ -21,7 +21,7 @@ class Hero extends React.Component {
           </div>
           <div className="hero-neg">
             <span className="hero-desc">
-              Currently designing digital experiences @ <a style={{textDecoration:"underline"}} href="https://funko.com" target="blank">funko</a>
+              UX Designer seeking new opportunities
             </span>
           </div>
         </div>
