@@ -124,6 +124,7 @@ export default function BasicTabs() {
                 autoPlay
                 muted
                 loop
+                controls
                 src={holiday}
               />
             </div>
@@ -139,6 +140,7 @@ export default function BasicTabs() {
                 autoPlay
                 muted
                 loop
+                controls
                 src={freegift}
               />
             </div>
