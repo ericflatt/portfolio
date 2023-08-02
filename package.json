@@ -5,8 +5,11 @@
   "version": "0.1.0",
   "author": "Eric Flatt <eflatt18@gmail.com>",
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
+    "@mui/material": "^5.14.3",
     "animate.css": "^4.1.1",
     "aos": "^3.0.0-beta.6",
     "framer-motion": "^4.1.17",
@@ -30,14 +33,19 @@
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-alice-carousel": "^2.5.1",
+    "react-confetti": "^6.1.0",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "react-particles": "^2.11.0",
     "react-reveal": "^1.2.2",
     "react-scroll": "^1.8.2",
+    "react-tsparticles": "^2.11.0",
     "sass": "^1.34.1",
     "styled-components": "^5.3.0",
     "tailwind.macro": "^0.5.10",
-    "tailwindcss": "^2.2.4"
+    "tailwindcss": "^2.2.4",
+    "tsparticles-engine": "^2.11.1",
+    "tsparticles-shape-confetti": "^1.14.2"
   },
   "devDependencies": {
     "@types/tailwindcss": "^2.2.0",

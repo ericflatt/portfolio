@@ -8,8 +8,7 @@ import oboimage from "../images/oboimage.png"
 import upload from "../images/holocloud/upload.png"
 import sway from "../images/sway.png"
 import scrapbook from "../images/bond/scrapbook.png"
-// import funko from "../images/funko.png"
-import freddy from "../images/freddy.png"
+import freddy from "../images/funko/freddy.png"
 
 class HomeAbout extends React.Component {
   componentDidMount() {
@@ -36,8 +35,7 @@ class HomeAbout extends React.Component {
       .on("mouseleave", function () {
         $(".work-item-inner").removeClass("image-appear")
       })
-    //Blog page cursors with image
-    //Blog post 1:
+    //cursors with image
     $(".cursor-link-blog-post-1")
       .on("mouseenter", function () {
         $(".cursor").addClass("active-blog-post-1")
@@ -45,7 +43,7 @@ class HomeAbout extends React.Component {
       .on("mouseleave", function () {
         $(".cursor").removeClass("active-blog-post-1")
       })
-    //Blog post 2:
+
     $(".cursor-link-blog-post-2")
       .on("mouseenter", function () {
         $(".cursor").addClass("active-blog-post-2")
@@ -53,7 +51,7 @@ class HomeAbout extends React.Component {
       .on("mouseleave", function () {
         $(".cursor").removeClass("active-blog-post-2")
       })
-    //Blog post 3:
+
     $(".cursor-link-blog-post-3")
       .on("mouseenter", function () {
         $(".cursor").addClass("active-blog-post-3")
@@ -61,7 +59,7 @@ class HomeAbout extends React.Component {
       .on("mouseleave", function () {
         $(".cursor").removeClass("active-blog-post-3")
       })
-    //Blog post 4:
+
     $(".cursor-link-blog-post-4")
       .on("mouseenter", function () {
         $(".cursor").addClass("active-blog-post-4")
@@ -69,7 +67,7 @@ class HomeAbout extends React.Component {
       .on("mouseleave", function () {
         $(".cursor").removeClass("active-blog-post-4")
       })
-    //Blog post 5:
+
     $(".cursor-link-blog-post-5")
       .on("mouseenter", function () {
         $(".cursor").addClass("active-blog-post-5")
@@ -77,7 +75,7 @@ class HomeAbout extends React.Component {
       .on("mouseleave", function () {
         $(".cursor").removeClass("active-blog-post-5")
       })
-    //Blog post 6:
+
     $(".cursor-link-blog-post-6")
       .on("mouseenter", function () {
         $(".cursor").addClass("active-blog-post-6")
@@ -85,7 +83,7 @@ class HomeAbout extends React.Component {
       .on("mouseleave", function () {
         $(".cursor").removeClass("active-blog-post-6")
       })
-    //Blog post 7:
+
     $(".cursor-link-blog-post-7")
       .on("mouseenter", function () {
         $(".cursor").addClass("active-blog-post-7")
@@ -104,63 +102,6 @@ class HomeAbout extends React.Component {
   render() {
     return (
       <div className="about-home">
-        <div className="section-intro">
-          <h1>About</h1>
-        </div>
-        <div className="about-home-text">
-          <div>{/* <img src={funko} alt="funko" /> */}</div>
-          <h1>
-            Lover of any workplace comedy, cartoons, coffee, traveling and all
-            kinds of music (not in any particular order). Most recently I was
-            designing digital experiences at{" "}
-            <a
-              className="about-link"
-              target="_blank"
-              href="https://funko.com"
-              rel="noreferrer"
-            >
-              Funko
-            </a>
-            . Before Funko I was a creative tech intern at{" "}
-            <a
-              className="about-link"
-              target="_blank"
-              href="https://blackmath.com"
-              rel="noreferrer"
-            >
-              Black Math
-            </a>{" "}
-            doing work in Figma, React, Node and Spark AR for different clients. Previously I was also at{" "}
-            <a
-              className="about-link"
-              target="_blank"
-              href="https://icims.com"
-              rel="noreferrer"
-            >
-              iCIMS
-            </a>{" "}
-            and{" "}
-            <a
-              className="about-link"
-              target="_blank"
-              href="https://bobblehaus.com"
-              rel="noreferrer"
-            >
-              Bobblehaus
-            </a>.
-            <br></br><br></br>
-            Click to view my{" "}
-            <a
-              className="about-link"
-              target="_blank"
-              href="https://drive.google.com/file/d/1SubpvE2xl7dhFJgzvcZo3Wwk6ZVntGf2/view?usp=sharing"
-              rel="noreferrer"
-            >
-              Resume
-            </a>
-          </h1>
-        </div>
-
         {/* Work Section */}
 
         <div id="work">
@@ -295,6 +236,64 @@ class HomeAbout extends React.Component {
               </div>
             </div>
           </div>
+        </div>
+        <div className="section-intro">
+          <h1>About</h1>
+        </div>
+        <div className="about-home-text">
+          <div>{/* <img src={funko} alt="funko" /> */}</div>
+          <h1>
+            Most recently I was working on the digital experiences team at{" "}
+            <a
+              className="about-link"
+              target="_blank"
+              href="https://funko.com"
+              rel="noreferrer"
+            >
+              Funko
+            </a>
+            . I was responsible for designing and prototyping new features for
+            our direct to consumer e-commerce platform as well as the Funko
+            mobile app. Before Funko I was a creative tech intern at{" "}
+            <a
+              className="about-link"
+              target="_blank"
+              href="https://blackmath.com"
+              rel="noreferrer"
+            >
+              Black Math
+            </a>{" "}
+            doing work in Figma, React, Node and Spark AR for different clients.
+            Previously I was also at{" "}
+            <a
+              className="about-link"
+              target="_blank"
+              href="https://icims.com"
+              rel="noreferrer"
+            >
+              iCIMS
+            </a>{" "}
+            and{" "}
+            <a
+              className="about-link"
+              target="_blank"
+              href="https://bobblehaus.com"
+              rel="noreferrer"
+            >
+              Bobblehaus
+            </a>
+            .<br></br>
+            <br></br>
+            Click to view my{" "}
+            <a
+              className="about-link"
+              target="_blank"
+              href="https://drive.google.com/file/d/1SubpvE2xl7dhFJgzvcZo3Wwk6ZVntGf2/view?usp=sharing"
+              rel="noreferrer"
+            >
+              Resume
+            </a>
+          </h1>
         </div>
       </div>
     )

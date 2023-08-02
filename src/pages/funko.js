@@ -5,8 +5,6 @@ import "../styles/playground.scss"
 import Seo from "../components/seo"
 import Cursor from "../components/cursor"
 import HomeNav from "../components/homenav"
-
-
 import React, { useState, useEffect } from "react"
 import PasswordForm from "../PasswordForm"
 const ProtectedPage = () => {

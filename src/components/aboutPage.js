@@ -33,8 +33,8 @@ class About extends React.Component {
             <img className="about-image" src={me} alt="me" />
             <div className="about-content">
               <h1 className="about-text">
-                Hi I'm Eric. Currently I am a designer on the digital
-                experiences team at Funko, working on{" "}
+                Hi I'm Eric. Most recently I was a designer on the digital
+                experiences team at Funko crafting new experiences for{" "}
                 <a
                   className="about-link"
                   target="blank"
@@ -42,7 +42,7 @@ class About extends React.Component {
                 >
                   funko.com
                 </a>
-                ,
+                ,{" "}
                 <a
                   className="about-link"
                   target="blank"
@@ -50,9 +50,9 @@ class About extends React.Component {
                 >
                   loungefly.com
                 </a>
-                , as well as the Funko mobile app. I graduated in spring 2021
-                from the Savannah College of Art and Design with a BFA in User
-                Experience Design. Previously I was a creative tech intern at{" "}
+                , as well as the Funko mobile app. I am a graduate of the Savannah
+                College of Art and Design with a BFA in User Experience Design.
+                Previously I was a creative tech intern at{" "}
                 <a
                   className="about-link"
                   target="blank"
@@ -61,7 +61,7 @@ class About extends React.Component {
                   Black Math
                 </a>{" "}
                 collaborating on front-end web development and UX/UI design
-                based projects. I have also interned with{" "}
+                based projects for various clients. I have also interned with{" "}
                 <a
                   className="about-link"
                   target="blank"

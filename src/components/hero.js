@@ -8,10 +8,11 @@ import "animate.css/animate.css"
 
 class Hero extends React.Component {
   componentDidMount() {
-
+  
   }
 
   render() {
+    
     return (
       <div className="hero">
         <div className="hero-name">
