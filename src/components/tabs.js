@@ -10,6 +10,8 @@ import holidayone from "../images/funko/holidaysite/onemobile.png"
 import holidaytwo from "../images/funko/holidaysite/twomobile.png"
 import holidaythree from "../images/funko/holidaysite/threemobile.png"
 import freegift from "../images/videos/freegift.mp4"
+import tracker from "../images/funko/sdcc-tracker.png"
+import wishlist from "../images/funko/sdcc-wishlist.png"
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props
@@ -149,6 +151,26 @@ export default function BasicTabs() {
         <CustomTabPanel value={value} index={2}>
           <div className="funko-container">
             <h1>Convention Tracker</h1>
+            <div>
+              <h2>Overview</h2>
+              <p>
+                For use in major conventions such as San Diego Comic Con and New York Comic Con, this convention tracker is for fans to see what will be available for sale ahead of time on their own device. The wishlist feature allows users to mark specific items to keep track of what they specifically want out of the larger list.
+              </p>
+            </div>
+            <div className="two-grid">
+              <div>
+                <figure>
+                  <img src={tracker} alt="tracker" />
+                  <figcaption>Convention tracker</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src={wishlist} alt="wishlist" />
+                  <figcaption>Wishlist feature</figcaption>
+                </figure>
+              </div>
+            </div>
           </div>
         </CustomTabPanel>
         <CustomTabPanel value={value} index={3}></CustomTabPanel>

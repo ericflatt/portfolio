@@ -14,7 +14,7 @@
   }
 }
 
-.funko-header{
+.funko-header {
   margin-left: 60px;
   margin-right: 60px;
 }
@@ -84,8 +84,29 @@
   grid-column-gap: 16px;
   grid-row-gap: 0px;
 
-  img{
+  img {
     width: 70%;
+    @media only screen and (max-width: 1000px) {
+      width: 100%;
+    }
+  }
+}
+
+.two-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  figcaption {
+    text-align: center;
+  }
+  
+  img {
+    width: 75%;
+    display: block;
+    margin: auto;
     @media only screen and (max-width: 1000px) {
       width: 100%;
     }
