@@ -58,7 +58,7 @@ export default function BasicTabs() {
   return (
     <Box sx={{ width: "100%" }}>
       <Box>
-        <div style={{ marginTop: "80px" }} className="funko-header">
+        <div style={{ marginTop: "120px" }} className="funko-container">
           <h1>Hello,</h1>
           <p>
             Most recently I was a UX/UI Designer on the digital experience team
@@ -70,11 +70,11 @@ export default function BasicTabs() {
           </p>
         </div>
         <Tabs
-          className="tabs"
+          className="funko-container"
           value={value}
           onChange={handleChange}
           variant="scrollable"
-          scrollButtons
+          // scrollButtons
           allowScrollButtonsMobile
           aria-label="scrollable force tabs example"
         >
@@ -161,7 +161,7 @@ export default function BasicTabs() {
               <div>
                 <figure>
                   <img src={tracker} alt="tracker" />
-                  <figcaption>Convention tracker</figcaption>
+                  <figcaption>Convention item list</figcaption>
                 </figure>
               </div>
               <div>

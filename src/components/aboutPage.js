@@ -50,9 +50,8 @@ class About extends React.Component {
                 >
                   loungefly.com
                 </a>
-                , as well as the Funko mobile app. I am a graduate of the Savannah
-                College of Art and Design with a BFA in User Experience Design.
-                Previously I was a creative tech intern at{" "}
+                , as well as the Funko mobile app. Previously I was a creative
+                tech intern at{" "}
                 <a
                   className="about-link"
                   target="blank"
@@ -77,7 +76,9 @@ class About extends React.Component {
                 >
                   iCIMS
                 </a>{" "}
-                & worked freelance with Vera Roca.<br></br>
+                & worked freelance with Vera Roca. I am a graduate of the
+                Savannah College of Art and Design with a BFA in User Experience
+                Design.<br></br>
                 {/* <br></br> I was first drawn to UX because of my curiosity with
                 ever evolving technologies and exploring creative ways in which
                 we can use them. I set up a raspberry pi to post daily{" "}
@@ -104,7 +105,7 @@ class About extends React.Component {
                 <a
                   className="about-link"
                   target="blank"
-                  href="https://drive.google.com/file/d/1SubpvE2xl7dhFJgzvcZo3Wwk6ZVntGf2/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1l2F6jgD60kzYvbXyK_uP46TKVWFDuGJG/view?usp=sharing"
                 >
                   Resume
                 </a>{" "}

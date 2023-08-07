@@ -288,7 +288,7 @@ class HomeAbout extends React.Component {
             <a
               className="about-link"
               target="_blank"
-              href="https://drive.google.com/file/d/1SubpvE2xl7dhFJgzvcZo3Wwk6ZVntGf2/view?usp=sharing"
+              href="https://drive.google.com/file/d/1l2F6jgD60kzYvbXyK_uP46TKVWFDuGJG/view?usp=sharing"
               rel="noreferrer"
             >
               Resume
