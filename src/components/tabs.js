@@ -12,6 +12,8 @@ import holidaythree from "../images/funko/holidaysite/threemobile.png"
 import freegift from "../images/videos/freegift.mp4"
 import tracker from "../images/funko/sdcc-tracker.png"
 import wishlist from "../images/funko/sdcc-wishlist.png"
+import geico from "../images/funko/geico.png"
+import geicomobile from "../images/funko/geicomobile.png"
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props
@@ -39,14 +41,13 @@ CustomTabPanel.propTypes = {
   value: PropTypes.number.isRequired,
 }
 
-function a11yProps(index) {
-  // eslint-disable-line
+// function a11yProps(index) { // eslint-disable-line
 
-  return {
-    id: `simple-tab-${index}`,
-    "aria-controls": `simple-tabpanel-${index}`,
-  }
-}
+//   return {
+//     id: `simple-tab-${index}`,
+//     "aria-controls": `simple-tabpanel-${index}`,
+//   }
+// }
 
 export default function BasicTabs() {
   const [value, setValue] = React.useState(0)
@@ -70,7 +71,7 @@ export default function BasicTabs() {
           </p>
         </div>
         <Tabs
-          className="funko-container"
+          className="funko-container navigation"
           value={value}
           onChange={handleChange}
           variant="scrollable"
@@ -81,8 +82,8 @@ export default function BasicTabs() {
           <Tab label="Employee Holiday Site" />
           <Tab label="Choose Your Own Gift" />
           <Tab label="Convention Tracker" />
+          <Tab label="Geico" />
           <Tab label="Pop! Yourself" />
-          <Tab label="Item Five" />
           <Tab label="Item Six" />
           <Tab label="Item Seven" />
         </Tabs>
@@ -136,6 +137,18 @@ export default function BasicTabs() {
           <div className="funko-container">
             <h1>Choose Your Own Gift</h1>
             <div>
+              <h2 style={{ marginBottom: "8px" }}>Overview</h2>
+              <p>
+                The 'Choose your own gift' feature was a promotional offer that
+                provided customers with the option to select a free gift when
+                their cart's total value exceeded a certain threshold. As shown
+                in the prototype below, if a user were to choose 'No Thanks,'
+                they would not lose the opportunity. Instead of selecting a gift
+                at that moment, they would be given another opportunity when
+                they proceed to their cart.
+              </p>
+            </div>
+            <div>
               <h2>Prototype</h2>
               <video
                 className="video-container"
@@ -154,10 +167,14 @@ export default function BasicTabs() {
             <div>
               <h2>Overview</h2>
               <p>
-                For use in major conventions such as San Diego Comic Con and New York Comic Con, this convention tracker is for fans to see what will be available for sale ahead of time on their own device. The wishlist feature allows users to mark specific items to keep track of what they specifically want out of the larger list.
+                For use in major conventions such as San Diego Comic Con and New
+                York Comic Con, this convention tracker is for fans to see what
+                will be available for sale ahead of time on their own device.
+                The wishlist feature allows users to mark specific items to keep
+                track of what they specifically want out of the larger list.
               </p>
             </div>
-            <div className="two-grid">
+            <div style={{marginTop:"40px"}} className="two-grid">
               <div>
                 <figure>
                   <img src={tracker} alt="tracker" />
@@ -173,7 +190,48 @@ export default function BasicTabs() {
             </div>
           </div>
         </CustomTabPanel>
-        <CustomTabPanel value={value} index={3}></CustomTabPanel>
+        <CustomTabPanel value={value} index={3}>
+          <div className="funko-container">
+            <h1>Geico</h1>
+            <div>
+              <h2>Overview</h2>
+              <p>
+                For use in major conventions such as San Diego Comic Con and New
+                York Comic Con, this convention tracker is for fans to see what
+                will be available for sale ahead of time on their own device.
+                The wishlist feature allows users to mark specific items to keep
+                track of what they specifically want out of the larger list.
+                <br></br>
+                <br></br>
+                There were four potential colors to win: Green, Orange, White,
+                and Gold. Each color had its own corresponding redemption page,
+                giving the winner a unique experience for the Pop! they won.
+              </p>
+            </div>
+
+            <div>
+              <h2>Design</h2>
+              <figure>
+                <img
+                  className="geico-img"
+                  src={geico}
+                  alt="geico redemption site"
+                />
+                <figcaption>Geico x Funko winner redemption site</figcaption>
+              </figure>
+              <figure>
+                <img
+                  className="geico-mobile"
+                  src={geicomobile}
+                  alt="geico redemption site mobiel view"
+                />
+                <figcaption>
+                  Mobile view of Geico x Funko <br></br>winner redemption site
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </CustomTabPanel>
 
         {/* <footer className="funko-container funko-footer">
           <p>

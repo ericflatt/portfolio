@@ -16,7 +16,7 @@ const IndexPage = () => (
     <Helmet> 
       <meta
         name="description" 
-        content="Hi, I'm Eric. A UX Designer and Frontend Developer as well as a recent graduate of SCAD."
+        content="Hi, I'm Eric. A UX Designer who dabbles in front end dev."
       />
       <meta
         name="keywords"
