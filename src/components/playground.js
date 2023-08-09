@@ -29,7 +29,7 @@ class Playground extends React.Component {
                 <img className="play-image" src={startup} alt="comotion" />
               <a
                 className="about-link"
-                href="https://scadstartup.com"
+                href="https://2021.scadstartup.com/"
                 target="blank"
               >
                 <p>SCAD StartUp</p>
@@ -40,7 +40,7 @@ class Playground extends React.Component {
                 <img className="play-image" src={comotion} alt="comotion" />
               <a
                 className="about-link"
-                href="https://scadcomotion.com"
+                href="https://2021.scadcomotion.com/"
                 target="blank"
               >
                 <p>SCAD CoMotion</p>

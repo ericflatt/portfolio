@@ -65,7 +65,7 @@ export default function BasicTabs() {
   return (
     <Box sx={{ width: "100%" }}>
       <Box>
-        <div style={{ marginTop: "120px" }} className="funko-container">
+        <div style={{ marginTop: "120px" }} className="funko-container top-part">
           <h1>Hello,</h1>
           <p>
             Most recently I was a UX/UI Designer on the digital experience team
@@ -89,9 +89,9 @@ export default function BasicTabs() {
           <Tab label="Choose Your Own Gift" />
           <Tab label="Geico x Funko" />
           <Tab label="Convention Tracker" />
-          <Tab label="Pop! Yourself" />
+          {/* <Tab label="Pop! Yourself" />
           <Tab label="Item Six" />
-          <Tab label="Item Seven" />
+          <Tab label="Item Seven" /> */}
         </Tabs>
       </Box>
       <div>
