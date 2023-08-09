@@ -6,6 +6,7 @@ import Cursor from "../components/cursor"
 import NavButtons from "./navButtons"
 import MobileNav from "./mobilenav"
 import BasicTabs from "./tabs"
+import Footer from "./footer"
 
 
 class Funko extends React.Component {
@@ -23,7 +24,7 @@ class Funko extends React.Component {
         <Cursor />
         <NavButtons />
         <MobileNav />
-
+        <Footer />
       </div>
     )
   }

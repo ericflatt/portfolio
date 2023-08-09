@@ -14,6 +14,12 @@ import tracker from "../images/funko/sdcc-tracker.png"
 import wishlist from "../images/funko/sdcc-wishlist.png"
 import geico from "../images/funko/geico.png"
 import geicomobile from "../images/funko/geicomobile.png"
+import giftflow from "../images/funko/giftflow.png"
+import giftmodal from "../images/funko/giftmodal.png"
+import giftbanner from "../images/funko/giftbanner.png"
+import giftplp from "../images/funko/giftplp.png"
+import cart from "../images/funko/cart.png"
+import geicoflow from "../images/funko/geicoflow.png"
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props
@@ -81,14 +87,15 @@ export default function BasicTabs() {
         >
           <Tab label="Employee Holiday Site" />
           <Tab label="Choose Your Own Gift" />
+          <Tab label="Geico x Funko" />
           <Tab label="Convention Tracker" />
-          <Tab label="Geico" />
           <Tab label="Pop! Yourself" />
           <Tab label="Item Six" />
           <Tab label="Item Seven" />
         </Tabs>
       </Box>
       <div>
+        {/* Holiday Site */}
         <CustomTabPanel value={value} index={0}>
           <div className="funko-container">
             <h1 className="tab-title">Employee Holiday Site</h1>
@@ -133,6 +140,7 @@ export default function BasicTabs() {
             </div>
           </div>
         </CustomTabPanel>
+        {/* Choose your own gift */}
         <CustomTabPanel value={value} index={1}>
           <div className="funko-container">
             <h1>Choose Your Own Gift</h1>
@@ -148,6 +156,59 @@ export default function BasicTabs() {
                 they proceed to their cart.
               </p>
             </div>
+            <div style={{ marginTop: "40px" }}>
+              <h2>User Flow</h2>
+              <p>
+                Creating a user flow in Lucidchart was crucial to ensure a
+                successful developer handoff and feature launch. The complexity
+                of this feature escalates when a user's cart hovers around the
+                cart value threshold, but as you will see below that has been
+                accounted for in the designs. A customer will never lose the
+                opportunity for the free gift as long as the value of their cart
+                meets the threshold.
+              </p>
+              <img
+                width={"75%"}
+                style={{ paddingTop: "40px", display: "block", margin: "auto" }}
+                src={giftflow}
+                alt="choose your own gift user flow"
+              />
+            </div>
+            <h2 style={{ marginTop: "80px" }}>Design</h2>
+            <div className="gift-grid">
+              <figure>
+                <img
+                  width={"50%"}
+                  src={giftmodal}
+                  alt="choose your own gift modal"
+                />
+                <figcaption>Choose your own gift modal</figcaption>
+              </figure>
+              <figure style={{ display: "block", margin: "auto" }}>
+                <img
+                  width={"100%"}
+                  src={giftbanner}
+                  alt="choose your own gift cart banner"
+                />
+                <figcaption>Cart banner</figcaption>
+              </figure>
+              <figure>
+                <img
+                  width={"100%"}
+                  src={giftplp}
+                  alt="choose your own gift modal"
+                />
+                <figcaption>Product List Page with modal popup</figcaption>
+              </figure>
+              <figure>
+                <img
+                  width={"100%"}
+                  src={cart}
+                  alt="choose your own gift modal"
+                />
+                <figcaption>Banner in cart when no gift is selected</figcaption>
+              </figure>
+            </div>
             <div>
               <h2>Prototype</h2>
               <video
@@ -161,54 +222,29 @@ export default function BasicTabs() {
             </div>
           </div>
         </CustomTabPanel>
+        {/* Geico */}
         <CustomTabPanel value={value} index={2}>
           <div className="funko-container">
-            <h1>Convention Tracker</h1>
+            <h1>Geico x Funko Giveaway</h1>
             <div>
               <h2>Overview</h2>
+              <p>description here</p>
+            </div>
+            <div style={{ marginTop: "40px" }}>
+              <h2>User Flow</h2>
               <p>
-                For use in major conventions such as San Diego Comic Con and New
-                York Comic Con, this convention tracker is for fans to see what
-                will be available for sale ahead of time on their own device.
-                The wishlist feature allows users to mark specific items to keep
-                track of what they specifically want out of the larger list.
+                Below is the user flow for a Geico x Funko giveaway winner. A
+                winning customer, who wishes to claim their prize, follows the
+                instructions emailed to them and then proceeds to the Funko
+                redemption site.
               </p>
+              <img
+                width={"40%"}
+                style={{ paddingTop: "40px", display: "block", margin: "auto" }}
+                src={geicoflow}
+                alt="choose your own gift user flow"
+              />
             </div>
-            <div style={{marginTop:"40px"}} className="two-grid">
-              <div>
-                <figure>
-                  <img src={tracker} alt="tracker" />
-                  <figcaption>Convention item list</figcaption>
-                </figure>
-              </div>
-              <div>
-                <figure>
-                  <img src={wishlist} alt="wishlist" />
-                  <figcaption>Wishlist feature</figcaption>
-                </figure>
-              </div>
-            </div>
-          </div>
-        </CustomTabPanel>
-        <CustomTabPanel value={value} index={3}>
-          <div className="funko-container">
-            <h1>Geico</h1>
-            <div>
-              <h2>Overview</h2>
-              <p>
-                For use in major conventions such as San Diego Comic Con and New
-                York Comic Con, this convention tracker is for fans to see what
-                will be available for sale ahead of time on their own device.
-                The wishlist feature allows users to mark specific items to keep
-                track of what they specifically want out of the larger list.
-                <br></br>
-                <br></br>
-                There were four potential colors to win: Green, Orange, White,
-                and Gold. Each color had its own corresponding redemption page,
-                giving the winner a unique experience for the Pop! they won.
-              </p>
-            </div>
-
             <div>
               <h2>Design</h2>
               <figure>
@@ -232,13 +268,36 @@ export default function BasicTabs() {
             </div>
           </div>
         </CustomTabPanel>
-
-        {/* <footer className="funko-container funko-footer">
-          <p>
-            Please note: All projects during my employment at Funko are the sole
-            property of Funko.
-          </p>
-        </footer> */}
+        {/* Convention Tracker */}
+        <CustomTabPanel value={value} index={3}>
+          <div className="funko-container">
+            <h1>Convention Tracker</h1>
+            <div>
+              <h2>Overview</h2>
+              <p>
+                For use in major conventions such as San Diego Comic Con and New
+                York Comic Con, this convention tracker is for fans to see what
+                will be available for sale ahead of time on their own device.
+                The wishlist feature allows users to mark specific items to keep
+                track of what they specifically want out of the larger list.
+              </p>
+            </div>
+            <div style={{ marginTop: "40px" }} className="two-grid">
+              <div>
+                <figure>
+                  <img src={tracker} alt="tracker" />
+                  <figcaption>Convention item list</figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src={wishlist} alt="wishlist" />
+                  <figcaption>Wishlist feature</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </CustomTabPanel>
       </div>
     </Box>
   )
