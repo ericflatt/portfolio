@@ -65,7 +65,10 @@ export default function BasicTabs() {
   return (
     <Box sx={{ width: "100%" }}>
       <Box>
-        <div style={{ marginTop: "120px" }} className="funko-container top-part">
+        <div
+          style={{ marginTop: "120px" }}
+          className="funko-container top-part"
+        >
           <h1>Hello,</h1>
           <p>
             Most recently I was a UX/UI Designer on the digital experience team
@@ -85,9 +88,9 @@ export default function BasicTabs() {
           allowScrollButtonsMobile
           aria-label="scrollable force tabs example"
         >
-          <Tab label="Employee Holiday Site" />
           <Tab label="Choose Your Own Gift" />
           <Tab label="Geico x Funko" />
+          <Tab label="Employee Holiday Site" />
           <Tab label="Convention Tracker" />
           {/* <Tab label="Pop! Yourself" />
           <Tab label="Item Six" />
@@ -95,53 +98,8 @@ export default function BasicTabs() {
         </Tabs>
       </Box>
       <div>
-        {/* Holiday Site */}
-        <CustomTabPanel value={value} index={0}>
-          <div className="funko-container">
-            <h1 className="tab-title">Employee Holiday Site</h1>
-            <div>
-              <h2 style={{ marginBottom: "8px" }}>Overview</h2>
-              <p>
-                For the 2022 holiday season I designed a choose your gift
-                experience for employees of the Funko family of brands. The gift
-                selection experience was followed by the native shopify checkout
-                flow.
-              </p>
-            </div>
-            <div>
-              <h2 style={{ marginBottom: "8px" }}>Design</h2>
-              <p style={{ marginTop: "0" }}>
-                Designed with a mobile first mindset so employees can take part
-                from anywhere. On the live website, the background snow flakes
-                were animated for a fun holday touch.
-              </p>
-              <div className="three-grid">
-                <div>
-                  <img alt="holiday site" src={holidaytwo} />
-                </div>
-                <div>
-                  <img alt="holiday site" src={holidayone} />
-                </div>
-                <div>
-                  <img alt="holiday site" src={holidaythree} />
-                </div>
-              </div>
-            </div>
-            <div>
-              <h2>Prototype</h2>
-              <video
-                className="video-container"
-                autoPlay
-                muted
-                loop
-                controls
-                src={holiday}
-              />
-            </div>
-          </div>
-        </CustomTabPanel>
         {/* Choose your own gift */}
-        <CustomTabPanel value={value} index={1}>
+        <CustomTabPanel value={value} index={0}>
           <div className="funko-container">
             <h1>Choose Your Own Gift</h1>
             <div>
@@ -223,12 +181,12 @@ export default function BasicTabs() {
           </div>
         </CustomTabPanel>
         {/* Geico */}
-        <CustomTabPanel value={value} index={2}>
+        <CustomTabPanel value={value} index={1}>
           <div className="funko-container">
             <h1>Geico x Funko Giveaway</h1>
             <div>
               <h2>Overview</h2>
-              <p>description here</p>
+              <p>Around Halloween time in 2022, Geico and Funko partnered up to bring fans 'Geicoween,' a giveaway contest where fans could enter for a chance to win one of four limited edition Geico Gecko Funko Pops!</p>
             </div>
             <div style={{ marginTop: "40px" }}>
               <h2>User Flow</h2>
@@ -265,6 +223,51 @@ export default function BasicTabs() {
                   Mobile view of Geico x Funko <br></br>winner redemption site
                 </figcaption>
               </figure>
+            </div>
+          </div>
+        </CustomTabPanel>
+        {/* Holiday Site */}
+        <CustomTabPanel value={value} index={2}>
+          <div className="funko-container">
+            <h1 className="tab-title">Employee Holiday Site</h1>
+            <div>
+              <h2 style={{ marginBottom: "8px" }}>Overview</h2>
+              <p>
+                For the 2022 holiday season I designed a choose your gift
+                experience for employees of the Funko family of brands. The gift
+                selection experience was followed by the native shopify checkout
+                flow.
+              </p>
+            </div>
+            <div>
+              <h2 style={{ marginBottom: "8px" }}>Design</h2>
+              <p style={{ marginTop: "0" }}>
+                Designed with a mobile first mindset so employees can take part
+                from anywhere. On the live website, the background snow flakes
+                were animated for a fun holday touch.
+              </p>
+              <div className="three-grid">
+                <div>
+                  <img alt="holiday site" src={holidaytwo} />
+                </div>
+                <div>
+                  <img alt="holiday site" src={holidayone} />
+                </div>
+                <div>
+                  <img alt="holiday site" src={holidaythree} />
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2>Prototype</h2>
+              <video
+                className="video-container"
+                autoPlay
+                muted
+                loop
+                controls
+                src={holiday}
+              />
             </div>
           </div>
         </CustomTabPanel>
