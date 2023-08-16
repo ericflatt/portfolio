@@ -18,15 +18,15 @@ class Hero extends React.Component {
     //   window.requestAnimationFrame(parallax)
     // }
 
-    document.addEventListener("scroll", parallaxtwo)
-    var cloudtwo = document.getElementById("cloudtwo")
+    // document.addEventListener("scroll", parallaxtwo)
+    // var cloudtwo = document.getElementById("cloudtwo")
 
-    function parallaxtwo() {
-      Object.assign(cloudtwo.style, {
-        transform: "translateY(".concat(window.scrollY * 0.5, "px)"),
-      })
-      window.requestAnimationFrame(parallaxtwo)
-    }
+    // function parallaxtwo() {
+    //   Object.assign(cloudtwo.style, {
+    //     transform: "translateY(".concat(window.scrollY * 0.5, "px)"),
+    //   })
+    //   window.requestAnimationFrame(parallaxtwo)
+    // }
   }
 
   render() {
