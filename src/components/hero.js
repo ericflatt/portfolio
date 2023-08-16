@@ -5,22 +5,20 @@ import "../styles/main.scss"
 import "../styles/newhero.scss"
 import "animate.css/animate.css"
 import cloud from "../images/cloud.png"
+import Parallax from "react-rellax"
 
 class Hero extends React.Component {
   componentDidMount() {
     // document.addEventListener("scroll", parallax)
     // var cloud = document.getElementById("cloud")
-
     // function parallax() {
     //   Object.assign(cloud.style, {
     //     transform: "translateY(".concat(window.scrollY * 0.5, "px)"),
     //   })
     //   window.requestAnimationFrame(parallax)
     // }
-
     // document.addEventListener("scroll", parallaxtwo)
     // var cloudtwo = document.getElementById("cloudtwo")
-
     // function parallaxtwo() {
     //   Object.assign(cloudtwo.style, {
     //     transform: "translateY(".concat(window.scrollY * 0.5, "px)"),
@@ -45,12 +43,16 @@ class Hero extends React.Component {
       //   </div>
       // </div>
       <div>
-        <div id="cloud">
-          <img className="cloud" src={cloud} alt="cloud bg" />
-        </div>
-        <div id="cloudtwo">
-        <img className="cloud-two" src={cloud} alt="cloud bg" />
-        </div>
+        <Parallax speed={-6}>
+          <div id="cloud">
+            <img className="cloud" src={cloud} alt="cloud bg" />
+          </div>
+        </Parallax>
+        <Parallax speed={-4}>
+          <div id="cloudtwo">
+            <img className="cloud-two" src={cloud} alt="cloud bg" />
+          </div>
+        </Parallax>
         <div className="hero-container">
           <div className="hero-intro">
             <h2>
