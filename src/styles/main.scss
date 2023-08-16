@@ -517,14 +517,16 @@ a {
 }
 .cursor.cursor-shadow {
   background-color: transparent;
-  border: 1px solid #6193c3;
+  // border: 1px solid #6193c3;
+  border: 1px solid #000;
   --size: 40px;
   transition: top 0.2s, left 0.2s, width 0.2s, height 0.2s,
     background-color 0.2s, border-color 0.2s;
   transition-timing-function: ease-out;
 }
 .cursor.cursor-dot {
-  background: #6193c3;
+  // background: #6193c3;
+  background: #000;
   transition: width 0.2s, height 0.2s;
 }
 .cursor-shadow.active {

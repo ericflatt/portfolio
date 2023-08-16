@@ -108,9 +108,9 @@ class HomeAbout extends React.Component {
           <h1 className="section-intro">Work</h1>
           <div className="work">
             <div
-              data-aos="fade-up"
-              data-aos-delay="50"
-              data-aos-duration="1000"
+              // data-aos="fade-up"
+              // data-aos-delay="50"
+              // data-aos-duration="1000"
               className="wrapper work-item"
             >
               <div className="work-title work-item-inner">
