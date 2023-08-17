@@ -8,27 +8,11 @@ import cloud from "../images/cloud.png"
 import Parallax from "react-rellax"
 
 class Hero extends React.Component {
-  componentDidMount() {
-    // document.addEventListener("scroll", parallax)
-    // var cloud = document.getElementById("cloud")
-    // function parallax() {
-    //   Object.assign(cloud.style, {
-    //     transform: "translateY(".concat(window.scrollY * 0.5, "px)"),
-    //   })
-    //   window.requestAnimationFrame(parallax)
-    // }
-    // document.addEventListener("scroll", parallaxtwo)
-    // var cloudtwo = document.getElementById("cloudtwo")
-    // function parallaxtwo() {
-    //   Object.assign(cloudtwo.style, {
-    //     transform: "translateY(".concat(window.scrollY * 0.5, "px)"),
-    //   })
-    //   window.requestAnimationFrame(parallaxtwo)
-    // }
-  }
+  componentDidMount() {}
 
   render() {
     return (
+      // old hero
       // <div className="hero">
       //   <div className="hero-name">
       //     <div className="hero-animation">
