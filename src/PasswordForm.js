@@ -12,7 +12,7 @@ const PasswordForm = ({ setPasswordValid }) => {
   const handleSubmit = e => {
     e.preventDefault()
     // Replace 'your-password' with the actual password to protect the page
-    if (password === "funko2023") {
+    if (password === "funko") {
       localStorage.setItem("passwordValid", "true")
       setPasswordValid(true)
     } else {
