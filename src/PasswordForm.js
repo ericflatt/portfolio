@@ -7,6 +7,7 @@ import MobileNav from "./components/mobilenav"
 
 
 const PasswordForm = ({ setPasswordValid }) => {
+  
   const [password, setPassword] = useState("")
 
   const handleSubmit = e => {

@@ -12,6 +12,10 @@
   font-style: normal;
 }
 
+input[type="text"], input[type="password"] {
+  touch-action: manipulation; 
+}
+
 body {
   font-family: "Jost", sans-serif;
   margin: 0;

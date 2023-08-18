@@ -56,12 +56,12 @@ class MobileNav extends React.Component {
   render() {
     return (
       <div>
-        <div class="menu-toggle">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
+        <div className="menu-toggle">
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
         </div>
-        <div class="mobile-nav">
+        <div className="mobile-nav">
           <ul>
             <li>
               <Link id="home" to="/">
