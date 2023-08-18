@@ -18,7 +18,7 @@ const IndexPage = () => (
 
       <meta
         name="description" 
-        content="Hi, I'm Eric. A UX Designer who dabbles in front end dev."
+        content="Hi, I'm Eric. A UX Designer who dabbles in front end development."
       />
       <meta
         name="keywords"
