@@ -14,7 +14,7 @@ const IndexPage = () => (
   <main>
     <Seo title="Home" />
     <Helmet> 
-    <meta name="theme-color" content="#ffffff"/>
+    <meta name="theme-color" content="#f6f6f6"/>
 
       <meta
         name="description" 
