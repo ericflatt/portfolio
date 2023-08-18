@@ -14,6 +14,8 @@ const IndexPage = () => (
   <main>
     <Seo title="Home" />
     <Helmet> 
+    <meta name="theme-color" content="#ffffff"/>
+
       <meta
         name="description" 
         content="Hi, I'm Eric. A UX Designer who dabbles in front end dev."
