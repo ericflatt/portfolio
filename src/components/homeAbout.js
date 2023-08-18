@@ -104,7 +104,7 @@ class HomeAbout extends React.Component {
       <div className="about-home">
         {/* Work Section */}
 
-        <div id="work">
+        <div style={{paddingTop:"40px"}} id="work">
           <h1 className="section-intro">Work</h1>
           <div className="work">
             <div

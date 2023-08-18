@@ -7,6 +7,9 @@ class MobileNav extends React.Component {
   componentDidMount() {
     const menuToggle = document.querySelector(".menu-toggle")
     const mobileNav = document.querySelector(".mobile-nav")
+    const workLink = document.getElementById("worklink") // Get the "Work" link element
+    const home = document.getElementById("home") // Get the "Work" link element
+    const body = document.querySelector("body")
 
     menuToggle.addEventListener("click", () => {
       mobileNav.classList.toggle("active")
@@ -14,9 +17,25 @@ class MobileNav extends React.Component {
 
       if (mobileNav.classList.contains("active")) {
         animateBarsToX()
+        body.style.overflow = "hidden" // Prevent scrolling
       } else {
         resetBars()
+        body.style.overflow = "auto" // Revert back to normal scrolling
       }
+    })
+
+    workLink.addEventListener("click", () => {
+      mobileNav.classList.remove("active")
+      menuToggle.classList.remove("active")
+      resetBars()
+      body.style.overflow = "auto" // Revert back to normal scrolling
+    })
+
+    home.addEventListener("click", () => {
+      mobileNav.classList.remove("active")
+      menuToggle.classList.remove("active")
+      resetBars()
+      body.style.overflow = "auto" // Revert back to normal scrolling
     })
 
     function animateBarsToX() {
@@ -45,23 +64,19 @@ class MobileNav extends React.Component {
         <div class="mobile-nav">
           <ul>
             <li>
-              <Link to="/">
-                <div>
-                  <h1>Home</h1>
-                </div>
+              <Link id="home" to="/">
+                <div>Home</div>
               </Link>{" "}
             </li>
             <li>
-              <a href="#">About</a>
+              <Link id="worklink" to="/#work">
+                <div>Work</div>
+              </Link>{" "}
             </li>
             <li>
-              <a href="#">Services</a>
-            </li>
-            <li>
-              <a href="#">Portfolio</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
+              <Link to="/about">
+                <div>About</div>
+              </Link>{" "}
             </li>
           </ul>
         </div>
