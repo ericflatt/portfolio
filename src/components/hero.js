@@ -26,15 +26,20 @@ class Hero extends React.Component {
       //     </div>
       //   </div>
       // </div>
-      <div>
+      <div className="hero-box">
         <Parallax speed={-6}>
-          <div id="cloud">
+          <div>
             <img className="cloud" src={cloud} alt="cloud bg" />
           </div>
         </Parallax>
         <Parallax speed={-4}>
-          <div id="cloudtwo">
+          <div>
             <img className="cloud-two" src={cloud} alt="cloud bg" />
+          </div>
+        </Parallax>
+        <Parallax speed={-3}>
+          <div>
+            <img className="cloud-three" src={cloud} alt="cloud bg" />
           </div>
         </Parallax>
         <div className="hero-container">
@@ -43,6 +48,7 @@ class Hero extends React.Component {
               Hi <span className="wave">👋</span>, I'm Eric. A Product Designer
               living in Seattle, Washington.
             </h2>
+            <p>A little about me: Most recently I was working on the digital experiences team at Funko. I was responsible for designing and prototyping new features for our direct to consumer e-commerce platform as well as the Funko mobile app.</p>
           </div>
         </div>
       </div>

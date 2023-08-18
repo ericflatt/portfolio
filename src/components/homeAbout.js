@@ -237,11 +237,10 @@ class HomeAbout extends React.Component {
             </div>
           </div>
         </div>
-        <div className="section-intro">
+        {/* <div className="section-intro">
           <h1>About</h1>
         </div>
         <div className="about-home-text">
-          <div>{/* <img src={funko} alt="funko" /> */}</div>
           <h1>
             Most recently I was working on the digital experiences team at{" "}
             <a
@@ -294,7 +293,7 @@ class HomeAbout extends React.Component {
               Resume
             </a>
           </h1>
-        </div>
+        </div> */}
       </div>
     )
   }

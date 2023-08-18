@@ -432,9 +432,10 @@ img {
 }
 
 .work-sub-title {
-  font-family: "font";
-  font-size: 18px;
-  margin-bottom: -25px;
+  font-family: "jost";
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: -32px;
   color: #3f4248;
 }
 
@@ -766,13 +767,13 @@ nav {
   margin-top: 100px;
 }
 
-.mobile-nav {
-  position: fixed;
-  z-index: 99999;
-  @media only screen and (min-width: 1023px) {
-    display: none;
-  }
-}
+// .mobile-nav {
+//   position: fixed;
+//   z-index: 99999;
+//   @media only screen and (min-width: 1023px) {
+//     display: none;
+//   }
+// }
 
 /* Modal Content */
 .modal-content {
