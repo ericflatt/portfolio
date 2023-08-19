@@ -2,6 +2,21 @@
   height: 100vh;
 }
 
+.cssda{
+  width: 5%;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  pointer-events: all;
+  z-index: 9999999999999999;
+  @media (max-width: 768px) {
+    width: 7%;
+  }
+  @media (max-width: 500px) {
+    width: 10%;
+  }
+}
+
 .cloud {
   position: absolute;
   z-index: 1;
