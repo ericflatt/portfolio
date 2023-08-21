@@ -155,10 +155,36 @@
   max-width: 25%;
   margin-top: 40px;
   @media only screen and (max-width: 1000px) {
-    max-width: 50%;;
+    max-width: 50%;
   }
 }
 
 figure{
   margin: 0;
+}
+
+.side-nav{
+  img{
+    display: block;
+    margin: 0;
+    width: 50% !important;
+  }
+  figcaption{
+    text-align: left !important;
+    margin-top: 16px;
+  }
+}
+
+.protector{
+  width: 70%;
+  @media only screen and (max-width: 1000px) {
+    width: 100%;
+  }
+}
+
+.mobile-protector{
+  width: 25%;
+  @media only screen and (max-width: 1000px) {
+    width: 60%;
+  }
 }

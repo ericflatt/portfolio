@@ -20,6 +20,18 @@ import giftbanner from "../images/funko/giftbanner.png"
 import giftplp from "../images/funko/giftplp.png"
 import cart from "../images/funko/cart.png"
 import geicoflow from "../images/funko/geicoflow.png"
+import popyourself from "../images/funko/popyourself.png"
+import sidenav from "../images/funko/sidenav.png"
+import popmobile from "../images/funko/popmobile.png"
+import testresults from "../images/funko/usertest.png"
+import protector from "../images/funko/protector.png"
+import mobileprotector from "../images/funko/mobileprotector.png"
+import builder from "../images/funko/builder.png"
+
+
+
+
+
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props
@@ -70,14 +82,14 @@ export default function BasicTabs() {
           className="funko-container top-part"
         >
           <h1>Hello,</h1>
-          <p>
+          <span>
             Most recently I was a UX/UI Designer on the digital experience team
             at Funko.
             <br></br>
             Select a project below to see what I worked on.
             <br></br>
-            More content coming soon...
-          </p>
+            This page is a work in progress, more content will be added.
+          </span>
         </div>
         <Tabs
           className="funko-container navigation"
@@ -88,6 +100,7 @@ export default function BasicTabs() {
           allowScrollButtonsMobile
           aria-label="scrollable force tabs example"
         >
+          <Tab label="Pop! Yourself" />
           <Tab label="Choose Your Own Gift" />
           <Tab label="Geico x Funko" />
           <Tab label="Employee Holiday Site" />
@@ -98,13 +111,74 @@ export default function BasicTabs() {
         </Tabs>
       </Box>
       <div>
-        {/* Choose your own gift */}
+        {/* Convention Tracker */}
         <CustomTabPanel value={value} index={0}>
+          <div className="funko-container">
+            <h1>Pop! Yourself</h1>
+            <div>
+              <h2>Overview</h2>
+              <span>
+                Pop! Yourself online allows Funko fans to literally Pop-ify themselves. Until now this was available only at Funko's flagship stores in Everett, WA and Hollywood, CA.
+                <br></br>
+                <br></br>
+                My role on this project was to design and prototype the builder experience.
+              </span>
+            </div>
+            <h2>Design</h2>
+            <div style={{ marginTop: "40px" }} className="">
+              <div >
+              <figure style={{marginBottom:"40px"}}>
+                  <img width={"100%"} src={builder} alt="pop yourself looks good screen" />
+                  <figcaption>Pop! Yourself builder "Tops & Outfits" screen. Within the builder screens the user can see what option they have selected from the yellow outline among the options. </figcaption>
+                </figure>
+                <figure>
+                  <img width={"100%"} src={popyourself} alt="pop yourself looks good screen" />
+                  <figcaption>Overview of Pop! Yourself "Looks Good" screen. Here the user can choose to either buy the Pop!, save it as their avatar, or choose to share and download an image of their Pop!.</figcaption>
+                </figure>
+                
+              </div>
+              <div className="two-grid side-nav" style={{marginTop:"40px"}}>
+              <figure>
+                  <img className="side-nav-img"  src={popmobile} alt="pop yourself looks good screen" />
+                  <figcaption>Mobile View of Pop! Yourself "Looks Good" screen</figcaption>
+                </figure>
+                <figure>
+                  <img src={sidenav} className="side-nav-img" alt="pop yourself side nav" />
+                  <figcaption>The Pop! Yourself side navigation shows users both what section of the builder experience they are currently in, as well as a thumbnail image of the selection they made.</figcaption>
+                </figure>
+              </div>
+              <h2>Pop Protector Upsell</h2>
+              <span>At the end of the builder experience users are presented with the option to purchase a protective case for their Pop!. To determine the best experience we conducted user testing with a small group to see which design was preferred. Below are the results of the user testing that played a vital role in our design decisions.</span>
+              <div>
+                <img width={"100%"} src={testresults} alt="user test results" />
+              </div>
+              <div>
+                <h2>Pop Protector Upsell Design</h2>
+                <div>
+                  <figure>
+                  <img className="protector" src={protector} alt="pop protector upsell" />
+                  <figcaption>Desktop view of the Pop Protector Upsell</figcaption>
+                  </figure>
+                </div>
+                <div>
+                  <figure style={{marginTop:"40px"}}>
+                  <img className="mobile-protector"  src={mobileprotector} alt="pop protector upsell" />
+                  <figcaption>Mobile view of the Pop Protector Upsell</figcaption>
+                  </figure>
+                </div>
+              </div>
+              <h2>Builder Experience</h2>
+              <span>Click this <a rel="noreferrer" className="about-link" target="_blank" href="https://funko.com/pop-yourself/">Link</a> to experience the Pop! Yourself builder.</span>
+            </div>
+          </div>
+        </CustomTabPanel>
+        {/* Choose your own gift */}
+        <CustomTabPanel value={value} index={1}>
           <div className="funko-container">
             <h1>Choose Your Own Gift</h1>
             <div>
               <h2 style={{ marginBottom: "8px" }}>Overview</h2>
-              <p>
+              <span>
                 The 'Choose your own gift' feature was a promotional offer that
                 provided customers with the option to select a free gift when
                 their cart's total value exceeded a certain threshold. As shown
@@ -112,11 +186,11 @@ export default function BasicTabs() {
                 they would not lose the opportunity. Instead of selecting a gift
                 at that moment, they would be given another opportunity when
                 they proceed to their cart.
-              </p>
+              </span>
             </div>
             <div style={{ marginTop: "40px" }}>
               <h2>User Flow</h2>
-              <p>
+              <span>
                 Creating a user flow in Lucidchart was crucial to ensure a
                 successful developer handoff and feature launch. The complexity
                 of this feature escalates when a user's cart hovers around the
@@ -124,7 +198,7 @@ export default function BasicTabs() {
                 accounted for in the designs. A customer will never lose the
                 opportunity for the free gift as long as the value of their cart
                 meets the threshold.
-              </p>
+              </span>
               <img
                 width={"75%"}
                 style={{ paddingTop: "40px", display: "block", margin: "auto" }}
@@ -181,21 +255,26 @@ export default function BasicTabs() {
           </div>
         </CustomTabPanel>
         {/* Geico */}
-        <CustomTabPanel value={value} index={1}>
+        <CustomTabPanel value={value} index={2}>
           <div className="funko-container">
             <h1>Geico x Funko Giveaway</h1>
             <div>
               <h2>Overview</h2>
-              <p>Around Halloween time in 2022, Geico and Funko partnered up to bring fans 'Geicoween,' a giveaway contest where fans could enter for a chance to win one of four limited edition Geico Gecko Funko Pops!</p>
+              <span>
+                Around Halloween time in 2022, Geico and Funko partnered up to
+                bring fans 'Geicoween,' a giveaway contest where fans could
+                enter for a chance to win one of four limited edition Geico
+                Gecko Funko Pops!
+              </span>
             </div>
             <div style={{ marginTop: "40px" }}>
               <h2>User Flow</h2>
-              <p>
+              <span>
                 Below is the user flow for a Geico x Funko giveaway winner. A
                 winning customer, who wishes to claim their prize, follows the
                 instructions emailed to them and then proceeds to the Funko
                 redemption site.
-              </p>
+              </span>
               <img
                 width={"40%"}
                 style={{ paddingTop: "40px", display: "block", margin: "auto" }}
@@ -227,25 +306,25 @@ export default function BasicTabs() {
           </div>
         </CustomTabPanel>
         {/* Holiday Site */}
-        <CustomTabPanel value={value} index={2}>
+        <CustomTabPanel value={value} index={3}>
           <div className="funko-container">
             <h1 className="tab-title">Employee Holiday Site</h1>
             <div>
               <h2 style={{ marginBottom: "8px" }}>Overview</h2>
-              <p>
+              <span>
                 For the 2022 holiday season I designed a choose your gift
                 experience for employees of the Funko family of brands. The gift
                 selection experience was followed by the native shopify checkout
                 flow.
-              </p>
+              </span>
             </div>
             <div>
               <h2 style={{ marginBottom: "8px" }}>Design</h2>
-              <p style={{ marginTop: "0" }}>
+              <span style={{ marginTop: "0" }}>
                 Designed with a mobile first mindset so employees can take part
                 from anywhere. On the live website, the background snow flakes
                 were animated for a fun holday touch.
-              </p>
+              </span>
               <div className="three-grid">
                 <div>
                   <img alt="holiday site" src={holidaytwo} />
@@ -272,18 +351,18 @@ export default function BasicTabs() {
           </div>
         </CustomTabPanel>
         {/* Convention Tracker */}
-        <CustomTabPanel value={value} index={3}>
+        <CustomTabPanel value={value} index={4}>
           <div className="funko-container">
             <h1>Convention Tracker</h1>
             <div>
               <h2>Overview</h2>
-              <p>
+              <span>
                 For use in major conventions such as San Diego Comic Con and New
                 York Comic Con, this convention tracker is for fans to see what
                 will be available for sale ahead of time on their own device.
                 The wishlist feature allows users to mark specific items to keep
                 track of what they specifically want out of the larger list.
-              </p>
+              </span>
             </div>
             <div style={{ marginTop: "40px" }} className="two-grid">
               <div>
