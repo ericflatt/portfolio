@@ -46,8 +46,6 @@
     "styled-components": "^5.3.0",
     "tailwind.macro": "^0.5.10",
     "tailwindcss": "^2.2.4",
-    "tsparticles-engine": "^2.11.1",
-    "tsparticles-shape-confetti": "^1.14.2",
     "vanta": "^0.5.24"
   },
   "devDependencies": {
