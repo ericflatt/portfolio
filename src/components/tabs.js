@@ -87,8 +87,6 @@ export default function BasicTabs() {
             at Funko.
             <br></br>
             Select a project below to see what I worked on.
-            <br></br>
-            This page is a work in progress, more content will be added.
           </span>
         </div>
         <Tabs
