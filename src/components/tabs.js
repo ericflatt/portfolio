@@ -27,11 +27,26 @@ import testresults from "../images/funko/usertest.png"
 import protector from "../images/funko/protector.png"
 import mobileprotector from "../images/funko/mobileprotector.png"
 import builder from "../images/funko/builder.png"
-
-
-
-
-
+import logo from "../images/funko/funkologo.svg"
+import icons from "../images/funko/icons.png"
+import grids from "../images/funko/grids.png"
+import searchbreakdown from "../images/funko/searchbreakdown.png"
+import Collection from "../images/funko/CollectionButton.png"
+import CollectionActive from "../images/funko/CollectionActive.png"
+import ShareButton from "../images/funko/ShareButton.png"
+import ShopNow from "../images/funko/ShopNow.png"
+import searchbar from "../images/funko/searchbar.png"
+import activesearch from "../images/funko/activesearch.png"
+import productcard from "../images/funko/productcard.png"
+import cardbar from "../images/funko/cardbar.png"
+import header from "../images/funko/header.png"
+import footer from "../images/funko/footer.png"
+import rec from "../images/funko/rec.png"
+import plp from "../images/funko/plp.png"
+import homescreen from "../images/funko/homescreen.png"
+import pdp from "../images/funko/pdp.png"
+import lists from "../images/funko/lists.png"
+import wishlistribbon from "../images/funko/wishlist.png"
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props
@@ -81,12 +96,14 @@ export default function BasicTabs() {
           style={{ marginTop: "120px" }}
           className="funko-container top-part"
         >
-          <h1>Hello,</h1>
-          <span>
+          {/* <h1>Hello,</h1> */}
+          <img className="funko-logo" src={logo} alt="funko logo" />
+          <br></br>
+          <span style={{ textDecoration: "none", fontSize: "18px" }}>
             Most recently I was a UX/UI Designer on the digital experience team
             at Funko.
             <br></br>
-            Select a project below to see what I worked on.
+            Select a project from the tabs below to see what I worked on.
           </span>
         </div>
         <Tabs
@@ -98,6 +115,8 @@ export default function BasicTabs() {
           allowScrollButtonsMobile
           aria-label="scrollable force tabs example"
         >
+          <Tab label="Mobile App Design System" />
+          <Tab label="eBay in the Mobile App" />
           <Tab label="Pop! Yourself" />
           <Tab label="Choose Your Own Gift" />
           <Tab label="Geico x Funko" />
@@ -109,44 +128,236 @@ export default function BasicTabs() {
         </Tabs>
       </Box>
       <div>
-        {/* Convention Tracker */}
         <CustomTabPanel value={value} index={0}>
+          <div className="funko-container mobile-ds">
+            <h1>Mobile App Design System</h1>
+            <h2>Overview</h2>
+            <h3 className="template-copy">
+              The Funko mobile app utilizes Atomic Design methodology for its
+              design system. This method allows the mobile app to have a
+              scalable design system using all five stages of the atomic design
+              method to breakdown the design elements into small, reusable
+              components.
+            </h3>
+            <h2>Atoms</h2>
+            <h3>
+              Atoms are the base level of any design system, components broken
+              down as far as they can be without ceasing functionality.
+            </h3>
+            <div style={{ paddingTop: "8px" }}>
+              <h4>Icons used thoughout the mobile app</h4>
+              <img className="icon-grid" src={icons} alt="app icons" />
+            </div>
+            <hr></hr>
+            <div>
+              <h4>Grid for mobile phones and tablets</h4>
+              <img src={grids} alt="grid" />
+            </div>
+            <hr></hr>
+            <div>
+              <h4>
+                Breakdown of search bar molecule into its individual atoms.
+              </h4>
+              <img src={searchbreakdown} alt="search" />
+            </div>
+            <hr></hr>
+            <div>
+              <h4>
+                Breakdown of product card bar molecule into its individual
+                atoms.
+              </h4>
+              <img src={cardbar} alt="product card bar" />
+            </div>
+            <hr></hr>
+            <div>
+              <h4>List library ribbon</h4>
+              <img src={wishlistribbon} alt="wishlist ribbon" />
+            </div>
+            <hr></hr>
+            <div>
+              <h4>Buttons</h4>
+              <div className="collection-ctas">
+                <figure>
+                  <img src={Collection} alt="add to collection button" />
+                  <figcaption>Default Collection CTA State</figcaption>
+                </figure>
+                <figure>
+                  <img src={CollectionActive} alt="add to collection button" />
+                  <figcaption>Active Collection CTA State</figcaption>
+                </figure>
+              </div>
+              <div style={{ paddingTop: "24px" }} className="collection-ctas">
+                <figure>
+                  <img src={ShopNow} alt="add to collection button" />
+                  <figcaption>CTA for a Purchasable Item</figcaption>
+                </figure>
+                <figure>
+                  <img src={ShareButton} alt="add to collection button" />
+                  <figcaption>
+                    Share Button Using Native OS Share Activity
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <h2>Molecules</h2>
+            <h3>
+              The molecules are groups of atoms put together to create UI
+              elements.
+            </h3>
+            <div style={{ paddingTop: "8px" }}>
+              <h4>
+                Search form molecule composed of label, input and button atoms
+              </h4>
+              <img src={searchbar} alt="search form" />
+              <figure style={{ paddingTop: "24px" }}>
+                <img src={activesearch} alt="active search bar" />
+                <figcaption>Active Search Bar</figcaption>
+              </figure>
+              <hr></hr>
+              <figure style={{ paddingTop: "40px" }}>
+                <img src={productcard} alt="mobile app product card" />
+                <figcaption>
+                  Product cards used on Product List Pages
+                </figcaption>
+              </figure>
+            </div>
+            <h2>Organisms</h2>
+            <h3>
+              Organisms are more complex UI components made up of molecules and
+              atoms.
+            </h3>
+            <div>
+              <h4>Funko mobile app header and footer components</h4>
+              <div style={{ paddingTop: "24px" }}>
+                <img src={header} alt="mobile app header" />
+              </div>
+              <div>
+                <img src={footer} alt="mobile app footer" />
+              </div>
+            </div>
+            <hr></hr>
+            <div>
+              <h4>Recommended products carousel</h4>
+              <img src={rec} alt="recommended products" />
+            </div>
+            <hr></hr>
+            <div>
+              <h4>PLP Product card grid in use</h4>
+              <img src={plp} alt="product cards" />
+            </div>
+            <h2>Templates/Pages</h2>
+            <h3 className="template-copy">
+              Combining all the design system components creating templates to
+              work off of. These templates allow for easy iteration and creating
+              new features.
+            </h3>
+            <div>
+              <h4>Funko mobile app home screen</h4>
+              <img src={homescreen} alt="mobile app home screen" />
+            </div>
+            <hr></hr>
+            <div>
+              <h4>Product Display Page</h4>
+              <img src={pdp} alt="mobile app pdp" />
+            </div>
+            <hr></hr>
+            <div>
+              <h4>Product List Page</h4>
+              <img src={plp} alt="mobile app plp" />
+            </div>
+            <hr></hr>
+            <div>
+              <h4>Mobile App List Library</h4>
+              <img src={lists} alt="list library" />
+            </div>
+          </div>
+        </CustomTabPanel>
+        <CustomTabPanel value={value} index={1}>
+          <div className="funko-container">
+            <h1>eBay Integration in the Mobile App</h1>
+            <div>
+              <h3>eBay onboarding prototype</h3>
+            <iframe className="figma-proto" style={{border:"1px solid rgba(0 , 0, 0, .1)"}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fc7vnTCBzOUAa5AAZEQfxhC%2FeBay-Onboarding-proto%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D16-419%26viewport%3D-412%252C447%252C0.52%26t%3Dp1dS75FSMINVnSyd-1%26scaling%3Dscale-down%26starting-point-node-id%3D16%253A335%26mode%3Ddesign" allowfullscreen="true"></iframe>
+            </div>
+
+          </div>
+        </CustomTabPanel>
+        <CustomTabPanel value={value} index={2}>
           <div className="funko-container">
             <h1>Pop! Yourself</h1>
             <div>
               <h2>Overview</h2>
               <span>
-                Pop! Yourself online allows Funko fans to literally Pop-ify themselves. Until now this was available only at Funko's flagship stores in Everett, WA and Hollywood, CA.
+                Pop! Yourself online allows Funko fans to literally Pop-ify
+                themselves. Until now this was available only at Funko's
+                flagship stores in Everett, WA and Hollywood, CA.
                 <br></br>
                 <br></br>
-                My role on this project was to design and prototype the builder experience.
+                My role on this project was to design and prototype the builder
+                experience.
               </span>
             </div>
             <h2>Design</h2>
             <div style={{ marginTop: "40px" }} className="">
-              <div >
-              <figure style={{marginBottom:"40px"}}>
-                  <img width={"100%"} src={builder} alt="pop yourself looks good screen" />
-                  <figcaption>Pop! Yourself builder "Tops & Outfits" screen. Within the builder screens the user can see what option they have selected from the yellow outline among the options. </figcaption>
+              <div>
+                <figure style={{ marginBottom: "40px" }}>
+                  <img
+                    width={"100%"}
+                    src={builder}
+                    alt="pop yourself looks good screen"
+                  />
+                  <figcaption>
+                    Pop! Yourself builder "Tops & Outfits" screen. Within the
+                    builder screens the user can see what option they have
+                    selected from the yellow outline among the options.{" "}
+                  </figcaption>
                 </figure>
                 <figure>
-                  <img width={"100%"} src={popyourself} alt="pop yourself looks good screen" />
-                  <figcaption>Overview of Pop! Yourself "Looks Good" screen. Here the user can choose to either buy the Pop!, save it as their avatar, or choose to share and download an image of their Pop!.</figcaption>
+                  <img
+                    width={"100%"}
+                    src={popyourself}
+                    alt="pop yourself looks good screen"
+                  />
+                  <figcaption>
+                    Overview of Pop! Yourself "Looks Good" screen. Here the user
+                    can choose to either buy the Pop!, save it as their avatar,
+                    or choose to share and download an image of their Pop!.
+                  </figcaption>
                 </figure>
-                
               </div>
-              <div className="two-grid side-nav" style={{marginTop:"40px"}}>
-              <figure>
-                  <img className="side-nav-img"  src={popmobile} alt="pop yourself looks good screen" />
-                  <figcaption>Mobile View of Pop! Yourself "Looks Good" screen</figcaption>
+              <div className="two-grid side-nav" style={{ marginTop: "40px" }}>
+                <figure>
+                  <img
+                    className="side-nav-img"
+                    src={popmobile}
+                    alt="pop yourself looks good screen"
+                  />
+                  <figcaption>
+                    Mobile View of Pop! Yourself "Looks Good" screen
+                  </figcaption>
                 </figure>
                 <figure>
-                  <img src={sidenav} className="side-nav-img" alt="pop yourself side nav" />
-                  <figcaption>The Pop! Yourself side navigation shows users both what section of the builder experience they are currently in, as well as a thumbnail image of the selection they made.</figcaption>
+                  <img
+                    src={sidenav}
+                    className="side-nav-img"
+                    alt="pop yourself side nav"
+                  />
+                  <figcaption>
+                    The Pop! Yourself side navigation shows users both what
+                    section of the builder experience they are currently in, as
+                    well as a thumbnail image of the selection they made.
+                  </figcaption>
                 </figure>
               </div>
               <h2>Pop Protector Upsell</h2>
-              <span>At the end of the builder experience users are presented with the option to purchase a protective case for their Pop!. To determine the best experience we conducted user testing with a small group to see which design was preferred. Below are the results of the user testing that played a vital role in our design decisions.</span>
+              <span>
+                At the end of the builder experience users are presented with
+                the option to purchase a protective case for their Pop!. To
+                determine the best experience we conducted user testing with a
+                small group to see which design was preferred. Below are the
+                results of the user testing that played a vital role in our
+                design decisions.
+              </span>
               <div>
                 <img width={"100%"} src={testresults} alt="user test results" />
               </div>
@@ -154,24 +365,47 @@ export default function BasicTabs() {
                 <h2>Pop Protector Upsell Design</h2>
                 <div>
                   <figure>
-                  <img className="protector" src={protector} alt="pop protector upsell" />
-                  <figcaption>Desktop view of the Pop Protector Upsell</figcaption>
+                    <img
+                      className="protector"
+                      src={protector}
+                      alt="pop protector upsell"
+                    />
+                    <figcaption>
+                      Desktop view of the Pop Protector Upsell
+                    </figcaption>
                   </figure>
                 </div>
                 <div>
-                  <figure style={{marginTop:"40px"}}>
-                  <img className="mobile-protector"  src={mobileprotector} alt="pop protector upsell" />
-                  <figcaption>Mobile view of the Pop Protector Upsell</figcaption>
+                  <figure style={{ marginTop: "40px" }}>
+                    <img
+                      className="mobile-protector"
+                      src={mobileprotector}
+                      alt="pop protector upsell"
+                    />
+                    <figcaption>
+                      Mobile view of the Pop Protector Upsell
+                    </figcaption>
                   </figure>
                 </div>
               </div>
               <h2>Builder Experience</h2>
-              <span>Click this <a rel="noreferrer" className="about-link" target="_blank" href="https://funko.com/pop-yourself/">Link</a> to experience the Pop! Yourself builder.</span>
+              <span>
+                Click this{" "}
+                <a
+                  rel="noreferrer"
+                  className="about-link"
+                  target="_blank"
+                  href="https://funko.com/pop-yourself/"
+                >
+                  Link
+                </a>{" "}
+                to experience the Pop! Yourself builder.
+              </span>
             </div>
           </div>
         </CustomTabPanel>
         {/* Choose your own gift */}
-        <CustomTabPanel value={value} index={1}>
+        <CustomTabPanel value={value} index={3}>
           <div className="funko-container">
             <h1>Choose Your Own Gift</h1>
             <div>
@@ -253,7 +487,7 @@ export default function BasicTabs() {
           </div>
         </CustomTabPanel>
         {/* Geico */}
-        <CustomTabPanel value={value} index={2}>
+        <CustomTabPanel value={value} index={4}>
           <div className="funko-container">
             <h1>Geico x Funko Giveaway</h1>
             <div>
@@ -304,7 +538,7 @@ export default function BasicTabs() {
           </div>
         </CustomTabPanel>
         {/* Holiday Site */}
-        <CustomTabPanel value={value} index={3}>
+        <CustomTabPanel value={value} index={5}>
           <div className="funko-container">
             <h1 className="tab-title">Employee Holiday Site</h1>
             <div>
@@ -349,7 +583,7 @@ export default function BasicTabs() {
           </div>
         </CustomTabPanel>
         {/* Convention Tracker */}
-        <CustomTabPanel value={value} index={4}>
+        <CustomTabPanel value={value} index={6}>
           <div className="funko-container">
             <h1>Convention Tracker</h1>
             <div>

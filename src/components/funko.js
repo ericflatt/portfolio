@@ -15,7 +15,6 @@ class Funko extends React.Component {
 
   render() {
     const passwordValid = localStorage.getItem('passwordValid') === 'true';// eslint-disable-line
-
     return (
       <div>
         <Seo title="Funko" />

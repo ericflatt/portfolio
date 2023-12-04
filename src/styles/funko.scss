@@ -14,6 +14,14 @@
   }
 }
 
+body{
+  cursor: auto !important;
+}
+
+.cursor{
+  display: none !important;
+}
+
 .top-part{
   @media only screen and (max-width: 1000px) {
     padding-left: 24px;
@@ -65,8 +73,90 @@
   }
 }
 
+.funko-container{
+  img{
+    max-width: 100%;
+  }
+}
+
+.figma-proto{
+  width: 375px;
+  height: 450px;
+
+  @media (max-width:500px) {
+    width: 320px;
+  }
+}
+
+.collection-ctas{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;  
+}
+
+// .embed_documentation_footer--documentationFooterLeft--wXQbu{
+//   display: none;
+// }
+
+.mobile-ds{
+  hr{
+    height: 3px;
+    background-color: rgba(128, 128, 128, 0.250);
+    border: none;
+    border-radius: 50px;
+    margin-top: 16px;
+  }
+  img{
+    padding-bottom: 40px;
+  }
+  h3{
+    font-weight: 400;
+  }
+  h2{
+    padding-top: 40px;
+  }
+  figcaption{
+    margin-top: -20px;
+  }
+}
+
+.template-copy{
+  max-width: 70%;
+  @media (max-width:768px) {
+    max-width: 100%;
+  }
+}
+
+.icon-grid{
+ width: 40%;
+  @media (max-width:768px) {
+    width: 100%;
+  }
+}
+
+.grid-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 8px;
+  grid-row-gap: 16px;
+
+
+}
+
+.funko-logo{
+  width: 20%;
+  margin-bottom: 24px;
+  @media (max-width:768px) {
+    width: 50%;
+  }
+}
+
 .navigation {
   padding-bottom: 0 !important;
+  @media (max-width:768px) {
+    margin-left: 24px;
+  }
 }
 
 .funko-footer {
