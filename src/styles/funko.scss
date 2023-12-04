@@ -14,15 +14,15 @@
   }
 }
 
-body{
+body {
   cursor: auto !important;
 }
 
-.cursor{
+.cursor {
   display: none !important;
 }
 
-.top-part{
+.top-part {
   @media only screen and (max-width: 1000px) {
     padding-left: 24px;
   }
@@ -73,88 +73,130 @@ body{
   }
 }
 
-.funko-container{
-  img{
+.funko-container {
+  img {
     max-width: 100%;
   }
 }
 
-.figma-proto{
+.figma-proto {
   width: 375px;
   height: 450px;
 
-  @media (max-width:500px) {
+  @media (max-width: 500px) {
     width: 320px;
   }
 }
 
-.collection-ctas{
+.ebay-page {
+  p {
+    max-width: 70%;
+  }
+  @media (max-width: 768px) {
+    p {
+      max-width: 100%;
+    }
+  }
+}
+
+.ebay-list{
+  width: 320px;
+  height: auto;
+}
+
+.ebay-data{
+  img{
+    margin-top: 40px;
+    margin-bottom: 8px;
+    width: 320px;
+    height: auto;
+    // box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.ebay-browser{
+  img{
+    box-shadow: none !important;
+  }
+}
+
+.jess-img {
+  display: flex;
+  gap: 40px;
+  img {
+    margin-top: 40px;
+    margin-bottom: 8px;
+    width: 320px;
+    height: auto;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.collection-ctas {
   display: flex;
   flex-direction: row;
-  gap: 40px;  
+  gap: 40px;
 }
 
 // .embed_documentation_footer--documentationFooterLeft--wXQbu{
 //   display: none;
 // }
 
-.mobile-ds{
-  hr{
+.mobile-ds {
+  hr {
     height: 3px;
-    background-color: rgba(128, 128, 128, 0.250);
+    background-color: rgba(128, 128, 128, 0.25);
     border: none;
     border-radius: 50px;
     margin-top: 16px;
   }
-  img{
+  img {
     padding-bottom: 40px;
   }
-  h3{
+  h3 {
     font-weight: 400;
   }
-  h2{
+  h2 {
     padding-top: 40px;
   }
-  figcaption{
+  figcaption {
     margin-top: -20px;
   }
 }
 
-.template-copy{
+.template-copy {
   max-width: 70%;
-  @media (max-width:768px) {
+  @media (max-width: 768px) {
     max-width: 100%;
   }
 }
 
-.icon-grid{
- width: 40%;
-  @media (max-width:768px) {
+.icon-grid {
+  width: 40%;
+  @media (max-width: 768px) {
     width: 100%;
   }
 }
 
-.grid-grid{
+.grid-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 8px;
   grid-row-gap: 16px;
-
-
 }
 
-.funko-logo{
+.funko-logo {
   width: 20%;
   margin-bottom: 24px;
-  @media (max-width:768px) {
+  @media (max-width: 768px) {
     width: 50%;
   }
 }
 
 .navigation {
   padding-bottom: 0 !important;
-  @media (max-width:768px) {
+  @media (max-width: 768px) {
     margin-left: 24px;
   }
 }
@@ -219,29 +261,29 @@ body{
   grid-template-rows: 1fr;
   grid-column-gap: 40px;
   grid-row-gap: 40px;
-  
-  figure{
+
+  figure {
     position: relative;
   }
 
-  img{
+  img {
     padding-bottom: 24px;
   }
 
-  figcaption{
+  figcaption {
     position: absolute;
     bottom: 0;
   }
 }
 
-.geico-img{
+.geico-img {
   max-width: 75%;
   @media only screen and (max-width: 1000px) {
     max-width: 100%;
   }
 }
 
-.geico-mobile{
+.geico-mobile {
   max-width: 25%;
   margin-top: 40px;
   @media only screen and (max-width: 1000px) {
@@ -249,30 +291,30 @@ body{
   }
 }
 
-figure{
+figure {
   margin: 0;
 }
 
-.side-nav{
-  img{
+.side-nav {
+  img {
     display: block;
     margin: 0;
     width: 50% !important;
   }
-  figcaption{
+  figcaption {
     text-align: left !important;
     margin-top: 16px;
   }
 }
 
-.protector{
+.protector {
   width: 70%;
   @media only screen and (max-width: 1000px) {
     width: 100%;
   }
 }
 
-.mobile-protector{
+.mobile-protector {
   width: 25%;
   @media only screen and (max-width: 1000px) {
     width: 60%;

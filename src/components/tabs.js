@@ -47,6 +47,19 @@ import homescreen from "../images/funko/homescreen.png"
 import pdp from "../images/funko/pdp.png"
 import lists from "../images/funko/lists.png"
 import wishlistribbon from "../images/funko/wishlist.png"
+import oldjess from "../images/funko/oldjess.png"
+import ebayjess from "../images/funko/ebayjess.png"
+import ebaylist from "../images/funko/ebaylist.png"
+import ebaydata from "../images/funko/ebaydata.png"
+import ebaycollection from "../images/funko/ebaycollection.png"
+import condition from "../images/funko/condition.png"
+import listonebay from "../images/funko/listonebay.png"
+import ebaybrowser from "../images/funko/ebaybrowser.png"
+import sold from "../images/funko/sold.png"
+import start from "../images/funko/start.png"
+import middle from "../images/funko/middle.png"
+import end from "../images/funko/end.png"
+
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props
@@ -273,13 +286,205 @@ export default function BasicTabs() {
           </div>
         </CustomTabPanel>
         <CustomTabPanel value={value} index={1}>
-          <div className="funko-container">
+          <div className="funko-container ebay-page">
             <h1>eBay Integration in the Mobile App</h1>
             <div>
-              <h3>eBay onboarding prototype</h3>
-            <iframe className="figma-proto" style={{border:"1px solid rgba(0 , 0, 0, .1)"}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fc7vnTCBzOUAa5AAZEQfxhC%2FeBay-Onboarding-proto%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D16-419%26viewport%3D-412%252C447%252C0.52%26t%3Dp1dS75FSMINVnSyd-1%26scaling%3Dscale-down%26starting-point-node-id%3D16%253A335%26mode%3Ddesign" allowfullscreen="true"></iframe>
+              <h2>Overview</h2>
+              <p>
+                {" "}
+                The Funko mobile app will now get its data from eBay instead of
+                poppriceguide (PPG), the most impactful data point being the
+                trending value of a pop. Along with this partnership also comes
+                a new feature “Sell on eBay”, users can now list their pops for
+                sale directly through the Funko app.
+              </p>
+            </div>
+            <div>
+              <h2>Problem</h2>
+              <p>
+                Users were used to and trusted PPG to get the value of their
+                pops. With this data now coming from eBay, how might we gain
+                their trust and provide accurate data? Within the community eBay
+                has been known for having fake sales to bump up the value of
+                pops.
+              </p>
+              <div className="jess-img">
+                <figure>
+                  <img src={oldjess} alt="old version of app" />
+                  <figcaption>
+                    An old version of the Funko app using data from PPG
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src={ebayjess} alt="new version of app" />
+                  <figcaption>
+                    New version of the Funko app using data from eBay
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div>
+              <h2>Goal</h2>
+              <p>
+                Our goal is to provide the best experience to the user while
+                still keeping the Funko app as the best tool for collectors.
+              </p>
             </div>
 
+            <div>
+              <h2>Target Audience - End User</h2>
+              <p>
+                It is important to keep our power users, those who use the app
+                as a collection tool happy with these new features. At the same
+                time the room for growth is large with a new demographic of
+                users, i.e. those who sell on eBay. The Funko app can provide
+                those sellers an all in one tool to keep track of their
+                inventory whether that be a custom list or using the default
+                collection. As well as now within the same app the ability to
+                list and track their product on eBay.{" "}
+              </p>
+            </div>
+
+            <div>
+              <h2>Role</h2>
+              <p>
+                My role on the team was Hi-Fidelity design, prototyping, and
+                assisting with any user research or testing we performed. With
+                our findings from user testing I then went back and iterated
+                upon the designs using the insights gathered from research and
+                testing.
+              </p>
+            </div>
+
+            <div>
+              <h2>Scope and Constraints</h2>
+              <p>
+                Working with a short timeframe, V1 of adding eBay into the app
+                had to only include updating the trending value and adding the
+                “Sell on eBay” feature. Keeping V1 to these two features allowed
+                for proper testing and development.
+              </p>
+            </div>
+
+            <div className="ebay-data">
+              <h2>Solution</h2>
+              <div>
+                <h3>eBay trending value</h3>
+                <p>
+                  The trending value of pops now comes from eBay instead of PPG.
+                  This allows for more accurate data due to the eBay API
+                  refreshing at a much faster rate than relying on the old data
+                  from poppriceguide where the data was entered manually and
+                  inaccurately.
+                </p>
+                <img
+                  style={{ boxShadow: "0px 4px 6px 0px rgba(0, 0, 0, 0.15)" }}
+                  src={ebaydata}
+                  alt="ebay trending value"
+                />
+                <hr></hr>
+              </div>
+              <div>
+                <h3>eBay data shown in Product List Pages</h3>
+                <p>
+                  Shown below is how the new eBay data looks in product list
+                  pages such as a users collection page. Depending on how
+                  frequent a pop is selling, the data may change between "Last
+                  Sold" and "Trending Value".
+                </p>
+                <img src={ebaycollection} alt="users collection" />
+              </div>
+              <hr></hr>
+              <div>
+                <h3>List on eBay</h3>
+                <p>
+                  Users can start their listing by clicking the CTA on the
+                  specific products page. They are then brought to eBay through
+                  a browser window within the Funko app using native OS
+                  features.
+                </p>
+                <div className="jess-img ebay-browser">
+                  <figure>
+                    <img src={listonebay} alt="cta for list on ebay" />
+                  </figure>
+                  <figure>
+                    <img src={ebaybrowser} alt="browser for ebay" />
+                  </figure>
+                </div>
+              </div>
+              <hr></hr>
+              <div>
+                <h3>My eBay List in Funko app</h3>
+                <p>
+                  With the new "Sell on eBay" feature comes the "My eBay List",
+                  it is automatically created for users after they list their
+                  first item on eBay through the app.{" "}
+                </p>
+                <img className="ebay-list" src={ebaylist} alt="my ebay list" />
+              </div>
+              <hr></hr>
+              <div>
+                <h3>Mark item as sold</h3>
+                <p>
+                  Another new feature within the "My ebay List" is the ability
+                  to mark your items as sold. This allows users to keep track of
+                  their total amount sold via ebay through the Funko app
+                </p>
+                <img src={sold} alt="marked as sold" />
+              </div>
+              <hr></hr>
+              <div>
+                <h3>Item Condition</h3>
+                <p>
+                  Another new feature exclusive to the "My eBay List" is the
+                  ability to add an items condition. This helps users when they
+                  have multiple of the same product listed to help differentiate
+                  and keep track of their inventory.
+                </p>
+                <img
+                  style={{
+                    boxShadow: "0px 4px 6px 0px rgba(0, 0, 0, 0.15)",
+                    borderRadius: "8px",
+                  }}
+                  src={condition}
+                  alt="item condition"
+                />
+              </div>
+              <hr></hr>
+              <div>
+                <h3>eBay onboarding prototype</h3>
+                <p>As an effort to get users familiar and using these new features I put together an onboarding experience. This experience included the use of explanatory text along with gifs to show users all the different new features included with the eBay integration. A user will first see this onboarding experience on first launch of the Funko app after it has been made available. </p>
+                <div className="jess-img">
+                  <figure>
+                    <img src={start} alt="ebay proto" />
+                  </figure>
+                  <figure>
+                    <img src={middle} alt="ebay proto" />
+                  </figure>
+                  <figure>
+                    <img src={end} alt="ebay proto" />
+                  </figure>
+                </div>
+                <h3>Interactive prototype</h3>
+                <p>Fullscreen available and press "R" to restart. Press "ESC" to exit fullscreen.</p>
+                <p>Prototype flow:
+                  <br></br>
+                  The Funko app loads and users are immediately dropped into the onboarding experience.
+                  <br></br>
+                  Users can then navigate through the onboarding using the CTA's or exit out immediately to the app home page.
+                  <br></br>
+                  The option to reference back to the onboarding is provided via the "How does it work" cta on product pages.
+                </p>
+                <iframe
+                  title="figma proto"
+                  className="figma-proto"
+                  style={{ border: "1px solid rgba(0 , 0, 0, .1)", marginTop:"40px" }}
+                  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fc7vnTCBzOUAa5AAZEQfxhC%2FeBay-Onboarding-proto%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D16-419%26viewport%3D-412%252C447%252C0.52%26t%3Dp1dS75FSMINVnSyd-1%26scaling%3Dscale-down%26starting-point-node-id%3D16%253A335%26mode%3Ddesign"
+                  allowfullscreen="true"
+                ></iframe>
+              </div>
+            </div>
+            {/* <h3 style={{marginTop:"80px", textAlign:"center"}}>Thank You</h3> */}
           </div>
         </CustomTabPanel>
         <CustomTabPanel value={value} index={2}>
