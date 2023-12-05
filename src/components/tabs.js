@@ -59,6 +59,8 @@ import sold from "../images/funko/sold.png"
 import start from "../images/funko/start.png"
 import middle from "../images/funko/middle.png"
 import end from "../images/funko/end.png"
+import modal from "../images/funko/modal.png"
+
 
 
 function CustomTabPanel(props) {
@@ -280,6 +282,12 @@ export default function BasicTabs() {
             </div>
             <hr></hr>
             <div>
+              <h4>Modal</h4>
+              <p>This is an example of the basic structure of modals in the funko app. It can be used as a template to adapt to different needs.</p>
+              <img src={modal} alt="modal example" />
+            </div>
+            <hr></hr>
+            <div>
               <h4>Mobile App List Library</h4>
               <img src={lists} alt="list library" />
             </div>
@@ -436,7 +444,7 @@ export default function BasicTabs() {
               <div>
                 <h3>Item Condition</h3>
                 <p>
-                  Another new feature exclusive to the "My eBay List" is the
+                  Within the "My eBay List" is now the
                   ability to add an items condition. This helps users when they
                   have multiple of the same product listed to help differentiate
                   and keep track of their inventory.
