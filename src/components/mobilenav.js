@@ -17,7 +17,7 @@ class MobileNav extends React.Component {
 
       if (mobileNav.classList.contains("active")) {
         animateBarsToX()
-        body.style.overflow = "hidden" // Prevent scrolling
+        body.style.overflow = "auto" // Prevent scrolling
       } else {
         resetBars()
         body.style.overflow = "auto" // Revert back to normal scrolling
@@ -74,7 +74,7 @@ class MobileNav extends React.Component {
               </Link>{" "}
             </li>
             <li>
-              <Link to="/about">
+              <Link to="/about/">
                 <div>About</div>
               </Link>{" "}
             </li>
