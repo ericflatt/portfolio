@@ -115,7 +115,7 @@ class HomeAbout extends React.Component {
             >
               <div className="work-title work-item-inner">
                 <div className="work-sub-title">
-                  <p>Most Recent Job - UX/UI Designer</p>
+                  <p>Most Recent Work - UX/UI Designer</p>
                 </div>
                 <Link
                   className="view-cursor cursor-link-blog-post-7"
