@@ -3,7 +3,7 @@ import * as React from "react"
 import Seo from "../components/seo"
 import Hero from "../components/hero"
 import Cursor from "../components/cursor"
-import HomeNav from "../components/homenav"
+import NavButtons from "../components/navButtons"
 import HomeAbout from "../components/homeAbout"
 import "../styles/main.scss"
 import MobileNav from "../components/mobilenav"
@@ -34,7 +34,7 @@ const IndexPage = () => (
     <MobileNav />
     <Hero />
     <HomeAbout />
-    <HomeNav />
+    <NavButtons />
   </main>
 )
 

@@ -699,11 +699,11 @@ a {
   }
 }
 
-nav {
-  @media only screen and (max-width: 1023px) {
-    display: none;
-  }
-}
+// nav {
+//   @media only screen and (max-width: 1023px) {
+//     display: none;
+//   }
+// }
 
 .funkoimg {
   width: 15%;
@@ -715,9 +715,9 @@ nav {
   }
 }
 
-.nav-vis {
-  visibility: hidden;
-}
+// .nav-vis {
+//   visibility: hidden;
+// }
 
 .logo {
   span {
