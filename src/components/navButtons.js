@@ -57,7 +57,7 @@ class NavButtons extends React.Component {
           </div>
         </Link>
         <Link to="/#work">
-          <div style={{ marginRight: "175px" }} className="work-button">
+          <div style={{ marginRight: "175px", zIndex:"999" }} className="work-button">
             <div className="work-button__content">Work</div>
           </div>
         </Link>
