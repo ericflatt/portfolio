@@ -23,7 +23,7 @@ import digitalBalance from "../images/obo/digitalBalance.png"
 import indigo from "../images/obo/indigo.png"
 import Seo from "../components/seo"
 import Cursor from "../components/cursor"
-import PageNav from "../components/PageNav"
+import PageNav from "../components/pageNav"
 
 import "../styles/obo.scss"
 import MobileNav from "../components/mobilenav"

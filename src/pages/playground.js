@@ -6,7 +6,7 @@ import Playground from "../components/playground"
 import "../styles/main.scss"
 // import NavButtons from "../components/navButtons"
 import MobileNav from "../components/mobilenav"
-import PageNav from "../components/PageNav"
+import PageNav from "../components/pageNav"
 
 const IndexPage = () => (
   <main>

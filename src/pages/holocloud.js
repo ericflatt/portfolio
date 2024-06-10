@@ -6,7 +6,7 @@ import Seo from "../components/seo"
 import Cursor from "../components/cursor"
 import AOS from 'aos'
 import 'aos/dist/aos.css';
-import PageNav from "../components/PageNav"
+import PageNav from "../components/pageNav"
 import logo from "../images/holocloud/logo.png"
 import render from "../images/holocloud/render.png"
 import hub from "../images/holocloud/hub.png"
