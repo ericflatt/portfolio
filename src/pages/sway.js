@@ -7,7 +7,7 @@ import Seo from "../components/seo"
 import Cursor from "../components/cursor"
 import AOS from "aos"
 import "aos/dist/aos.css"
-import NavButtons from "../components/navButtons"
+import PageNav from "../components/PageNav"
 import logo from "../images/sway/logo.png"
 import swayrender from "../images/sway/swayrender.png"
 import personaone from "../images/sway/personaone.png"
@@ -37,7 +37,7 @@ class Sway extends React.Component {
     return (
       <div className="sway-body">
         <Seo title="Sway" />
-        <NavButtons />
+        <PageNav />
         <MobileNav />
         <Cursor />
         <div className="sway-wrapper">

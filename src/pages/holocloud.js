@@ -6,7 +6,7 @@ import Seo from "../components/seo"
 import Cursor from "../components/cursor"
 import AOS from 'aos'
 import 'aos/dist/aos.css';
-import NavButtons from "../components/navButtons"
+import PageNav from "../components/PageNav"
 import logo from "../images/holocloud/logo.png"
 import render from "../images/holocloud/render.png"
 import hub from "../images/holocloud/hub.png"
@@ -37,7 +37,7 @@ class About extends React.Component {
     return (
       <div className="holo-body">
         <Seo title="holo-cloud" />
-        <NavButtons /> 
+        <PageNav /> 
         <MobileNav />
         <Cursor />
         <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" className="holo-hero">

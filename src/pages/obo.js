@@ -23,7 +23,7 @@ import digitalBalance from "../images/obo/digitalBalance.png"
 import indigo from "../images/obo/indigo.png"
 import Seo from "../components/seo"
 import Cursor from "../components/cursor"
-import NavButtons from "../components/navButtons"
+import PageNav from "../components/PageNav"
 
 import "../styles/obo.scss"
 import MobileNav from "../components/mobilenav"
@@ -76,7 +76,7 @@ class Obo extends React.Component {
       return (
         <div>
           <Seo title="Obo" />
-          <NavButtons />
+          <PageNav />
           <MobileNav />
           <Cursor />
           <div className="App">

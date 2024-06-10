@@ -20,7 +20,7 @@ import Cursor from "../components/cursor"
 
 import "../styles/bond.scss"
 import MobileNav from "../components/mobilenav"
-import HomeNav from "../components/homenav"
+import PageNav from "../components/pageNav"
 
 const ThreeColumns = styled.div`
   display: grid;
@@ -39,7 +39,7 @@ function App() {
   return (
     <div>
       <Seo title="Bond" />
-      <HomeNav />
+      <PageNav />
       <MobileNav />
       <Cursor />
 

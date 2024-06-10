@@ -97,6 +97,37 @@ body {
   }
 }
 
+.page-nav{
+  position: fixed;
+  z-index: 900;
+  top: 40px;
+  right: 100px;
+  width: 140px;
+  height: 40px;
+  display: flex;
+  color: #000;
+  div{
+    color: #000;
+  }
+}
+
+.page-nav-item{
+  color: white;
+  border: 2px solid #13c897;
+  // border: 2px solid #a0d0fc;
+  border-radius: 20px;
+  padding: 4px 24px;
+  margin-right: 8px;
+  font-weight: 700;
+  transition: .4s ease;
+
+  &:hover{
+    background-color: #13c897;
+    color: #fff;
+    transition: .4 ease;
+  }
+}
+
 .work-button {
   position: fixed;
   z-index: 900;

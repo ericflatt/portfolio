@@ -3,7 +3,7 @@ import "../styles/main.scss"
 import "../styles/funko.scss"
 import Seo from "../components/seo"
 import Cursor from "../components/cursor"
-import NavButtons from "./navButtons"
+import PageNav from "./PageNav"
 import MobileNav from "./mobilenav"
 import BasicTabs from "./tabs"
 import Footer from "./footer"
@@ -21,7 +21,7 @@ class Funko extends React.Component {
         <BasicTabs />
         {/* <HomeNav /> */}
         <Cursor />
-        <NavButtons />
+        <PageNav />
         <MobileNav />
         <Footer />
       </div>

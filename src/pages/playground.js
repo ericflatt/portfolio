@@ -6,13 +6,13 @@ import Playground from "../components/playground"
 import "../styles/main.scss"
 // import NavButtons from "../components/navButtons"
 import MobileNav from "../components/mobilenav"
-import HomeNav from "../components/homenav"
+import PageNav from "../components/PageNav"
 
 const IndexPage = () => (
   <main>
     <Seo title="Playground" />
     <Playground />
-    <HomeNav />
+    <PageNav />
     <MobileNav />
   </main>
 )

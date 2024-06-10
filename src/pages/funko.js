@@ -4,7 +4,7 @@ import "../styles/main.scss"
 import "../styles/playground.scss"
 import Seo from "../components/seo"
 import Cursor from "../components/cursor"
-import HomeNav from "../components/homenav"
+// import PageNav from "../components/PageNav"
 import React from "react"
 // import React, { useState, useEffect } from "react"
 // import PasswordForm from "../PasswordForm"
@@ -38,7 +38,7 @@ import React from "react"
 const IndexPage = () => (
   <main>
     <Seo title="Funko" />
-    <HomeNav />
+    {/* <NavButtons /> */}
     <Cursor />
     <Funko />
   </main>
