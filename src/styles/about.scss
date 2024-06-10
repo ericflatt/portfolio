@@ -13,118 +13,177 @@
 //     }
 // }
 
-
-.about-image{
+.about-image {
   width: 30%;
-  @media only screen and (max-width:"1000px"){
+  @media only screen and (max-width: "1000px") {
     width: 50%;
   }
 }
 
-.about-content{
+.about-content {
   margin-left: auto;
   max-width: 1000px;
 }
 
-.about-text{
-    font-weight: 400;
-    font-size: 21px;
-    color: white;
+.about-text {
+  font-weight: 400;
+  font-size: 21px;
+  color: white;
 
-    @media only screen and (max-width:1000px){
-        font-size: 16px;
-    }
+  @media only screen and (max-width: 1000px) {
+    font-size: 16px;
+  }
 }
 
-.about-title{
+.about-title {
   font-size: 6rem;
   color: white;
-  padding-top: 100px;
+  // padding-top: 100px;
   margin: 0;
-    @media only screen and (max-width:768px){
+  @media only screen and (max-width: 768px) {
     font-size: 4rem;
-    line-height: .8;
-    margin-top: 100px;
+    line-height: 0.8;
+    margin-top: 24px;
     margin-bottom: 40px;
   }
 }
 
 .about-link {
-    display: inline-block;
-    position: relative;
+  display: inline-block;
+  position: relative;
+  color: #13c897;
+  text-decoration: none;
+  z-index: 2;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    // color: #6193C3;
     color: #13c897;
-    text-decoration: none;
-    z-index: 2;
-    transition:0.2s ease-in-out;
-    
-    &:hover {
-      // color: #6193C3;
-      color: #13c897;
-      border-bottom: none;
-      &:before {
-        transition: transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        transform-origin:left;
-         background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200%25' height='100%25'%3E%3Cdefs%3E%3Cstyle%3E .wave%7B animation:wave 1s ease-in-out infinite alternate; animation-delay:-0.25s; stroke:lightgreen; stroke-width:2; stroke-linecap:square; %7D @keyframes wave%7B to%7B d:path('M 0 40 Q 20 42.5 40 40 Q 60 37.5 80 40'); %7D %7D %3C/style%3E%3C/defs%3E%3Cpattern id='wavePattern' x='0' y='0' width='80' height='80' patternUnits='userSpaceOnUse'%3E%3Cpath fill='none' class='wave' d='M 0 40 Q 20 37.5 40 40 Q 60 42.5 80 40' /%3E%3C/pattern%3E%3Crect x='0' y='0' width='100%25' height='100%25' fill='url(%23wavePattern)'%3E%3C/rect%3E%3C/svg%3E")
-          0px 50% / 80px 80px repeat-x;
-        animation: waving 3s linear infinite;
-        transform: scaleX(1);
-        @keyframes waving {
-          to {
-            background-position: 80px 50%, 160px 50%;
-          }
+    border-bottom: none;
+    &:before {
+      transition: transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      transform-origin: left;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200%25' height='100%25'%3E%3Cdefs%3E%3Cstyle%3E .wave%7B animation:wave 1s ease-in-out infinite alternate; animation-delay:-0.25s; stroke:lightgreen; stroke-width:2; stroke-linecap:square; %7D @keyframes wave%7B to%7B d:path('M 0 40 Q 20 42.5 40 40 Q 60 37.5 80 40'); %7D %7D %3C/style%3E%3C/defs%3E%3Cpattern id='wavePattern' x='0' y='0' width='80' height='80' patternUnits='userSpaceOnUse'%3E%3Cpath fill='none' class='wave' d='M 0 40 Q 20 37.5 40 40 Q 60 42.5 80 40' /%3E%3C/pattern%3E%3Crect x='0' y='0' width='100%25' height='100%25' fill='url(%23wavePattern)'%3E%3C/rect%3E%3C/svg%3E")
+        0px 50% / 80px 80px repeat-x;
+      animation: waving 3s linear infinite;
+      transform: scaleX(1);
+      @keyframes waving {
+        to {
+          background-position:
+            80px 50%,
+            160px 50%;
         }
       }
     }
-    &:before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 80px;
-      left: 0;
-      bottom: -40px;
-      z-index: -1;
-      transform: scaleX(0);
-      transition: transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1);
-      transform-origin: right;
-      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200%25' height='100%25'%3E%3Cdefs%3E%3Cstyle%3E .wave%7B stroke:%7f6ed2; stroke-width:2; stroke-linecap:square; %7D %3C/style%3E%3C/defs%3E%3Cpattern id='wavePattern' x='0' y='0' width='80' height='80' patternUnits='userSpaceOnUse'%3E%3Cpath fill='none' class='wave' d='M 0 40 Q 20 40 40 40 Q 60 40 80 40' /%3E%3C/pattern%3E%3Crect x='0' y='0' width='100%25' height='100%25' fill='url(%23wavePattern)'%3E%3C/rect%3E%3C/svg%3E")
-        0px 50% / 80px 80px repeat-x;
-    }
   }
-
-  .launch-icon{
-      margin-bottom: -4px;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    left: 0;
+    bottom: -40px;
+    z-index: -1;
+    transform: scaleX(0);
+    transition: transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1);
+    transform-origin: right;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200%25' height='100%25'%3E%3Cdefs%3E%3Cstyle%3E .wave%7B stroke:%7f6ed2; stroke-width:2; stroke-linecap:square; %7D %3C/style%3E%3C/defs%3E%3Cpattern id='wavePattern' x='0' y='0' width='80' height='80' patternUnits='userSpaceOnUse'%3E%3Cpath fill='none' class='wave' d='M 0 40 Q 20 40 40 40 Q 60 40 80 40' /%3E%3C/pattern%3E%3Crect x='0' y='0' width='100%25' height='100%25' fill='url(%23wavePattern)'%3E%3C/rect%3E%3C/svg%3E")
+      0px 50% / 80px 80px repeat-x;
   }
-
-  .hover-gif{
-      visibility: visible;
-      width: 20%;
-      margin-left: 5px;
-  }
-
-  .me-image{
-      display: none;
-      width: 15%;
-      z-index: 999;
-      position: absolute;
-      top: 125px;
-      left: 245px;
-      transition: .2s ease;
-  }
-
-  .me{
-      // color: #7f6ed2;
-      color: #6193C3;
-  }
-
-  .me-visible{
-    display: inline-block;
-    transition: .2s ease;
 }
 
-.stone-pony{
+.launch-icon {
+  margin-bottom: -4px;
+}
+
+.hover-gif {
+  visibility: visible;
+  width: 20%;
+  margin-left: 5px;
+}
+
+.me-image {
+  display: none;
+  width: 15%;
+  z-index: 999;
+  position: absolute;
+  top: 125px;
+  left: 245px;
+  transition: 0.2s ease;
+}
+
+.me {
+  // color: #7f6ed2;
+  color: #6193c3;
+}
+
+.me-visible {
+  display: inline-block;
+  transition: 0.2s ease;
+}
+
+.stone-pony {
+  width: 50%;
+}
+.stone-ponytwo {
+  width: 25%;
+  margin-left: 25px;
+}
+
+.about-container {
+  display: flex;
+  height: 100vh;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-column,
+.right-column {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-column img {
+  width: 50%;
+  border-radius: 8px;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
+.right-column {
+  padding: 20px;
+}
+
+.right-column h1 {
+  margin-bottom: 20px;
+}
+
+.right-column p {
+  font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .left-column {
+    height: 50vh;
+  }
+
+  .left-column img {
+    height: auto;
+    border-radius: 0px;
     width: 50%;
-}
-.stone-ponytwo{
-    width: 25%;
-    margin-left: 25px;
+    padding-top: 64px;
+  }
+
+  .right-column {
+    // height: 50vh;
+    // padding: 10px;
+    // padding-top: 48px;
+  }
 }

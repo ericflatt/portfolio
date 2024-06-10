@@ -1,7 +1,7 @@
 import * as React from "react"
 // import { Link } from "gatsby"
 import Seo from "../components/seo"
-import About from "../components/aboutPage"
+import About from "../components/about"
 import "../styles/main.scss"
 // import NavButtons from "../components/navButtons"
 import MobileNav from "../components/mobilenav"
@@ -10,7 +10,7 @@ import Spline from "@splinetool/react-spline"
 import { Helmet } from "react-helmet"
 
 const IndexPage = () => (
-  <main>
+  <main style={{overflowY:"hidden"}}>
     <Seo title="About" />
     <Spline
       style={{ zIndex: "-1", backgroundColor: "#57797d" }}
