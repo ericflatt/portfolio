@@ -54,6 +54,9 @@
     "@types/tailwindcss": "^3.0.11",
     "prettier": "3.3.0"
   },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "keywords": [
     "gatsby"
   ],
