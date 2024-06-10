@@ -59,7 +59,7 @@ class NavButtons extends React.Component {
           </Link>
           <Link to="/about">
             <div className="desk-nav-item">
-              <div>About</div>
+              <div>About</div> 
             </div>
           </Link>
         </div>
