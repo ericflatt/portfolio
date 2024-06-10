@@ -26,12 +26,17 @@ canvas{
   inset: 0;
   height: 100%;
   opacity: .8;
+  overflow-x: hidden;
+}
+
+html{
+  overflow-x: hidden !important;
 }
 
 body {
   font-family: "Jost", sans-serif;
   margin: 0;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   width: 100%;
   cursor: none;
 }
