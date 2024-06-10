@@ -27,7 +27,7 @@ class NavButtons extends React.Component {
                 $target.attr("tabindex", "-1")
                 $target.focus()
               }
-            }
+            },
           )
         }
       })
@@ -51,16 +51,29 @@ class NavButtons extends React.Component {
           </Link>
         </div>
 
-        <Link to="/about">
+        <div className="desktop-nav">
+          <Link to="/#work">
+            <div style={{ marginRight: "24px" }} className="desk-nav-item">
+              <div>Work</div>
+            </div>
+          </Link>
+          <Link to="/about">
+            <div className="desk-nav-item">
+              <div>About</div>
+            </div>
+          </Link>
+        </div>
+
+        {/* <Link to="/about">
           <div className="work-button">
-            <div className="work-button__content">About</div>
+            <div  className="work-button__content">About</div>
           </div>
         </Link>
         <Link to="/#work">
           <div style={{ marginRight: "175px", zIndex:"999" }} className="work-button">
             <div className="work-button__content">Work</div>
           </div>
-        </Link>
+        </Link> */}
       </nav>
     )
   }

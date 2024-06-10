@@ -61,8 +61,6 @@ import middle from "../images/funko/middle.png"
 import end from "../images/funko/end.png"
 import modal from "../images/funko/modal.png"
 
-
-
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props
 
@@ -108,7 +106,7 @@ export default function BasicTabs() {
     <Box sx={{ width: "100%" }}>
       <Box>
         <div
-          style={{ marginTop: "120px" }}
+          style={{ paddingTop: "120px" }}
           className="funko-container top-part"
         >
           {/* <h1>Hello,</h1> */}
@@ -130,9 +128,9 @@ export default function BasicTabs() {
           allowScrollButtonsMobile
           aria-label="scrollable force tabs example"
         >
-          <Tab label="Mobile App Design System" />
           <Tab label="eBay in the Mobile App" />
           <Tab label="Pop! Yourself" />
+          <Tab label="Mobile App Design System" />
           <Tab label="Choose Your Own Gift" />
           <Tab label="Geico x Funko" />
           <Tab label="Employee Holiday Site" />
@@ -144,156 +142,6 @@ export default function BasicTabs() {
       </Box>
       <div>
         <CustomTabPanel value={value} index={0}>
-          <div className="funko-container mobile-ds">
-            <h1>Mobile App Design System</h1>
-            <h2>Overview</h2>
-            <h3 className="template-copy">
-              The Funko mobile app utilizes Atomic Design methodology for its
-              design system. This method allows the mobile app to have a
-              scalable design system using all five stages of the atomic design
-              method to breakdown the design elements into small, reusable
-              components.
-            </h3>
-            <h2>Atoms</h2>
-            <h3>
-              Atoms are the base level of any design system, components broken
-              down as far as they can be without ceasing functionality.
-            </h3>
-            <div style={{ paddingTop: "8px" }}>
-              <h4>Icons used thoughout the mobile app</h4>
-              <img className="icon-grid" src={icons} alt="app icons" />
-            </div>
-            <hr></hr>
-            <div>
-              <h4>Grid for mobile phones and tablets</h4>
-              <img src={grids} alt="grid" />
-            </div>
-            <hr></hr>
-            <div>
-              <h4>
-                Breakdown of search bar molecule into its individual atoms.
-              </h4>
-              <img src={searchbreakdown} alt="search" />
-            </div>
-            <hr></hr>
-            <div>
-              <h4>
-                Breakdown of product card bar molecule into its individual
-                atoms.
-              </h4>
-              <img src={cardbar} alt="product card bar" />
-            </div>
-            <hr></hr>
-            <div>
-              <h4>List library ribbon</h4>
-              <img src={wishlistribbon} alt="wishlist ribbon" />
-            </div>
-            <hr></hr>
-            <div>
-              <h4>Buttons</h4>
-              <div className="collection-ctas">
-                <figure>
-                  <img src={Collection} alt="add to collection button" />
-                  <figcaption>Default Collection CTA State</figcaption>
-                </figure>
-                <figure>
-                  <img src={CollectionActive} alt="add to collection button" />
-                  <figcaption>Active Collection CTA State</figcaption>
-                </figure>
-              </div>
-              <div style={{ paddingTop: "24px" }} className="collection-ctas">
-                <figure>
-                  <img src={ShopNow} alt="add to collection button" />
-                  <figcaption>CTA for a Purchasable Item</figcaption>
-                </figure>
-                <figure>
-                  <img src={ShareButton} alt="add to collection button" />
-                  <figcaption>
-                    Share Button Using Native OS Share Activity
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-            <h2>Molecules</h2>
-            <h3>
-              The molecules are groups of atoms put together to create UI
-              elements.
-            </h3>
-            <div style={{ paddingTop: "8px" }}>
-              <h4>
-                Search form molecule composed of label, input and button atoms
-              </h4>
-              <img src={searchbar} alt="search form" />
-              <figure style={{ paddingTop: "24px" }}>
-                <img src={activesearch} alt="active search bar" />
-                <figcaption>Active Search Bar</figcaption>
-              </figure>
-              <hr></hr>
-              <figure style={{ paddingTop: "40px" }}>
-                <img src={productcard} alt="mobile app product card" />
-                <figcaption>
-                  Product cards used on Product List Pages
-                </figcaption>
-              </figure>
-            </div>
-            <h2>Organisms</h2>
-            <h3>
-              Organisms are more complex UI components made up of molecules and
-              atoms.
-            </h3>
-            <div>
-              <h4>Funko mobile app header and footer components</h4>
-              <div style={{ paddingTop: "24px" }}>
-                <img src={header} alt="mobile app header" />
-              </div>
-              <div>
-                <img src={footer} alt="mobile app footer" />
-              </div>
-            </div>
-            <hr></hr>
-            <div>
-              <h4>Recommended products carousel</h4>
-              <img src={rec} alt="recommended products" />
-            </div>
-            <hr></hr>
-            <div>
-              <h4>PLP Product card grid in use</h4>
-              <img src={plp} alt="product cards" />
-            </div>
-            <h2>Templates/Pages</h2>
-            <h3 className="template-copy">
-              Combining all the design system components creating templates to
-              work off of. These templates allow for easy iteration and creating
-              new features.
-            </h3>
-            <div>
-              <h4>Funko mobile app home screen</h4>
-              <img src={homescreen} alt="mobile app home screen" />
-            </div>
-            <hr></hr>
-            <div>
-              <h4>Product Display Page</h4>
-              <img src={pdp} alt="mobile app pdp" />
-            </div>
-            <hr></hr>
-            <div>
-              <h4>Product List Page</h4>
-              <img src={plp} alt="mobile app plp" />
-            </div>
-            <hr></hr>
-            <div>
-              <h4>Modal</h4>
-              <p>This is an example of the basic structure of modals in the funko app. It can be used as a template to adapt to different needs.</p>
-              <img src={modal} alt="modal example" />
-            </div>
-            <hr></hr>
-            <div>
-              <h4>Mobile App List Library</h4>
-              <img src={lists} alt="list library" />
-            </div>
-          </div>
-        </CustomTabPanel>
-        <CustomTabPanel value={value} index={1}>
           <div className="funko-container ebay-page">
             <h1>eBay Integration in the Mobile App</h1>
             <div>
@@ -444,10 +292,10 @@ export default function BasicTabs() {
               <div>
                 <h3>Item Condition</h3>
                 <p>
-                  Within the "My eBay List" is now the
-                  ability to add an items condition. This helps users when they
-                  have multiple of the same product listed to help differentiate
-                  and keep track of their inventory.
+                  Within the "My eBay List" is now the ability to add an items
+                  condition. This helps users when they have multiple of the
+                  same product listed to help differentiate and keep track of
+                  their inventory.
                 </p>
                 <img
                   style={{
@@ -461,7 +309,15 @@ export default function BasicTabs() {
               <hr></hr>
               <div>
                 <h3>eBay onboarding prototype</h3>
-                <p>As an effort to get users familiar and using these new features I put together an onboarding experience. This experience included the use of explanatory text along with gifs to show users all the different new features included with the eBay integration. A user will first see this onboarding experience on first launch of the Funko app after it has been made available. </p>
+                <p>
+                  As an effort to get users familiar and using these new
+                  features I put together an onboarding experience. This
+                  experience included the use of explanatory text along with
+                  gifs to show users all the different new features included
+                  with the eBay integration. A user will first see this
+                  onboarding experience on first launch of the Funko app after
+                  it has been made available.{" "}
+                </p>
                 <div className="jess-img">
                   <figure>
                     <img src={start} alt="ebay proto" />
@@ -474,19 +330,29 @@ export default function BasicTabs() {
                   </figure>
                 </div>
                 <h3>Interactive prototype</h3>
-                <p>Fullscreen available and press "R" to restart. Press "ESC" to exit fullscreen.</p>
-                <p>Prototype flow:
+                <p>
+                  Fullscreen available and press "R" to restart. Press "ESC" to
+                  exit fullscreen.
+                </p>
+                <p>
+                  Prototype flow:
                   <br></br>
-                  The Funko app loads and users are immediately dropped into the onboarding experience.
+                  The Funko app loads and users are immediately dropped into the
+                  onboarding experience.
                   <br></br>
-                  Users can then navigate through the onboarding using the CTA's or exit out immediately to the app home page.
+                  Users can then navigate through the onboarding using the CTA's
+                  or exit out immediately to the app home page.
                   <br></br>
-                  The option to reference back to the onboarding is provided via the "How does it work" cta on product pages.
+                  The option to reference back to the onboarding is provided via
+                  the "How does it work" cta on product pages.
                 </p>
                 <iframe
                   title="figma proto"
                   className="figma-proto"
-                  style={{ border: "1px solid rgba(0 , 0, 0, .1)", marginTop:"40px" }}
+                  style={{
+                    border: "1px solid rgba(0 , 0, 0, .1)",
+                    marginTop: "40px",
+                  }}
                   src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fc7vnTCBzOUAa5AAZEQfxhC%2FeBay-Onboarding-proto%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D16-419%26viewport%3D-412%252C447%252C0.52%26t%3Dp1dS75FSMINVnSyd-1%26scaling%3Dscale-down%26starting-point-node-id%3D16%253A335%26mode%3Ddesign"
                   allowfullscreen="true"
                 ></iframe>
@@ -495,7 +361,8 @@ export default function BasicTabs() {
             {/* <h3 style={{marginTop:"80px", textAlign:"center"}}>Thank You</h3> */}
           </div>
         </CustomTabPanel>
-        <CustomTabPanel value={value} index={2}>
+
+        <CustomTabPanel value={value} index={1}>
           <div className="funko-container">
             <h1>Pop! Yourself</h1>
             <div>
@@ -572,7 +439,7 @@ export default function BasicTabs() {
                 design decisions.
               </span>
               <div>
-                <img width={"100%"} src={testresults} alt="user test results" />
+                <img width={"75%"} src={testresults} alt="user test results" />
               </div>
               <div>
                 <h2>Pop Protector Upsell Design</h2>
@@ -614,6 +481,159 @@ export default function BasicTabs() {
                 </a>{" "}
                 to experience the Pop! Yourself builder.
               </span>
+            </div>
+          </div>
+        </CustomTabPanel>
+        <CustomTabPanel value={value} index={2}>
+          <div className="funko-container mobile-ds">
+            <h1>Mobile App Design System</h1>
+            <h2>Overview</h2>
+            <h3 className="template-copy">
+              The Funko mobile app utilizes Atomic Design methodology for its
+              design system. This method allows the mobile app to have a
+              scalable design system using all five stages of the atomic design
+              method to breakdown the design elements into small, reusable
+              components.
+            </h3>
+            <h2>Atoms</h2>
+            <h3>
+              Atoms are the base level of any design system, components broken
+              down as far as they can be without ceasing functionality.
+            </h3>
+            <div style={{ paddingTop: "8px" }}>
+              <h4>Icons used thoughout the mobile app</h4>
+              <img className="icon-grid" src={icons} alt="app icons" />
+            </div>
+            <hr></hr>
+            <div>
+              <h4>Grid for mobile phones and tablets</h4>
+              <img src={grids} alt="grid" />
+            </div>
+            <hr></hr>
+            <div>
+              <h4>
+                Breakdown of search bar molecule into its individual atoms.
+              </h4>
+              <img src={searchbreakdown} alt="search" />
+            </div>
+            <hr></hr>
+            <div>
+              <h4>
+                Breakdown of product card bar molecule into its individual
+                atoms.
+              </h4>
+              <img src={cardbar} alt="product card bar" />
+            </div>
+            <hr></hr>
+            <div>
+              <h4>List library ribbon</h4>
+              <img src={wishlistribbon} alt="wishlist ribbon" />
+            </div>
+            <hr></hr>
+            <div>
+              <h4>Buttons</h4>
+              <div className="collection-ctas">
+                <figure>
+                  <img src={Collection} alt="add to collection button" />
+                  <figcaption>Default Collection CTA State</figcaption>
+                </figure>
+                <figure>
+                  <img src={CollectionActive} alt="add to collection button" />
+                  <figcaption>Active Collection CTA State</figcaption>
+                </figure>
+              </div>
+              <div style={{ paddingTop: "24px" }} className="collection-ctas">
+                <figure>
+                  <img src={ShopNow} alt="add to collection button" />
+                  <figcaption>CTA for a Purchasable Item</figcaption>
+                </figure>
+                <figure>
+                  <img src={ShareButton} alt="add to collection button" />
+                  <figcaption>
+                    Share Button Using Native OS Share Activity
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <h2>Molecules</h2>
+            <h3>
+              The molecules are groups of atoms put together to create UI
+              elements.
+            </h3>
+            <div style={{ paddingTop: "8px" }}>
+              <h4>
+                Search form molecule composed of label, input and button atoms
+              </h4>
+              <img src={searchbar} alt="search form" />
+              <figure style={{ paddingTop: "24px" }}>
+                <img src={activesearch} alt="active search bar" />
+                <figcaption>Active Search Bar</figcaption>
+              </figure>
+              <hr></hr>
+              <figure style={{ paddingTop: "40px" }}>
+                <img src={productcard} alt="mobile app product card" />
+                <figcaption>
+                  Product cards used on Product List Pages
+                </figcaption>
+              </figure>
+            </div>
+            <h2>Organisms</h2>
+            <h3>
+              Organisms are more complex UI components made up of molecules and
+              atoms.
+            </h3>
+            <div>
+              <h4>Funko mobile app header and footer components</h4>
+              <div style={{ paddingTop: "24px" }}>
+                <img src={header} alt="mobile app header" />
+              </div>
+              <div>
+                <img src={footer} alt="mobile app footer" />
+              </div>
+            </div>
+            <hr></hr>
+            <div>
+              <h4>Recommended products carousel</h4>
+              <img src={rec} alt="recommended products" />
+            </div>
+            <hr></hr>
+            <div>
+              <h4>PLP Product card grid in use</h4>
+              <img src={plp} alt="product cards" />
+            </div>
+            <h2>Templates/Pages</h2>
+            <h3 className="template-copy">
+              Combining all the design system components creating templates to
+              work off of. These templates allow for easy iteration and creating
+              new features.
+            </h3>
+            <div>
+              <h4>Funko mobile app home screen</h4>
+              <img src={homescreen} alt="mobile app home screen" />
+            </div>
+            <hr></hr>
+            <div>
+              <h4>Product Display Page</h4>
+              <img src={pdp} alt="mobile app pdp" />
+            </div>
+            <hr></hr>
+            <div>
+              <h4>Product List Page</h4>
+              <img src={plp} alt="mobile app plp" />
+            </div>
+            <hr></hr>
+            <div>
+              <h4>Modal</h4>
+              <p>
+                This is an example of the basic structure of modals in the funko
+                app. It can be used as a template to adapt to different needs.
+              </p>
+              <img src={modal} alt="modal example" />
+            </div>
+            <hr></hr>
+            <div>
+              <h4>Mobile App List Library</h4>
+              <img src={lists} alt="list library" />
             </div>
           </div>
         </CustomTabPanel>

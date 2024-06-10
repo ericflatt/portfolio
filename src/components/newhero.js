@@ -3,7 +3,7 @@ import React from "react"
 import "../styles/newhero.scss"
 import "../styles/main.scss"
 import "animate.css/animate.css"
-// import Cursor from "./cursor"
+import Cursor from "./cursor"
 import cloud from "../images/cloud.webp"
 // import Cloud from "../components/cloud"
 
@@ -20,14 +20,14 @@ class NewHero extends React.Component {
 
         <div className="left-side"></div>
         <div className="right-side"></div>
-        {/* <Cursor /> */}
+        <Cursor />
         <div className="hero-container">
-          <div className="hero-intro">
+          {/* <div className="hero-intro">
             <h2>
               Hi <span className="wave">👋</span>, I'm Eric. A Product Designer
               living in Seattle, Washington.
             </h2>
-          </div>
+          </div> */}
           <div className="project-list-grid">
             <div className="">
               <h1>Funko</h1>

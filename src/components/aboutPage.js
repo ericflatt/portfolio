@@ -12,6 +12,7 @@ import "animate.css/animate.css"
 
 class About extends React.Component {
   componentDidMount() {
+    // document.body.style = 'background: black;';
     $(".me")
       .on("mouseenter", function () {
         $(".me-image").addClass("me-visible")

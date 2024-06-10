@@ -8,6 +8,8 @@ import HomeAbout from "../components/homeAbout"
 import "../styles/main.scss"
 import MobileNav from "../components/mobilenav"
 import { Helmet } from "react-helmet"
+import Spline from '@splinetool/react-spline';
+
 
 const IndexPage = () => (
   
@@ -29,7 +31,10 @@ const IndexPage = () => (
       <meta name="language" content="English" />
       <meta name="author" content="Eric Flatt" />
     </Helmet>
-    <div className="noise"></div>
+    <div className="noise">
+      <Spline className="spline-bg" scene="https://prod.spline.design/vdwYHRH3oVcozf3e/scene.splinecode" />
+    </div>
+    
     <Cursor />
     <MobileNav />
     <Hero />

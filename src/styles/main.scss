@@ -16,6 +16,18 @@ input[type="text"], input[type="password"] {
   touch-action: manipulation; 
 }
 
+canvas{
+  cursor: default !important;
+}
+
+.spline-bg{
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  height: 100%;
+  opacity: .8;
+}
+
 body {
   font-family: "Jost", sans-serif;
   margin: 0;
@@ -37,7 +49,7 @@ body {
   z-index: -1;
   width: 200%;
   height: 200%;
-  background-color: #f6f6f6;
+  background-color: #57797d;
   // background-image: url("../images/noise.jpg");
   // background-repeat: repeat;
   // animation: noise 1s steps(2) infinite;
@@ -53,6 +65,37 @@ body {
 //   justify-content: center;
 //   // position: relative;
 // }
+
+.desktop-nav{
+  position: fixed;
+  z-index: 900;
+  top: 40px;
+  right: 100px;
+  width: 140px;
+  height: 40px;
+  display: flex;
+  color: #fff;
+  div{
+    color: #fff;
+  }
+}
+
+.desk-nav-item{
+  color: white;
+  border: 2px solid #13c897;
+  // border: 2px solid #a0d0fc;
+  border-radius: 20px;
+  padding: 4px 24px;
+  margin-right: 8px;
+  font-weight: 700;
+  transition: .4s ease;
+
+  &:hover{
+    background-color: #13c897;
+    color: #fff;
+    transition: .4 ease;
+  }
+}
 
 .work-button {
   position: fixed;
@@ -357,7 +400,7 @@ img {
 // }
 
 .project-color {
-  color: #3f4248;
+  color: #fff;
 }
 
 .work {
@@ -441,7 +484,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   margin-bottom: -32px;
-  color: #3f4248;
+  color: #fff;
 }
 
 @media (max-width: 1100px) {
@@ -456,6 +499,32 @@ img {
     padding: 0;
     margin: 20px;
     margin-bottom: 0;
+  }
+}
+
+.category{
+  font-size: 16px;
+  color: white;
+  @media (max-width: 768px) {
+    font-size: 8px;
+  }
+}
+
+.cat-list{
+  display: flex;
+
+  span{
+    border: 2px solid #13c897;
+    // border: 2px solid #a0d0fc;
+    border-radius: 20px;
+    padding: .5em .6em;;
+    margin-right: 8px;
+    font-weight: 700;
+    @media (max-width: 768px) {
+      font-weight: 400;
+      border: 1px solid #13c897;
+
+    }
   }
 }
 
@@ -510,42 +579,47 @@ a {
 // * {
 // 	cursor: none;
 // }
-
 .cursor {
-  @media only screen and (max-width: 768px) {
-    display: none;
-  }
-  --size: 8px;
-  height: var(--size);
-  width: var(--size);
-  border-radius: 50%;
-  position: absolute;
-  z-index: 10000;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
+    --size: 8px;
+    height: var(--size);
+    width:  var(--size);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10000;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    // turns on and off on hover image
+    // display: none;
 }
 .cursor.cursor-shadow {
-  background-color: transparent;
-  // border: 1px solid #6193c3;
-  border: 1px solid #000;
-  --size: 40px;
-  transition: top 0.2s, left 0.2s, width 0.2s, height 0.2s,
-    background-color 0.2s, border-color 0.2s;
-  transition-timing-function: ease-out;
+    // background-color: transparent;
+    // border: 1px solid #345a54;
+    // --size: 40px;
+    transition: top .2s, left .2s,
+                width .2s, height .2s,
+                background-color .2s, border-color 0.2s;
+    transition-timing-function: ease-out;
+
 }
 .cursor.cursor-dot {
-  // background: #6193c3;
-  background: #000;
-  transition: width 0.2s, height 0.2s;
+    background: #345a54;
+    transition: width .2s, height .2s;
+    display: none;
 }
 .cursor-shadow.active {
-  --size: 80px;
-  border-color: rgba(255, 255, 255, 0);
-  background-color: rgba(255, 255, 255, 0.1);
+    --size: 80px;
+    border-color: rgba(255,255,255, 0);
+    background-color: rgba(255,255,255,.1);
 }
 .cursor-dot.active {
-  --size: 0;
+	  --size: 0;
 }
+// a {
+// 	  cursor: pointer;
+// }
+// a:hover {
+//   	text-decoration: none;
+// }
 
 .cursor-shadow.active-blog-post-7 {
   background-image: url("../images/funko-crown.png");
@@ -671,6 +745,7 @@ a {
 
 .about-home {
   height: auto;
+  color: white;
   margin-top: 100px;
   // padding: 0 5%;
 }

@@ -103,8 +103,9 @@ class HomeAbout extends React.Component {
     return (
       <div className="about-home">
         {/* Work Section */}
-
-        <div style={{paddingTop:"40px"}} id="work">
+        {/* <div class="cursor cursor-shadow"></div>
+	<div class="cursor cursor-dot"></div> */}
+        <div style={{ paddingTop: "40px" }} id="work">
           <h1 className="section-intro">Work</h1>
           <div className="work">
             <div
@@ -115,13 +116,19 @@ class HomeAbout extends React.Component {
             >
               <div className="work-title work-item-inner">
                 <div className="work-sub-title">
-                  <p>Most Recent Work - UX/UI Designer</p>
+                  <p>UX/UI Designer</p>
                 </div>
                 <Link
                   className="view-cursor cursor-link-blog-post-7"
                   to="/funko"
                 >
                   <span className="project-color">Funko</span>
+                  <section className="cat-list">
+                    <span className="category">UX/UI</span>
+                    <span className="category">Responsive Web</span>
+                    <span className="category">Mobile App</span>
+                    <span className="category">Design System</span>
+                  </section>
                   <img
                     className="project-image freddy-image"
                     src={freddy}
@@ -132,9 +139,9 @@ class HomeAbout extends React.Component {
             </div>
 
             <div
-              data-aos="fade-up"
-              data-aos-delay="50"
-              data-aos-duration="1000"
+              // data-aos="fade-up"
+              // data-aos-delay="50"
+              // data-aos-duration="1000"
               className="wrapper work-item"
             >
               <div className="work-title work-item-inner">
@@ -146,6 +153,12 @@ class HomeAbout extends React.Component {
                   to="/holocloud"
                 >
                   <span className="project-color">Holo-cloud</span>
+                  <section className="cat-list">
+                    <span className="category">UX/UI</span>
+                    <span className="category">Interaction Design</span>
+                    <span className="category">Mobile App</span>
+                    <span className="category">Physical Product</span>
+                  </section>
                   <img
                     className="project-image holo-image"
                     src={upload}
@@ -156,9 +169,9 @@ class HomeAbout extends React.Component {
             </div>
 
             <div
-              data-aos="fade-up"
-              data-aos-delay="150"
-              data-aos-duration="1000"
+              // data-aos="fade-up"
+              // data-aos-delay="150"
+              // data-aos-duration="1000"
               className="work-item"
             >
               <div className="work-title work-item-inner">
@@ -167,6 +180,11 @@ class HomeAbout extends React.Component {
                 </div>
                 <Link className="view-cursor cursor-link-blog-post-2" to="/obo">
                   <span className="project-color">Obo</span>
+                  <section className="cat-list">
+                    <span className="category">UX/UI</span>
+                    <span className="category">Mobile App</span>
+                    <span className="category">Physical Product</span>
+                  </section>
                 </Link>
                 <img
                   className="project-image obo-image"
@@ -177,9 +195,9 @@ class HomeAbout extends React.Component {
             </div>
 
             <div
-              data-aos="fade-up"
-              data-aos-delay="150"
-              data-aos-duration="1000"
+              // data-aos="fade-up"
+              // data-aos-delay="150"
+              // data-aos-duration="1000"
               className="work-item"
             >
               <div className="work-title work-item-inner">
@@ -191,15 +209,20 @@ class HomeAbout extends React.Component {
                   to="/sway"
                 >
                   <span className="project-color">Sway</span>
+                  <section className="cat-list">
+                    <span className="category">Interaction Design</span>
+                    <span className="category">Arduino</span>
+                    <span className="category">Physical Product</span>
+                  </section>
                 </Link>
                 <img className="project-image sway-img" src={sway} alt="test" />
               </div>
             </div>
 
             <div
-              data-aos="fade-up"
-              data-aos-delay="250"
-              data-aos-duration="1000"
+              // data-aos="fade-up"
+              // data-aos-delay="250"
+              // data-aos-duration="1000"
               className="work-item"
             >
               <div className="work-title work-item-inner">
@@ -211,6 +234,11 @@ class HomeAbout extends React.Component {
                   to="/bond"
                 >
                   <span className="project-color">Bond</span>
+                  <section className="cat-list">
+                    <span className="category">Interaction Design</span>
+                    <span className="category">Mobile Design</span>
+                    <span className="category">UX/UI</span>
+                  </section>
                 </Link>
                 <img
                   className="project-image bond-img"
@@ -221,9 +249,9 @@ class HomeAbout extends React.Component {
             </div>
 
             <div
-              data-aos="fade-up"
-              data-aos-delay="250"
-              data-aos-duration="1000"
+              // data-aos="fade-up"
+              // data-aos-delay="250"
+              // data-aos-duration="1000"
               className="work-item"
             >
               <div className="work-title work-item-inner">
