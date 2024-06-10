@@ -10,18 +10,18 @@ import Spline from "@splinetool/react-spline"
 import { Helmet } from "react-helmet"
 
 const IndexPage = () => (
-  <main style={{overflowY:"hidden"}}>
+  <main>
     <Seo title="About" />
     <Spline
       style={{ zIndex: "-1", backgroundColor: "#57797d" }}
-      className="spline-bg"
+      className="spline-bg spline-mobile"
       scene="https://prod.spline.design/vdwYHRH3oVcozf3e/scene.splinecode"
     />
     <About />
     {/* <HomeNav /> */}
-    <MobileNav />
+    <MobileNav /> 
     <Helmet>
-      <style>{"body { background-color: #333333; }"}</style>
+      <style>{"body { background-color: #57797d; }"}</style>
     </Helmet>
   </main>
 )

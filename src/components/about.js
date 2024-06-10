@@ -29,7 +29,7 @@ class About extends React.Component {
         <NavButtons />
         <Cursor />
         <div class="about-container">
-        <div class="left-column">
+        <div class="left-column"> 
             <img src={me} alt="me" />
         </div>
         <div class="right-column">
