@@ -24,7 +24,7 @@ class About extends React.Component {
 
   render() {
     return (
-        <div>
+        <div style={{height:"100%"}}>
         <Seo title="About" />
         <NavButtons />
         <Cursor />

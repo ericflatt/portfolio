@@ -195,6 +195,7 @@
 .spline-mobile{
   @media (max-width:768px) {
     height: 180% !important;
-
+    z-index: -9999;
   }
 }
+

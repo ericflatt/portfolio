@@ -13,7 +13,7 @@ import Spline from '@splinetool/react-spline';
 
 const IndexPage = () => (
   
-  <main>
+  <main style={{overflowX:"hidden"}}>
     <Seo title="Home" />
     <Helmet> 
     <meta name="theme-color" content="#f6f6f6"/>
