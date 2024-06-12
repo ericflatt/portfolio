@@ -89,6 +89,7 @@ class Hero extends React.Component {
               features for our direct to consumer e-commerce platform as well as
               the Funko mobile app.
             </p>
+            <p>I am open for work.</p>
           </div>
           {/* <div className="hero-intro">
             <h2>
