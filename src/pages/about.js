@@ -12,11 +12,14 @@ import { Helmet } from "react-helmet"
 const IndexPage = () => (
   <main>
     <Seo title="About" />
+    <div className="spline-background">
     <Spline
-      style={{ zIndex: "-1", backgroundColor: "#57797d" }}
-      className="spline-bg spline-mobile"
+      style={{ zIndex: "-1", backgroundColor: "#57797d", height:"100%" }}
+      className="spline-mobile"
       scene="https://prod.spline.design/vdwYHRH3oVcozf3e/scene.splinecode"
     />
+    </div>
+
     <About />
     {/* <HomeNav /> */}
     <MobileNav /> 

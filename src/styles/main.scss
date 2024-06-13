@@ -29,6 +29,30 @@ canvas{
   // overflow-x: hidden;
 }
 
+
+.spline-about{
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  height: 100%;
+  opacity: .8;
+}
+
+.spline-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure it is behind other content */
+}
+
+.spline-background canvas {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 // html{
 //   overflow-x: hidden !important;
 // }
@@ -978,4 +1002,15 @@ nav {
 
 .password-button {
   margin-left: 8px;
+}
+
+.footer-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img{
+    margin: 8px;
+    width: 36px;
+    height: 36px;
+  }
 }

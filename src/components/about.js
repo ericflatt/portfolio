@@ -9,6 +9,7 @@ import NavButtons from "../components/navButtons"
 // import NavButtons from "../components/navButtons"
 import me from "../images/meandgus.png"
 import "animate.css/animate.css"
+// import CoverFlow from "./coverFlow"
 
 class About extends React.Component {
   componentDidMount() {
@@ -24,18 +25,20 @@ class About extends React.Component {
 
   render() {
     return (
-        <div style={{height:"100%"}}>
+      <div>
         <Seo title="About" />
         <NavButtons />
         <Cursor />
+        {/* <div>
+          <CoverFlow />
+        </div> */}
         <div class="about-container">
-        <div class="left-column"> 
+          <div class="left-column">
             <img src={me} alt="me" />
-        </div>
-        <div class="right-column">
-        <div className="about-content">
-        <h1 className="about-title">About me</h1>
-
+          </div>
+          <div class="right-column">
+            <div className="about-content">
+              <h1 className="about-title">About me</h1>
               <h1 className="about-text">
                 Hi I'm Eric. Most recently I was a designer on the digital
                 experiences team at Funko crafting new experiences for{" "}
@@ -111,9 +114,18 @@ class About extends React.Component {
                   target="blank"
                   href="https://drive.google.com/file/d/16aPC_zMT-e-Pj7BFGH8Y15Rd8QMg3XcL/view?usp=sharing"
                 >
-                  Resume
-                </a>{" "}
-                and feel free to contact me{" "}
+                  Resume{" "}
+                </a>
+                , {" "}
+                add me on {" "}
+                <a
+                  className="about-link"
+                  target="blank"
+                  href="https://linkedin.com/in/ericbflatt"
+                >
+                  LinkedIn
+                </a>
+                {" "}and feel free to contact me{" "}
                 <a
                   className="about-link"
                   target="blank"
@@ -128,11 +140,9 @@ class About extends React.Component {
                 </span>
               </h1>
             </div>
+          </div>
         </div>
-    </div>
-        </div>
-
-   
+      </div>
     )
   }
 }

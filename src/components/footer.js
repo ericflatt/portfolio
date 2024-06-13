@@ -1,22 +1,19 @@
 import React from "react"
 import "../styles/main.scss"
-import "../styles/funko.scss"
-
-
+import linkedin from "../images/linkedin.png"
+import email from "../images/email.png"
 
 class Footer extends React.Component {
-  
   componentDidMount() {}
 
   render() {
-
     return (
       <div>
-        <footer className="funko-container funko-footer">
-          <p>
-            Please note: All projects during my employment at Funko are the sole
-            property of Funko.
-          </p>
+        <footer className="">
+          <div className="footer-img">
+            <img src={email} alt="email me" />
+            <img src={linkedin} alt="linkedin profile" />
+          </div>
         </footer>
       </div>
     )
