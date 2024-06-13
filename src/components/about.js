@@ -125,14 +125,14 @@ class About extends React.Component {
                 >
                   LinkedIn
                 </a>
-                {" "}and feel free to contact me{" "}
+                {" "}and feel free to contact me at{" "}
                 <a
                   className="about-link"
                   target="blank"
                   href="mailto:eflatt18@gmail.com"
                 >
                   eflatt18@gmail.com
-                </a>
+                </a>.
                 <br></br>
                 <br></br>
                 <span style={{ paddingBottom: "80px" }}>
