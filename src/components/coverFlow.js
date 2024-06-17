@@ -1,88 +1,118 @@
-// // src/CoverFlowComponent.js
-// import React from "react"
-// import Coverflow from "react-coverflow"
-// import "../styles/about.scss"
+import React, { useState } from "react"
+import Coverflow from "react-coverflow"
+import "../styles/about.scss"
 
+const CoverFlow = () => {
+  const [activeIndex, setActiveIndex] = useState(3) // Starting at the middle image
 
-// const CoverFlow = () => {
-//   const handleAction = () => {
-//     /* do your action */
-//   }
+  const handleNext = () => {
+    setActiveIndex(prevIndex => (prevIndex + 1) % 6) // Assuming you have 6 images
+  }
 
-//   const coverflowContainerStyle = {
-//     display: "flex",
-//     justifyContent: "center",
-//     alignItems: "center",
-//     position: "relative",
-//   }
+  const handlePrev = () => {
+    setActiveIndex(prevIndex => {
+      if (prevIndex === 0) {
+        return 5 // Wrap around to the last image index (assuming 6 images, 0-indexed)
+      } else {
+        return prevIndex - 1
+      }
+    })
+  }
 
-//   return (
-//     <div style={coverflowContainerStyle}>
-//       <Coverflow
-//         width="960"
-//         height="fit-content"
-//         displayQuantityOfSide={2}
-//         navigation={false}
-//         enableHeading={false}
-//         // displayQuantityOfSide={2}
-//         // navigation={true}
-//         enableScroll={false}
-//         // enableHeading={true}
-//         // clickable={true}
-//         // active={0}
-//         // infiniteScroll
-//         // currentFigureScale={1.2}
-//         // otherFigureScale={0.9}
-//         // margin={10}
-//         media={{
-//           "@media (max-width: 900px)": {
-//             width: "600px",
-//             height: "300px",
-//           },
-//           "@media (min-width: 900px)": {
-//             width: "960px",
-//             height: "600px",
-//           },
-//         }}
-//       >
-//         <div
-//           onClick={() => handleAction()}
-//           onKeyDown={() => handleAction()}
-//           role="menuitem"
-//           tabIndex="0"
-//         >
-//           <img 
-//             src="https://via.placeholder.com/300x300?text=Cover+1"
-//             alt="Cover 1"
-//             style={{
-//               display: "block",
-//               width: "100%",
-//             }}
-//           />
-//         </div>
-//         <img
-//           src="https://via.placeholder.com/300x300?text=Cover+3"
-//           alt="Cover 2"
-//         />
-//         <img 
-//           src="https://via.placeholder.com/300x300?text=Cover+3"
-//           alt="Cover 3"
-//         />
-//         <img 
-//           src="https://via.placeholder.com/300x300?text=Cover+3"
-//           alt="Cover 3"
-//         />
-//         <img 
-//           src="https://via.placeholder.com/300x300?text=Cover+3"
-//           alt="Cover 3"
-//         />
-//         <img 
-//           src="https://via.placeholder.com/300x300?text=Cover+3"
-//           alt="Cover 3"
-//         />
-//       </Coverflow>
-//     </div>
-//   )
-// }
+  //   const handlePrev = () => {
+  //     setActiveIndex((prevIndex) => {
+  //       const newIndex = (prevIndex - 1) % 6; // Assuming you have 6 images
+  //       return newIndex;
+  //     });
+  //   };
 
-// export default CoverFlow
+  const coverflowContainerStyle = {
+    position: "relative",
+    width: "fit-content", // Adjust width based on the content size
+    height: "fit-content", // Adjust height based on the content size
+    margin: "auto", // Center the container horizontally
+  }
+
+  const buttonStyle = {
+    cursor: "pointer",
+    fontSize: "16px",
+  }
+
+  const buttons = {
+    display: "flex",
+    position: "absolute",
+    bottom: "10px",
+    width: "100%",
+    justifyContent: "center", // Center the buttons horizontally
+    gap: "16px", // Space between buttons
+    zIndex: "99999",
+  }
+
+  return (
+    <div style={coverflowContainerStyle}>
+      <div style={buttons}>
+        <button
+          className="buttonStyle"
+          style={buttonStyle}
+          onClick={handlePrev}
+        >
+          Prev
+        </button>
+        <button
+          className="buttonStyle"
+          style={buttonStyle}
+          onClick={handleNext}
+        >
+          Next
+        </button>
+      </div>
+      <Coverflow
+        displayQuantityOfSide={2}
+        navigation={false}
+        active={activeIndex}
+        enableScroll={false}
+        enableHeading={true}
+        media={{
+          "@media (max-width: 900px)": {
+            width: "300px",
+            height: "350px",
+            fontSize:"6px",
+            userSelect:"none"
+          },
+          "@media (min-width: 900px)": {
+            width: "960px",
+            height: "500px",
+            userSelect:"none"
+          },
+        }}
+      >
+        <img
+          src="https://i.scdn.co/image/ab67616d00001e0298890ab31b06f44bcc40db75"
+          alt="Modern Baseball - You're Gonna Miss It All"
+        />
+        <img
+          src="https://i.scdn.co/image/ab67616d00001e027b6e8e01a00f177dc80e5d37"
+          alt="Glitterer - Life Is Not A Lesson"
+        />
+        <img
+          src="https://i.scdn.co/image/ab67616d00001e02ab6c683264ddc16e2b1bf47b"
+          alt="Touché Amoré - Is Survived By"
+        />
+        <img
+          src="https://i.scdn.co/image/ab67616d00001e0290fb18e06e115f5baa7ea27f"
+          alt="Hesitation Wounds - Awake For Everything"
+        />
+        <img
+          src="https://i.scdn.co/image/ab67616d00001e021e0f1079538af43dcd994022"
+          alt="Modern Life Is War - Witness"
+        />
+        <img
+          src="https://i.scdn.co/image/ab67616d00001e02b15ba51b8751b5cf5a03eafd"
+          alt="Alexisonfire - Crisis"
+        />
+      </Coverflow>
+    </div>
+  )
+}
+
+export default CoverFlow

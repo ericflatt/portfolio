@@ -248,7 +248,7 @@ class HomeAbout extends React.Component {
               </div>
             </div>
 
-            <div
+            {/* <div
               // data-aos="fade-up"
               // data-aos-delay="250"
               // data-aos-duration="1000"
@@ -262,7 +262,7 @@ class HomeAbout extends React.Component {
                   <span className="project-color">Playground</span>
                 </Link>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         {/* <div className="section-intro">
