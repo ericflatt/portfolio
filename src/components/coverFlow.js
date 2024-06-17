@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import Coverflow from "react-coverflow"
 import "../styles/about.scss"
 
+
 const CoverFlow = () => {
   const [activeIndex, setActiveIndex] = useState(3) // Starting at the middle image
 

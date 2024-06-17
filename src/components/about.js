@@ -10,13 +10,26 @@ import NavButtons from "../components/navButtons"
 // import NavButtons from "../components/navButtons"
 import me from "../images/meandgus.png"
 import "animate.css/animate.css"
-import CoverFlow from "./coverFlow"
+// import CoverFlow from "./coverFlow"
 import startup from "../images/playground/startup.png"
 import comotion from "../images/playground/comotion.png"
 import twitter from "../images/playground/twitter.png"
 import spotify from "../images/playground/spotify.png"
 import flux from "../images/playground/flux.png"
+import { lazy } from 'react'
+import { Suspense } from 'react'
 
+const LazyCoverflow = () => {
+  if (typeof window === 'undefined') return <span>loading...</span>
+  const Component = lazy(() => import('./coverFlow'))
+  return (
+    <>
+      <Suspense fallback={<span>loading...</span>}>
+        <Component />
+      </Suspense>
+    </>
+  )
+}
 class About extends React.Component {
   componentDidMount() {
     // document.body.style = 'background: black;';
@@ -28,6 +41,8 @@ class About extends React.Component {
         $(".me-image").removeClass("me-visible")
       })
   }
+
+
 
   render() {
     return (
@@ -150,7 +165,7 @@ class About extends React.Component {
           </h2>
         </div>
         <div>
-          <CoverFlow />
+        <LazyCoverflow />
         </div>
         <div className="right-column music-section">
           <h2>
