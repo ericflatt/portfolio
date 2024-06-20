@@ -77,8 +77,7 @@ class About extends React.Component {
                 >
                   loungefly.com
                 </a>
-                , as well as the Funko mobile app. Previously I was a creative
-                tech intern at{" "}
+                , as well as the Funko mobile app. Previously I was a UI Designer/Developer at{" "}
                 <a
                   className="about-link"
                   target="blank"
