@@ -660,6 +660,11 @@ a {
 // * {
 // 	cursor: none;
 // }
+
+.tracker-img{
+  width: 50% !important;
+}
+
 .cursor {
     --size: 8px;
     height: var(--size);
@@ -670,7 +675,7 @@ a {
     transform: translate(-50%, -50%);
     pointer-events: none;
     // turns on and off on hover image
-    // display: none;
+    display: none;
 }
 .cursor.cursor-shadow {
     // background-color: transparent;
