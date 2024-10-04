@@ -129,8 +129,8 @@ export default function BasicTabs() {
           aria-label="scrollable force tabs example"
         >
           <Tab label="eBay in the Mobile App" />
-          <Tab label="Pop! Yourself" />
           <Tab label="Mobile App Design System" />
+          <Tab label="Pop! Yourself" />
           <Tab label="Choose Your Own Gift" />
           <Tab label="Geico x Funko" />
           <Tab label="Employee Holiday Site" />
@@ -361,130 +361,7 @@ export default function BasicTabs() {
             {/* <h3 style={{marginTop:"80px", textAlign:"center"}}>Thank You</h3> */}
           </div>
         </CustomTabPanel>
-
         <CustomTabPanel value={value} index={1}>
-          <div className="funko-container">
-            <h1>Pop! Yourself</h1>
-            <div>
-              <h2>Overview</h2>
-              <span>
-                Pop! Yourself online allows Funko fans to literally Pop-ify
-                themselves. Until now this was available only at Funko's
-                flagship stores in Everett, WA and Hollywood, CA.
-                <br></br>
-                <br></br>
-                My role on this project was to design and prototype the builder
-                experience.
-              </span>
-            </div>
-            <h2>Design</h2>
-            <div style={{ marginTop: "40px" }} className="">
-              <div>
-                <figure style={{ marginBottom: "40px" }}>
-                  <img
-                    width={"100%"}
-                    src={builder}
-                    alt="pop yourself looks good screen"
-                  />
-                  <figcaption>
-                    Pop! Yourself builder "Tops & Outfits" screen. Within the
-                    builder screens the user can see what option they have
-                    selected from the yellow outline among the options.{" "}
-                  </figcaption>
-                </figure>
-                <figure>
-                  <img
-                    width={"100%"}
-                    src={popyourself}
-                    alt="pop yourself looks good screen"
-                  />
-                  <figcaption>
-                    Overview of Pop! Yourself "Looks Good" screen. Here the user
-                    can choose to either buy the Pop!, save it as their avatar,
-                    or choose to share and download an image of their Pop!.
-                  </figcaption>
-                </figure>
-              </div>
-              <div className="two-grid side-nav" style={{ marginTop: "40px" }}>
-                <figure>
-                  <img
-                    className="side-nav-img"
-                    src={popmobile}
-                    alt="pop yourself looks good screen"
-                  />
-                  <figcaption>
-                    Mobile View of Pop! Yourself "Looks Good" screen
-                  </figcaption>
-                </figure>
-                <figure>
-                  <img
-                    src={sidenav}
-                    className="side-nav-img"
-                    alt="pop yourself side nav"
-                  />
-                  <figcaption>
-                    The Pop! Yourself side navigation shows users both what
-                    section of the builder experience they are currently in, as
-                    well as a thumbnail image of the selection they made.
-                  </figcaption>
-                </figure>
-              </div>
-              <h2>Pop Protector Upsell</h2>
-              <span>
-                At the end of the builder experience users are presented with
-                the option to purchase a protective case for their Pop!. To
-                determine the best experience we conducted user testing with a
-                small group to see which design was preferred. Below are the
-                results of the user testing that played a vital role in our
-                design decisions.
-              </span>
-              <div>
-                <img width={"75%"} src={testresults} alt="user test results" />
-              </div>
-              <div>
-                <h2>Pop Protector Upsell Design</h2>
-                <div>
-                  <figure>
-                    <img
-                      className="protector"
-                      src={protector}
-                      alt="pop protector upsell"
-                    />
-                    <figcaption>
-                      Desktop view of the Pop Protector Upsell
-                    </figcaption>
-                  </figure>
-                </div>
-                <div>
-                  <figure style={{ marginTop: "40px" }}>
-                    <img
-                      className="mobile-protector"
-                      src={mobileprotector}
-                      alt="pop protector upsell"
-                    />
-                    <figcaption>
-                      Mobile view of the Pop Protector Upsell
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-              <h2>Builder Experience</h2>
-              <span>
-                Click this{" "}
-                <a
-                  rel="noreferrer"
-                  className="about-link"
-                  target="_blank"
-                  href="https://funko.com/pop-yourself/"
-                >
-                  Link
-                </a>{" "}
-                to experience the Pop! Yourself builder.
-              </span>
-            </div>
-          </div>
-        </CustomTabPanel>
-        <CustomTabPanel value={value} index={2}>
           <div className="funko-container mobile-ds">
             <h1>Mobile App Design System</h1>
             <h2>Overview</h2>
@@ -637,6 +514,129 @@ export default function BasicTabs() {
             </div>
           </div>
         </CustomTabPanel>
+        <CustomTabPanel value={value} index={2}>
+          <div className="funko-container">
+            <h1>Pop! Yourself</h1>
+            <div>
+              <h2>Overview</h2>
+              <span>
+                Pop! Yourself online allows Funko fans to literally Pop-ify
+                themselves. Until now this was available only at Funko's
+                flagship stores in Everett, WA and Hollywood, CA.
+                <br></br>
+                <br></br>
+                My role on this project was to design and prototype the builder
+                experience.
+              </span>
+            </div>
+            <h2>Design</h2>
+            <div style={{ marginTop: "40px" }} className="">
+              <div>
+                <figure style={{ marginBottom: "40px" }}>
+                  <img
+                    width={"100%"}
+                    src={builder}
+                    alt="pop yourself looks good screen"
+                  />
+                  <figcaption>
+                    Pop! Yourself builder "Tops & Outfits" screen. Within the
+                    builder screens the user can see what option they have
+                    selected from the yellow outline among the options.{" "}
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img
+                    width={"100%"}
+                    src={popyourself}
+                    alt="pop yourself looks good screen"
+                  />
+                  <figcaption>
+                    Overview of Pop! Yourself "Looks Good" screen. Here the user
+                    can choose to either buy the Pop!, save it as their avatar,
+                    or choose to share and download an image of their Pop!.
+                  </figcaption>
+                </figure>
+              </div>
+              <div className="two-grid side-nav" style={{ marginTop: "40px" }}>
+                <figure>
+                  <img
+                    className="side-nav-img"
+                    src={popmobile}
+                    alt="pop yourself looks good screen"
+                  />
+                  <figcaption>
+                    Mobile View of Pop! Yourself "Looks Good" screen
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img
+                    src={sidenav}
+                    className="side-nav-img"
+                    alt="pop yourself side nav"
+                  />
+                  <figcaption>
+                    The Pop! Yourself side navigation shows users both what
+                    section of the builder experience they are currently in, as
+                    well as a thumbnail image of the selection they made.
+                  </figcaption>
+                </figure>
+              </div>
+              <h2>Pop Protector Upsell</h2>
+              <span>
+                At the end of the builder experience users are presented with
+                the option to purchase a protective case for their Pop!. To
+                determine the best experience we conducted user testing with a
+                small group to see which design was preferred. Below are the
+                results of the user testing that played a vital role in our
+                design decisions.
+              </span>
+              <div>
+                <img width={"75%"} src={testresults} alt="user test results" />
+              </div>
+              <div>
+                <h2>Pop Protector Upsell Design</h2>
+                <div>
+                  <figure>
+                    <img
+                      className="protector"
+                      src={protector}
+                      alt="pop protector upsell"
+                    />
+                    <figcaption>
+                      Desktop view of the Pop Protector Upsell
+                    </figcaption>
+                  </figure>
+                </div>
+                <div>
+                  <figure style={{ marginTop: "40px" }}>
+                    <img
+                      className="mobile-protector"
+                      src={mobileprotector}
+                      alt="pop protector upsell"
+                    />
+                    <figcaption>
+                      Mobile view of the Pop Protector Upsell
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <h2>Builder Experience</h2>
+              <span>
+                Click this{" "}
+                <a
+                  rel="noreferrer"
+                  className="about-link"
+                  target="_blank"
+                  href="https://funko.com/pop-yourself/"
+                >
+                  Link
+                </a>{" "}
+                to experience the Pop! Yourself builder.
+              </span>
+            </div>
+          </div>
+        </CustomTabPanel>
+        
         {/* Choose your own gift */}
         <CustomTabPanel value={value} index={3}>
           <div className="funko-container">
@@ -832,13 +832,13 @@ export default function BasicTabs() {
             <div style={{ marginTop: "40px" }} className="two-grid">
               <div>
                 <figure>
-                  <img src={tracker} alt="tracker" />
+                  <img className="tracker-img" src={tracker} alt="tracker" />
                   <figcaption>Convention item list</figcaption>
                 </figure>
               </div>
               <div>
                 <figure>
-                  <img src={wishlist} alt="wishlist" />
+                  <img className="tracker-img" src={wishlist} alt="wishlist" />
                   <figcaption>Wishlist feature</figcaption>
                 </figure>
               </div>
